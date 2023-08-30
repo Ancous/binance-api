@@ -1,0 +1,23 @@
+{
+   "orderId": 32694038847,
+   "symbol": "ADAUSDT",
+   "status": "NEW",
+   "clientOrderId": "46437",
+   "price": "0",
+   "avgPrice": "0.00000",
+   "origQty": "16",
+   "executedQty": "0",
+   "cumQty": "0",
+   "cumQuote": "0",
+   "timeInForce": "GTC",
+   "type": "STOP_MARKET",
+   "reduceOnly": false,
+   "closePosition": false,
+   "side": "SELL",
+   "positionSide": "BOTH",
+   "stopPrice": "0.34000",
+   "workingType": "CONTRACT_PRICE",
+   "priceProtect": false,
+   "origType": "STOP_MARKET",
+   "updateTime": 1686062905520
+}

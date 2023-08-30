@@ -1,0 +1,2502 @@
+[
+   {
+      "symbol": "VETUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WAVESBUSD",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WAVESUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WLDUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00008041"
+   },
+   {
+      "symbol": "WOOUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00005715"
+   },
+   {
+      "symbol": "XEMUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XLMUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "-0.00013039"
+   },
+   {
+      "symbol": "XMRUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XRPBUSD",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XRPUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XTZUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XVGUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XVSUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "-0.00007112"
+   },
+   {
+      "symbol": "YFIUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZECUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZENUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "-0.00015370"
+   },
+   {
+      "symbol": "ZILUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZRXUSDT",
+      "fundingTime": 1690732800000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000FLOKIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000LUNCBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000LUNCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000PEPEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00001989"
+   },
+   {
+      "symbol": "1000SHIBBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000SHIBUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000XECUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00168477"
+   },
+   {
+      "symbol": "1INCHUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AAVEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ACHUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ADABUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00007759"
+   },
+   {
+      "symbol": "ADAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AGIXBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AGIXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AGLDUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ALGOUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ALICEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ALPHAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AMBBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AMBUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ANCBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ANKRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ANTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "APEBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "APEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00054432"
+   },
+   {
+      "symbol": "API3USDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "APTBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "APTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009871"
+   },
+   {
+      "symbol": "ARBUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00000307"
+   },
+   {
+      "symbol": "ARKMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ARPAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ARUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009890"
+   },
+   {
+      "symbol": "ASTRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00009807"
+   },
+   {
+      "symbol": "ATAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ATOMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00004932"
+   },
+   {
+      "symbol": "AUCTIONBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AUDIOUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AVAXBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AVAXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00008620"
+   },
+   {
+      "symbol": "AXSUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00028940"
+   },
+   {
+      "symbol": "BAKEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BALUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00000488"
+   },
+   {
+      "symbol": "BANDUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00005569"
+   },
+   {
+      "symbol": "BATUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00004298"
+   },
+   {
+      "symbol": "BCHUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00001810"
+   },
+   {
+      "symbol": "BELUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BLUEBIRDUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00003088"
+   },
+   {
+      "symbol": "BLURUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BLZUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00005273"
+   },
+   {
+      "symbol": "BNBBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00002749"
+   },
+   {
+      "symbol": "BNBUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009227"
+   },
+   {
+      "symbol": "BNXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BTCBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00004035"
+   },
+   {
+      "symbol": "BTCDOMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00005267"
+   },
+   {
+      "symbol": "BTCSTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BTCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00002369"
+   },
+   {
+      "symbol": "BTSUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "C98USDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CELOUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CELRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CFXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CHRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CHZUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009848"
+   },
+   {
+      "symbol": "CKBUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "COCOSUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "COMBOUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "COMPUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00004441"
+   },
+   {
+      "symbol": "COTIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CRVUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CTKUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CTSIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CVCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CVXBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CVXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DARUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DASHUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DEFIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DENTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DGBUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DODOBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00093162"
+   },
+   {
+      "symbol": "DOGEBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DOGEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00003474"
+   },
+   {
+      "symbol": "DOTBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DOTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00006966"
+   },
+   {
+      "symbol": "DUSKUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00007370"
+   },
+   {
+      "symbol": "DYDXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00004291"
+   },
+   {
+      "symbol": "EDUUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "EGLDUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ENJUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00003024"
+   },
+   {
+      "symbol": "ENSUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009564"
+   },
+   {
+      "symbol": "EOSUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ETCBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ETCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00005152"
+   },
+   {
+      "symbol": "ETHBTC",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00000000"
+   },
+   {
+      "symbol": "ETHBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00000710"
+   },
+   {
+      "symbol": "ETHUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00000049"
+   },
+   {
+      "symbol": "FETUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FILBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FILUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FLMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FLOWUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FOOTBALLUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00204563"
+   },
+   {
+      "symbol": "FTMBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FTMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FTTBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FTTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FXSUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GALABUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GALAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00004873"
+   },
+   {
+      "symbol": "GALBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GALUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GMTBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GMTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GMXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GRTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GTCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HBARUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HFTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HIGHUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HNTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HOOKUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HOTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ICPUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ICXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "IDEXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "IDUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "IMXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00011646"
+   },
+   {
+      "symbol": "INJUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00023267"
+   },
+   {
+      "symbol": "IOSTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "IOTAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00000254"
+   },
+   {
+      "symbol": "IOTXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "JASMYUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "JOEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KAVAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KEYUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KLAYUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KNCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KSMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00005715"
+   },
+   {
+      "symbol": "LDOBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LDOUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00000242"
+   },
+   {
+      "symbol": "LEVERBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LEVERUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LINAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LINKBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LINKUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00004960"
+   },
+   {
+      "symbol": "LITUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00006557"
+   },
+   {
+      "symbol": "LPTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LQTYUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LRCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LTCBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00005538"
+   },
+   {
+      "symbol": "LTCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00007800"
+   },
+   {
+      "symbol": "LUNA2USDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MAGICUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MANAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00003366"
+   },
+   {
+      "symbol": "MASKUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009665"
+   },
+   {
+      "symbol": "MATICBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00000767"
+   },
+   {
+      "symbol": "MATICUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00009689"
+   },
+   {
+      "symbol": "MAVUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MDTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MINAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MKRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MTLUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NEARBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NEARUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NEOUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NKNUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NMRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "OCEANUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "OGNUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00013573"
+   },
+   {
+      "symbol": "OMGUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00004115"
+   },
+   {
+      "symbol": "ONEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00003281"
+   },
+   {
+      "symbol": "ONTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "OPUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "PENDLEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00039124"
+   },
+   {
+      "symbol": "PEOPLEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "PERPUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00029862"
+   },
+   {
+      "symbol": "PHBBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "PHBUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "QNTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "QTUMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RADUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RAYUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RDNTUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "REEFUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RENUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RLCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RNDRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ROSEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00000135"
+   },
+   {
+      "symbol": "RSRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RUNEUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009401"
+   },
+   {
+      "symbol": "RVNUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00010206"
+   },
+   {
+      "symbol": "SANDBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SANDUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SFPUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SKLUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SNXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00033736"
+   },
+   {
+      "symbol": "SOLBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SOLUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009232"
+   },
+   {
+      "symbol": "SPELLUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SRMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SSVUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009285"
+   },
+   {
+      "symbol": "STGUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "STMXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00021910"
+   },
+   {
+      "symbol": "STORJUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010001"
+   },
+   {
+      "symbol": "STXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00008097"
+   },
+   {
+      "symbol": "SUIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00029937"
+   },
+   {
+      "symbol": "SUSHIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00009573"
+   },
+   {
+      "symbol": "SXPUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "THETAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TLMBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TLMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00017337"
+   },
+   {
+      "symbol": "TOMOUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TRBUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00006635"
+   },
+   {
+      "symbol": "TRUUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TRXBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TRXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009003"
+   },
+   {
+      "symbol": "TUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "UMAUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "UNFIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00005780"
+   },
+   {
+      "symbol": "UNIBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "UNIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "USDCUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00001910"
+   },
+   {
+      "symbol": "VETUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WAVESBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WAVESUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WLDUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00007221"
+   },
+   {
+      "symbol": "WOOUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XEMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XLMUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "-0.00020061"
+   },
+   {
+      "symbol": "XMRUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009966"
+   },
+   {
+      "symbol": "XRPBUSD",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XRPUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00009110"
+   },
+   {
+      "symbol": "XTZUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XVGUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XVSUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "YFIUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZECUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZENUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00000678"
+   },
+   {
+      "symbol": "ZILUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZRXUSDT",
+      "fundingTime": 1690761600000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000FLOKIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000LUNCBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000LUNCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000PEPEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000SHIBBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000SHIBUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "1000XECUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00095169"
+   },
+   {
+      "symbol": "1INCHUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AAVEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ACHUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ADABUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ADAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AGIXBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AGIXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AGLDUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00001239"
+   },
+   {
+      "symbol": "ALGOUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ALICEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ALPHAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AMBBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AMBUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ANCBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ANKRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ANTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00008606"
+   },
+   {
+      "symbol": "APEBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "APEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00056469"
+   },
+   {
+      "symbol": "API3USDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "APTBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "APTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00005438"
+   },
+   {
+      "symbol": "ARBUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00002697"
+   },
+   {
+      "symbol": "ARKMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ARPAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ARUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ASTRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00006401"
+   },
+   {
+      "symbol": "ATAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ATOMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AUCTIONBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AUDIOUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00004145"
+   },
+   {
+      "symbol": "AVAXBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "AVAXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00009854"
+   },
+   {
+      "symbol": "AXSUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00014870"
+   },
+   {
+      "symbol": "BAKEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BALUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00006573"
+   },
+   {
+      "symbol": "BANDUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BATUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00004112"
+   },
+   {
+      "symbol": "BCHUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00011427"
+   },
+   {
+      "symbol": "BELUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BLUEBIRDUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BLURUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BLZUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00009864"
+   },
+   {
+      "symbol": "BNBBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00009470"
+   },
+   {
+      "symbol": "BNBUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00007364"
+   },
+   {
+      "symbol": "BNXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BTCBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BTCDOMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00006692"
+   },
+   {
+      "symbol": "BTCSTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "BTCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00007362"
+   },
+   {
+      "symbol": "BTSUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "C98USDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CELOUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CELRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00005372"
+   },
+   {
+      "symbol": "CFXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CHRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CHZUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CKBUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "COCOSUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "COMBOUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00001264"
+   },
+   {
+      "symbol": "COMPUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00120651"
+   },
+   {
+      "symbol": "COTIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00004704"
+   },
+   {
+      "symbol": "CRVUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00098732"
+   },
+   {
+      "symbol": "CTKUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CTSIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CVCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CVXBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "CVXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00032712"
+   },
+   {
+      "symbol": "DARUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DASHUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DEFIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DENTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DGBUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DODOBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DOGEBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DOGEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DOTBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DOTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00000566"
+   },
+   {
+      "symbol": "DUSKUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "DYDXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00004074"
+   },
+   {
+      "symbol": "EDUUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "EGLDUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ENJUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ENSUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00006288"
+   },
+   {
+      "symbol": "EOSUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00007447"
+   },
+   {
+      "symbol": "ETCBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ETCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ETHBTC",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00000000"
+   },
+   {
+      "symbol": "ETHBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00007225"
+   },
+   {
+      "symbol": "ETHUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00000170"
+   },
+   {
+      "symbol": "FETUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00008700"
+   },
+   {
+      "symbol": "FILBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FILUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FLMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FLOWUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FOOTBALLUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00041053"
+   },
+   {
+      "symbol": "FTMBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FTMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FTTBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FTTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "FXSUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GALABUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GALAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GALBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GALUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GMTBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GMTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GMXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GRTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "GTCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HBARUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HFTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HIGHUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HNTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HOOKUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "HOTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ICPUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ICXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00007068"
+   },
+   {
+      "symbol": "IDEXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "IDUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "IMXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00021289"
+   },
+   {
+      "symbol": "INJUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00016245"
+   },
+   {
+      "symbol": "IOSTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "IOTAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00001294"
+   },
+   {
+      "symbol": "IOTXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "JASMYUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "JOEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KAVAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KEYUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KLAYUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KNCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "KSMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00005935"
+   },
+   {
+      "symbol": "LDOBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LDOUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00004957"
+   },
+   {
+      "symbol": "LEVERBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LEVERUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LINAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LINKBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LINKUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00003803"
+   },
+   {
+      "symbol": "LITUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LPTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LQTYUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LRCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LTCBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "LTCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00008268"
+   },
+   {
+      "symbol": "LUNA2USDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MAGICUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00005051"
+   },
+   {
+      "symbol": "MANAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00004304"
+   },
+   {
+      "symbol": "MASKUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MATICBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MATICUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00004760"
+   },
+   {
+      "symbol": "MAVUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00010132"
+   },
+   {
+      "symbol": "MDTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MINAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00009807"
+   },
+   {
+      "symbol": "MKRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "MTLUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NEARBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NEARUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NEOUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NKNUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "NMRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "OCEANUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "OGNUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00031410"
+   },
+   {
+      "symbol": "OMGUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ONEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ONTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "OPUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "PENDLEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00024811"
+   },
+   {
+      "symbol": "PEOPLEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "PERPUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "PHBBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "PHBUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "QNTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "QTUMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RADUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RAYUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RDNTUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "REEFUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RENUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RLCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00014581"
+   },
+   {
+      "symbol": "RNDRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ROSEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00015687"
+   },
+   {
+      "symbol": "RSRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00007124"
+   },
+   {
+      "symbol": "RUNEUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "RVNUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00002879"
+   },
+   {
+      "symbol": "SANDBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SANDUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SFPUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SKLUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SNXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00007965"
+   },
+   {
+      "symbol": "SOLBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00001670"
+   },
+   {
+      "symbol": "SOLUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00002568"
+   },
+   {
+      "symbol": "SPELLUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SRMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SSVUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "STGUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "STMXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00037965"
+   },
+   {
+      "symbol": "STORJUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "STXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "SUIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00014952"
+   },
+   {
+      "symbol": "SUSHIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00000399"
+   },
+   {
+      "symbol": "SXPUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "THETAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TLMBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TLMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TOMOUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TRBUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TRUUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TRXBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "TRXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00001325"
+   },
+   {
+      "symbol": "TUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "UMAUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "UNFIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "UNIBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "UNIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "USDCUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00002006"
+   },
+   {
+      "symbol": "VETUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WAVESBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WAVESUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WLDUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "WOOUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XEMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XLMUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00019085"
+   },
+   {
+      "symbol": "XMRUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XRPBUSD",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XRPUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XTZUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "XVGUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00101782"
+   },
+   {
+      "symbol": "XVSUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "YFIUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZECUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZENUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "-0.00014902"
+   },
+   {
+      "symbol": "ZILUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   },
+   {
+      "symbol": "ZRXUSDT",
+      "fundingTime": 1690790400000,
+      "fundingRate": "0.00010000"
+   }
+]

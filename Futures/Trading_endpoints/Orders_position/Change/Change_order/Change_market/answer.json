@@ -1,0 +1,23 @@
+{
+   "orderId": 33530191156,
+   "symbol": "ADAUSDT",
+   "status": "FILLED",
+   "clientOrderId": "24843",
+   "price": "0.00000",
+   "avgPrice": "0.28710",
+   "origQty": "20",
+   "executedQty": "20",
+   "cumQty": "20",
+   "cumQuote": "5.74200",
+   "timeInForce": "GTC",
+   "type": "MARKET",
+   "reduceOnly": false,
+   "closePosition": false,
+   "side": "BUY",
+   "positionSide": "BOTH",
+   "stopPrice": "0.00000",
+   "workingType": "CONTRACT_PRICE",
+   "priceProtect": false,
+   "origType": "MARKET",
+   "updateTime": 1688908411581
+}

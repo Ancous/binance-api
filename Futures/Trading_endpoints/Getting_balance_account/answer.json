@@ -1,0 +1,101 @@
+[
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "BTC",
+      "balance": "0.00000000",
+      "crossWalletBalance": "0.00000000",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "0.00000000",
+      "maxWithdrawAmount": "0.00000000",
+      "marginAvailable": true,
+      "updateTime": 0
+   },
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "XRP",
+      "balance": "0.00000000",
+      "crossWalletBalance": "0.00000000",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "0.00000000",
+      "maxWithdrawAmount": "0.00000000",
+      "marginAvailable": true,
+      "updateTime": 0
+   },
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "TUSD",
+      "balance": "0.00000000",
+      "crossWalletBalance": "0.00000000",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "0.00000000",
+      "maxWithdrawAmount": "0.00000000",
+      "marginAvailable": true,
+      "updateTime": 0
+   },
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "BNB",
+      "balance": "0.00000000",
+      "crossWalletBalance": "0.00000000",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "0.00000000",
+      "maxWithdrawAmount": "0.00000000",
+      "marginAvailable": true,
+      "updateTime": 0
+   },
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "ETH",
+      "balance": "0.00000000",
+      "crossWalletBalance": "0.00000000",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "0.00000000",
+      "maxWithdrawAmount": "0.00000000",
+      "marginAvailable": true,
+      "updateTime": 0
+   },
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "USDT",
+      "balance": "99.74899232",
+      "crossWalletBalance": "99.74899232",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "45.74899232",
+      "maxWithdrawAmount": "45.74899232",
+      "marginAvailable": true,
+      "updateTime": 1690193124008
+   },
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "USDP",
+      "balance": "0.00000000",
+      "crossWalletBalance": "0.00000000",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "0.00000000",
+      "maxWithdrawAmount": "0.00000000",
+      "marginAvailable": true,
+      "updateTime": 0
+   },
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "USDC",
+      "balance": "0.00000000",
+      "crossWalletBalance": "0.00000000",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "0.00000000",
+      "maxWithdrawAmount": "0.00000000",
+      "marginAvailable": true,
+      "updateTime": 0
+   },
+   {
+      "accountAlias": "FzSguXAumYAumY",
+      "asset": "BUSD",
+      "balance": "0.00000000",
+      "crossWalletBalance": "0.00000000",
+      "crossUnPnl": "0.00000000",
+      "availableBalance": "0.00000000",
+      "maxWithdrawAmount": "0.00000000",
+      "marginAvailable": true,
+      "updateTime": 0
+   }
+]

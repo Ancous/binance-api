@@ -1,0 +1,1186 @@
+[
+   {
+      "symbol": "METAVERSEUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "ALICE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "7.10298471",
+            "weightInPercentage": "0.01366900"
+         },
+         {
+            "baseAsset": "AXS",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "23.85124627",
+            "weightInPercentage": "0.28325000"
+         },
+         {
+            "baseAsset": "GALA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1649.00546985",
+            "weightInPercentage": "0.06286300"
+         },
+         {
+            "baseAsset": "GMT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "136.68120402",
+            "weightInPercentage": "0.08380700"
+         },
+         {
+            "baseAsset": "MANA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "431.90387774",
+            "weightInPercentage": "0.25299400"
+         },
+         {
+            "baseAsset": "SAND",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "356.61749367",
+            "weightInPercentage": "0.30341700"
+         }
+      ]
+   },
+   {
+      "symbol": "INFRAUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "AMB",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "256.53613552",
+            "weightInPercentage": "0.00555300"
+         },
+         {
+            "baseAsset": "ANKR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "2409.42654125",
+            "weightInPercentage": "0.07751900"
+         },
+         {
+            "baseAsset": "CTK",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "21.15103665",
+            "weightInPercentage": "0.02545400"
+         },
+         {
+            "baseAsset": "DENT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "24510.42902072",
+            "weightInPercentage": "0.02647400"
+         },
+         {
+            "baseAsset": "GAL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "8.99570165",
+            "weightInPercentage": "0.01923500"
+         },
+         {
+            "baseAsset": "GTC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "3.71456031",
+            "weightInPercentage": "0.00963600"
+         },
+         {
+            "baseAsset": "HNT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "34.40072550",
+            "weightInPercentage": "0.10959600"
+         },
+         {
+            "baseAsset": "JASMY",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "11807.22949701",
+            "weightInPercentage": "0.06782500"
+         },
+         {
+            "baseAsset": "LPT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "6.47438230",
+            "weightInPercentage": "0.06961100"
+         },
+         {
+            "baseAsset": "NKN",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "175.55342684",
+            "weightInPercentage": "0.02202700"
+         },
+         {
+            "baseAsset": "PHB",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "8.62460706",
+            "weightInPercentage": "0.00921300"
+         },
+         {
+            "baseAsset": "QNT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "3.02434020",
+            "weightInPercentage": "0.55785600"
+         }
+      ]
+   },
+   {
+      "symbol": "LAYER1USDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "ADA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "155.17744910",
+            "weightInPercentage": "0.05234100"
+         },
+         {
+            "baseAsset": "ALGO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "32.42313862",
+            "weightInPercentage": "0.00772600"
+         },
+         {
+            "baseAsset": "APT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.62767133",
+            "weightInPercentage": "0.00308600"
+         },
+         {
+            "baseAsset": "ATOM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1.28393358",
+            "weightInPercentage": "0.01357000"
+         },
+         {
+            "baseAsset": "AVAX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1.41932583",
+            "weightInPercentage": "0.02008700"
+         },
+         {
+            "baseAsset": "CELO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "2.25206563",
+            "weightInPercentage": "0.00139200"
+         },
+         {
+            "baseAsset": "DOT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "5.26835622",
+            "weightInPercentage": "0.02999700"
+         },
+         {
+            "baseAsset": "EGLD",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.10611956",
+            "weightInPercentage": "0.00521200"
+         },
+         {
+            "baseAsset": "EOS",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "4.75525323",
+            "weightInPercentage": "0.00516500"
+         },
+         {
+            "baseAsset": "ETC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.63052351",
+            "weightInPercentage": "0.01279200"
+         },
+         {
+            "baseAsset": "ETH",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.54620401",
+            "weightInPercentage": "0.75634900"
+         },
+         {
+            "baseAsset": "FTM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "11.42581276",
+            "weightInPercentage": "0.00291800"
+         },
+         {
+            "baseAsset": "HBAR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "110.92024653",
+            "weightInPercentage": "0.00575200"
+         },
+         {
+            "baseAsset": "ICP",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1.22955444",
+            "weightInPercentage": "0.00567200"
+         },
+         {
+            "baseAsset": "ICX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "4.12843006",
+            "weightInPercentage": "0.00079600"
+         },
+         {
+            "baseAsset": "IOST",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "84.67914695",
+            "weightInPercentage": "0.00076500"
+         },
+         {
+            "baseAsset": "IOTA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "12.40770867",
+            "weightInPercentage": "0.00278700"
+         },
+         {
+            "baseAsset": "IOTX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "42.39711721",
+            "weightInPercentage": "0.00105200"
+         },
+         {
+            "baseAsset": "KAVA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1.53629175",
+            "weightInPercentage": "0.00144400"
+         },
+         {
+            "baseAsset": "KLAY",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "13.52279529",
+            "weightInPercentage": "0.00269700"
+         },
+         {
+            "baseAsset": "KSM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.03876106",
+            "weightInPercentage": "0.00122000"
+         },
+         {
+            "baseAsset": "NEO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.30297062",
+            "weightInPercentage": "0.00240900"
+         },
+         {
+            "baseAsset": "QTUM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.45685811",
+            "weightInPercentage": "0.00109100"
+         },
+         {
+            "baseAsset": "SOL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1.66400264",
+            "weightInPercentage": "0.02416900"
+         },
+         {
+            "baseAsset": "TOMO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.43325121",
+            "weightInPercentage": "0.00014300"
+         },
+         {
+            "baseAsset": "TRX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "414.06751592",
+            "weightInPercentage": "0.02421100"
+         },
+         {
+            "baseAsset": "VET",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "322.37555146",
+            "weightInPercentage": "0.00668000"
+         },
+         {
+            "baseAsset": "WAVES",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.57136697",
+            "weightInPercentage": "0.00115300"
+         },
+         {
+            "baseAsset": "XEM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "39.49905933",
+            "weightInPercentage": "0.00141800"
+         },
+         {
+            "baseAsset": "XTZ",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "4.16762848",
+            "weightInPercentage": "0.00444100"
+         },
+         {
+            "baseAsset": "ZIL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "61.12761303",
+            "weightInPercentage": "0.00146400"
+         }
+      ]
+   },
+   {
+      "symbol": "DEXUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "1INCH",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "102.11863924",
+            "weightInPercentage": "0.04851300"
+         },
+         {
+            "baseAsset": "BAL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "6.02899134",
+            "weightInPercentage": "0.03949100"
+         },
+         {
+            "baseAsset": "DYDX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "8.89571074",
+            "weightInPercentage": "0.01521400"
+         },
+         {
+            "baseAsset": "LRC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "171.98663437",
+            "weightInPercentage": "0.04650000"
+         },
+         {
+            "baseAsset": "RUNE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "43.09416972",
+            "weightInPercentage": "0.06713400"
+         },
+         {
+            "baseAsset": "SNX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "32.86676337",
+            "weightInPercentage": "0.06834900"
+         },
+         {
+            "baseAsset": "SUSHI",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "17.09445797",
+            "weightInPercentage": "0.02151300"
+         },
+         {
+            "baseAsset": "UNI",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "102.59358984",
+            "weightInPercentage": "0.67053200"
+         },
+         {
+            "baseAsset": "ZRX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "108.41945298",
+            "weightInPercentage": "0.02275400"
+         }
+      ]
+   },
+   {
+      "symbol": "STORAGEUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "AR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "11.97860091",
+            "weightInPercentage": "0.12375600"
+         },
+         {
+            "baseAsset": "BLZ",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "121.44061209",
+            "weightInPercentage": "0.00876300"
+         },
+         {
+            "baseAsset": "FIL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "117.53821948",
+            "weightInPercentage": "0.59306200"
+         },
+         {
+            "baseAsset": "HOT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "61711.08972831",
+            "weightInPercentage": "0.12073700"
+         },
+         {
+            "baseAsset": "OCEAN",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "189.63315174",
+            "weightInPercentage": "0.03567000"
+         },
+         {
+            "baseAsset": "ONT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "305.61722005",
+            "weightInPercentage": "0.06437200"
+         },
+         {
+            "baseAsset": "STORJ",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "146.59098282",
+            "weightInPercentage": "0.05364000"
+         }
+      ]
+   },
+   {
+      "symbol": "PRIVACYUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "ARPA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "320.56798235",
+            "weightInPercentage": "0.00898900"
+         },
+         {
+            "baseAsset": "ATA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "85.17198961",
+            "weightInPercentage": "0.00928300"
+         },
+         {
+            "baseAsset": "DUSK",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "109.71341234",
+            "weightInPercentage": "0.00982800"
+         },
+         {
+            "baseAsset": "LIT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "11.16233595",
+            "weightInPercentage": "0.00850300"
+         },
+         {
+            "baseAsset": "MASK",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "20.44060569",
+            "weightInPercentage": "0.06159000"
+         },
+         {
+            "baseAsset": "XMR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "4.58777339",
+            "weightInPercentage": "0.68567300"
+         },
+         {
+            "baseAsset": "ZEC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "3.99854299",
+            "weightInPercentage": "0.18196200"
+         },
+         {
+            "baseAsset": "ZEN",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "3.44453596",
+            "weightInPercentage": "0.03417300"
+         }
+      ]
+   },
+   {
+      "symbol": "NFTUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "APE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "43.97626709",
+            "weightInPercentage": "0.26656500"
+         },
+         {
+            "baseAsset": "AUDIO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "129.01376248",
+            "weightInPercentage": "0.02688200"
+         },
+         {
+            "baseAsset": "BAKE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "27.00092299",
+            "weightInPercentage": "0.00642900"
+         },
+         {
+            "baseAsset": "BNX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.36782111",
+            "weightInPercentage": "0.02746200"
+         },
+         {
+            "baseAsset": "CHZ",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "908.36039637",
+            "weightInPercentage": "0.17532400"
+         },
+         {
+            "baseAsset": "DAR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "28.86584557",
+            "weightInPercentage": "0.00517100"
+         },
+         {
+            "baseAsset": "ENJ",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "136.18209606",
+            "weightInPercentage": "0.05700300"
+         },
+         {
+            "baseAsset": "FLOW",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "153.02196124",
+            "weightInPercentage": "0.20137700"
+         },
+         {
+            "baseAsset": "IMX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "101.91938843",
+            "weightInPercentage": "0.06057700"
+         },
+         {
+            "baseAsset": "OGN",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "68.26843637",
+            "weightInPercentage": "0.00968700"
+         },
+         {
+            "baseAsset": "THETA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "141.23985257",
+            "weightInPercentage": "0.16352200"
+         }
+      ]
+   },
+   {
+      "symbol": "BLUEBIRDUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "BNB",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.01664086",
+            "weightInPercentage": "0.57019500"
+         },
+         {
+            "baseAsset": "DOGE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "31.86617640",
+            "weightInPercentage": "0.35532700"
+         },
+         {
+            "baseAsset": "MASK",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.14483123",
+            "weightInPercentage": "0.07447800"
+         }
+      ]
+   },
+   {
+      "symbol": "DEFIUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "1INCH",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "75.48717805",
+            "weightInPercentage": "0.04466900"
+         },
+         {
+            "baseAsset": "AAVE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.34201995",
+            "weightInPercentage": "0.04875700"
+         },
+         {
+            "baseAsset": "ALGO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "197.03977127",
+            "weightInPercentage": "0.04237100"
+         },
+         {
+            "baseAsset": "ALPHA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "101.39090584",
+            "weightInPercentage": "0.02004300"
+         },
+         {
+            "baseAsset": "BAKE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "63.16837050",
+            "weightInPercentage": "0.01141600"
+         },
+         {
+            "baseAsset": "BAL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "2.44889245",
+            "weightInPercentage": "0.02150900"
+         },
+         {
+            "baseAsset": "BAND",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "13.45426752",
+            "weightInPercentage": "0.03121800"
+         },
+         {
+            "baseAsset": "BEL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "12.98368797",
+            "weightInPercentage": "0.01655500"
+         },
+         {
+            "baseAsset": "COMP",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.49725663",
+            "weightInPercentage": "0.06923900"
+         },
+         {
+            "baseAsset": "CRV",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "29.19087955",
+            "weightInPercentage": "0.04146800"
+         },
+         {
+            "baseAsset": "FLM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "115.73453009",
+            "weightInPercentage": "0.01480100"
+         },
+         {
+            "baseAsset": "KAVA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "21.06947908",
+            "weightInPercentage": "0.03579800"
+         },
+         {
+            "baseAsset": "KNC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "32.08177125",
+            "weightInPercentage": "0.04186000"
+         },
+         {
+            "baseAsset": "LINK",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "8.29260810",
+            "weightInPercentage": "0.12708000"
+         },
+         {
+            "baseAsset": "LRC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "57.55734271",
+            "weightInPercentage": "0.02490500"
+         },
+         {
+            "baseAsset": "MKR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.03290924",
+            "weightInPercentage": "0.07847000"
+         },
+         {
+            "baseAsset": "REN",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "188.67008866",
+            "weightInPercentage": "0.02185800"
+         },
+         {
+            "baseAsset": "RSR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "4429.39560468",
+            "weightInPercentage": "0.01677200"
+         },
+         {
+            "baseAsset": "RUNE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "13.71775977",
+            "weightInPercentage": "0.02511800"
+         },
+         {
+            "baseAsset": "SFP",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "25.24990918",
+            "weightInPercentage": "0.02063000"
+         },
+         {
+            "baseAsset": "SNX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "10.25284686",
+            "weightInPercentage": "0.05752000"
+         },
+         {
+            "baseAsset": "SPELL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "13215.10712338",
+            "weightInPercentage": "0.01207300"
+         },
+         {
+            "baseAsset": "SXP",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "36.70170077",
+            "weightInPercentage": "0.02418500"
+         },
+         {
+            "baseAsset": "TRB",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.66240999",
+            "weightInPercentage": "0.01637700"
+         },
+         {
+            "baseAsset": "UNFI",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1.72805511",
+            "weightInPercentage": "0.01137200"
+         },
+         {
+            "baseAsset": "UNI",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "6.61886255",
+            "weightInPercentage": "0.07566800"
+         },
+         {
+            "baseAsset": "YFI",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.00188465",
+            "weightInPercentage": "0.02504600"
+         },
+         {
+            "baseAsset": "ZRX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "57.54417957",
+            "weightInPercentage": "0.02322000"
+         }
+      ]
+   },
+   {
+      "symbol": "DEFI2USDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "AAVE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "2.55485778",
+            "weightInPercentage": "0.21488100"
+         },
+         {
+            "baseAsset": "ALPHA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "126.93985669",
+            "weightInPercentage": "0.01613500"
+         },
+         {
+            "baseAsset": "API3",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "10.10424557",
+            "weightInPercentage": "0.01963400"
+         },
+         {
+            "baseAsset": "BAT",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "262.66007122",
+            "weightInPercentage": "0.08194800"
+         },
+         {
+            "baseAsset": "BEL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "8.48727306",
+            "weightInPercentage": "0.00535400"
+         },
+         {
+            "baseAsset": "COMP",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1.27100949",
+            "weightInPercentage": "0.06796500"
+         },
+         {
+            "baseAsset": "CRV",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "100.10163778",
+            "weightInPercentage": "0.08606600"
+         },
+         {
+            "baseAsset": "CVX",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "12.62179893",
+            "weightInPercentage": "0.06855300"
+         },
+         {
+            "baseAsset": "FLM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "53.53616322",
+            "weightInPercentage": "0.00641300"
+         },
+         {
+            "baseAsset": "INJ",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "12.75749016",
+            "weightInPercentage": "0.02884200"
+         },
+         {
+            "baseAsset": "KNC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "29.32580677",
+            "weightInPercentage": "0.02536900"
+         },
+         {
+            "baseAsset": "LINA",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "806.71949889",
+            "weightInPercentage": "0.00685200"
+         },
+         {
+            "baseAsset": "MKR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.17452797",
+            "weightInPercentage": "0.14742700"
+         },
+         {
+            "baseAsset": "REEF",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "3662.23109515",
+            "weightInPercentage": "0.01529800"
+         },
+         {
+            "baseAsset": "REN",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "176.72125301",
+            "weightInPercentage": "0.02053600"
+         },
+         {
+            "baseAsset": "ROSE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1010.22140409",
+            "weightInPercentage": "0.06186800"
+         },
+         {
+            "baseAsset": "RSR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "7605.57835760",
+            "weightInPercentage": "0.04229600"
+         },
+         {
+            "baseAsset": "SPELL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "19046.81301491",
+            "weightInPercentage": "0.01645100"
+         },
+         {
+            "baseAsset": "UNFI",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.89857421",
+            "weightInPercentage": "0.00587700"
+         },
+         {
+            "baseAsset": "YFI",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.00656905",
+            "weightInPercentage": "0.06223600"
+         }
+      ]
+   },
+   {
+      "symbol": "BTCDOMUSDT",
+      "time": 1690806805000,
+      "component": "quoteAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "ADA",
+            "weightInQuantity": "0.00051577",
+            "weightInPercentage": "0.02772900"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "BCH",
+            "weightInQuantity": "0.17950577",
+            "weightInPercentage": "0.01216100"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "BNB",
+            "weightInQuantity": "1.37717573",
+            "weightInPercentage": "0.09499700"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "DOGE",
+            "weightInQuantity": "0.00013315",
+            "weightInPercentage": "0.02826800"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "DOT",
+            "weightInQuantity": "0.00518241",
+            "weightInPercentage": "0.01636400"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "ETC",
+            "weightInQuantity": "0.00735513",
+            "weightInPercentage": "0.00672400"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "ETH",
+            "weightInQuantity": "65.35061371",
+            "weightInPercentage": "0.58305500"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "FIL",
+            "weightInQuantity": "0.00128303",
+            "weightInPercentage": "0.00490200"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "ICP",
+            "weightInQuantity": "0.00114324",
+            "weightInPercentage": "0.00463700"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "LINK",
+            "weightInQuantity": "0.00512954",
+            "weightInPercentage": "0.01078000"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "LTC",
+            "weightInQuantity": "0.09345426",
+            "weightInPercentage": "0.01719800"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "MATIC",
+            "weightInQuantity": "0.00075620",
+            "weightInPercentage": "0.01739500"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "SOL",
+            "weightInQuantity": "0.03939030",
+            "weightInPercentage": "0.02628900"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "THETA",
+            "weightInQuantity": "0.00010343",
+            "weightInPercentage": "0.00212400"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "TRX",
+            "weightInQuantity": "0.00009410",
+            "weightInPercentage": "0.01907700"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "UNI",
+            "weightInQuantity": "0.00309212",
+            "weightInPercentage": "0.00870900"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "VET",
+            "weightInQuantity": "0.00000389",
+            "weightInPercentage": "0.00350300"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "XLM",
+            "weightInQuantity": "0.00010467",
+            "weightInPercentage": "0.01097100"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "XMR",
+            "weightInQuantity": "0.07561019",
+            "weightInPercentage": "0.00771200"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "XRP",
+            "weightInQuantity": "0.00415157",
+            "weightInPercentage": "0.09740400"
+         }
+      ]
+   },
+   {
+      "symbol": "FOOTBALLUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "ACM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "14.52523976",
+            "weightInPercentage": "0.07335500"
+         },
+         {
+            "baseAsset": "ASR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "6.57022506",
+            "weightInPercentage": "0.03945200"
+         },
+         {
+            "baseAsset": "ATM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "9.44859620",
+            "weightInPercentage": "0.06199800"
+         },
+         {
+            "baseAsset": "BAR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "26.56041619",
+            "weightInPercentage": "0.16339000"
+         },
+         {
+            "baseAsset": "CITY",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "19.09234035",
+            "weightInPercentage": "0.14353000"
+         },
+         {
+            "baseAsset": "JUV",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "12.41603515",
+            "weightInPercentage": "0.07054700"
+         },
+         {
+            "baseAsset": "LAZIO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "24.47640316",
+            "weightInPercentage": "0.12467900"
+         },
+         {
+            "baseAsset": "PORTO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "22.02681348",
+            "weightInPercentage": "0.10842700"
+         },
+         {
+            "baseAsset": "PSG",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "13.53539442",
+            "weightInPercentage": "0.12050900"
+         },
+         {
+            "baseAsset": "SANTOS",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "12.98996138",
+            "weightInPercentage": "0.09411400"
+         }
+      ]
+   },
+   {
+      "symbol": "LAYER2USDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "CELR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "489.53747846",
+            "weightInPercentage": "0.00664000"
+         },
+         {
+            "baseAsset": "CHR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "40.20935885",
+            "weightInPercentage": "0.00537200"
+         },
+         {
+            "baseAsset": "CTSI",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "44.35530680",
+            "weightInPercentage": "0.00592300"
+         },
+         {
+            "baseAsset": "LDO",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "22.11003702",
+            "weightInPercentage": "0.02521700"
+         },
+         {
+            "baseAsset": "MATIC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "618.33896316",
+            "weightInPercentage": "0.62330700"
+         },
+         {
+            "baseAsset": "NEAR",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "59.68532993",
+            "weightInPercentage": "0.10951400"
+         },
+         {
+            "baseAsset": "OMG",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "9.86524744",
+            "weightInPercentage": "0.01273100"
+         },
+         {
+            "baseAsset": "ONE",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "915.85001177",
+            "weightInPercentage": "0.01439700"
+         },
+         {
+            "baseAsset": "OP",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "17.01700232",
+            "weightInPercentage": "0.01949600"
+         },
+         {
+            "baseAsset": "SKL",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "286.27855578",
+            "weightInPercentage": "0.00801800"
+         },
+         {
+            "baseAsset": "XLM",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "1797.86410137",
+            "weightInPercentage": "0.16938400"
+         }
+      ]
+   },
+   {
+      "symbol": "POWUSDT",
+      "time": 1690806805000,
+      "component": "baseAsset",
+      "baseAssetList": [
+         {
+            "baseAsset": "BCH",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.05377559",
+            "weightInPercentage": "0.00633300"
+         },
+         {
+            "baseAsset": "BTC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.05135072",
+            "weightInPercentage": "0.97467600"
+         },
+         {
+            "baseAsset": "LTC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "0.19883014",
+            "weightInPercentage": "0.01655200"
+         },
+         {
+            "baseAsset": "RVN",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "32.75752348",
+            "weightInPercentage": "0.00078200"
+         },
+         {
+            "baseAsset": "XEC",
+            "quoteAsset": "USDT",
+            "weightInQuantity": "52266.05922531",
+            "weightInPercentage": "0.00165700"
+         }
+      ]
+   }
+]
