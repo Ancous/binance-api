@@ -12,7 +12,7 @@ def get_average_price_spot(symbol: str) -> dict:
     "https://api.binance.com/api/v3/avgPrice"
 
     Вес запроса:
-    1
+    2
 
     Параметры:
     - symbol="symbol" (str): актив ("BTCUSDT", ...)

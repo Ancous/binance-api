@@ -16,7 +16,7 @@ def get_uicandles_spot(symbol: str,
     "https://api.binance.com/api/v3/uiklines"
 
     Вес запроса:
-    [[limits, вес], [1-100, 1], [101-500: 2], [501-1000: 5], [1001-1500: 10]]
+    2
 
     Параметры:
     - symbol="symbol" (str): актив ("BTCUSDT", ...)

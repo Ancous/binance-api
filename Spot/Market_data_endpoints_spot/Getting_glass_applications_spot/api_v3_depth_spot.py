@@ -13,7 +13,7 @@ def get_glass_applications_spot(symbol: str,
     "https://api.binance.com/api/v3/depth"
 
     Вес запроса:
-    [[limits: вес], [1-100: 1], [101-500: 5], [501-1000: 10], [1001-5000: 50]]
+    [[limits: вес], [1-100: 2], [101-500: 10], [501-1000: 20], [1001-5000: 100]]
 
     Параметры:
     - symbol="symbol" (str): актив ("BTCUSDT", ...)

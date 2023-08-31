@@ -16,7 +16,7 @@ def get_merged_trades_spot(symbol: str,
     "https://api.binance.com/api/v3/aggTrades"
 
     Вес запроса:
-    1
+    2
 
     Параметры:
     - symbol="symbol" (str): актив ("BTCUSDT", ...)

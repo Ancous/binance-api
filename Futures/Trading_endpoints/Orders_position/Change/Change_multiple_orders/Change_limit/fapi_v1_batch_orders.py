@@ -35,7 +35,7 @@ def post_multiple_limit(data_list: list[list[str, ...], ...],
     - Максимально можно сделать запрос на 5 ордеров
     - Все данные в списках заполняются заглавными буквами
     - порядок записи данных в data_list: ["symbol", "side", "quantity", "price", "positionSide", "type", "timeInForce", "newClientOrderId", "workingType", "priceProtect", "newOrderRespType"]
-    - возможные варианты записи data_list:  [[<"ADAUSDT">, <"BUY", "SELL">, <"14.0">, <"0.3896">, <"BOTH", "LONG", "SHORT">, <"LIMIT">, <"GTC", "IOC", "FOK">, <"2312">, <"CONTRACT_PRICE", "MARK_PRICE">, <"FALSE", "TRUE">, <"ACK", "RESULT", "FULL">], ...]
+    - возможные варианты записи data_list:  [[<"ADAUSDT">, <"BUY", "SELL">, <"14.0">, <"0.3896">, <"BOTH", "LONG", "SHORT">, <"LIMIT">, <"GTC", "IOC", "FOK", "GTD", "GTX">, <"2312">, <"CONTRACT_PRICE", "MARK_PRICE">, <"FALSE", "TRUE">, <"ACK", "RESULT", "FULL">], ...]
 
     Ответ:
     [

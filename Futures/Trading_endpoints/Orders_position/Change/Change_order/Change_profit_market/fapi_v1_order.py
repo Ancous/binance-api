@@ -45,7 +45,7 @@ def post_profit_market(symbol: str,
     - stop_price="stopPrice" (str): по какой цене разместится profit_order ("268234", ...)
     - time_stamp="timestamp" (str): время отправки запроса ("1681501516492", ...)
     - my_type="type" (str): вид ордера ("TAKE_PROFIT_MARKET")
-    - time_in_force="timeInForce" (str): режим исполнения ("GTC", "IOC", "FOK")
+    - time_in_force="timeInForce" (str): режим исполнения ("GTC", "IOC", "FOK", "GTD", "GTX")
     - new_order_resp_type="newOrderRespType" (str): развёрнутость ответа ("ACK", "RESULT", "FULL")
     - new_client_order_id="newClientOrderId" (str): идентификатор сделки ("567887", ...)
     - reduce_only="reduceOnly" (str): ... ("FALSE", "TRUE")
@@ -60,7 +60,7 @@ def post_profit_market(symbol: str,
     - минимальное значение "quantity" рассчитывается как (end_point /fapi/v1/exchangeInfo float(["symbols"][если "symbol" == "symbol"]["filters"][если "filterType" == "MIN_NOTIONAL"]["notional"]) / end_point /fapi/v1/ticker/price float(["price"])
     - "side" возможные варианты: ["BUY" - купить, "SELL"- продать]
     - "stop_price" используется если "type" == ("STOP", "STOP_MARKET", "TAKE_PROFIT", "TAKE_PROFIT_MARKET")
-    - "timeInForce" возможные варианты: ["GTC" – ордер будет висеть до тех пор, пока его не отменят, "IOC" – будет куплено то количество, которое можно купить немедленно. Все, что не удалось купить, будет отменено, "FOK" – либо будет куплено все указанное количество немедленно, либо не будет куплено вообще ничего, ордер отменится.
+    - "timeInForce" возможные варианты: ["GTC" – ордер будет висеть до тех пор, пока его не отменят, "IOC" – будет куплено то количество, которое можно купить немедленно. Все, что не удалось купить, будет отменено, "FOK" – либо будет куплено все указанное количество немедленно, либо не будет куплено вообще ничего, ордер отменится, "GTD" - до определённой даты или до конца дня, "GTX" - ....
     - "reduceOnly" не может быть отправлен в режиме хеджирования так же нельзя отправить с параметром closePosition="True"
     - "newOrderRespType" возможные варианты: ["ACK" - короткий ответ, "RESULT" - оптимальный ответ, "FULL" - полный ответ]
     - если "side" == "BUY", то "stopPrice" должен быть меньше end_point /fapi/v1/ticker/price float(["price"])

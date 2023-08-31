@@ -14,7 +14,7 @@ def get_latest_price_spot(list_symbols: list = None) -> dict:
     "https://api.binance.com/api/v3/ticker/price"
 
     Вес запроса:
-    1 для одного символа, 2 когда параметр символа отсутствует
+    2 для одного символа, 4 когда параметр символа отсутствует
 
     Параметры:
     - list_symbols="symbols" (list): актив (["BTCUSDT"], ["BTCUSDT", "ADAUSDT"], ...)

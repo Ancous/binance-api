@@ -20,7 +20,7 @@ def get_historical_trades_spot(symbol: str,
     "https://api.binance.com/api/v3/historicalTrades"
 
     Вес запроса:
-    5
+    10
 
     Параметры:
     - symbol="symbol" (str): актив ("BTCUSDT", ...)

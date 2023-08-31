@@ -13,7 +13,7 @@ def get_latest_trades_spot(symbol: str,
     "https://api.binance.com/api/v3/trades"
 
     Вес запроса:
-    1
+    2
 
     Параметры:
     - symbol="symbol" (str): актив ("BTCUSDT", ...)

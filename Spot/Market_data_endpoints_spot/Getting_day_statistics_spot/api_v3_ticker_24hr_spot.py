@@ -14,7 +14,7 @@ def get_day_statistics_spot(list_symbols: list = None,
     "https://api.binance.com/api/v3/ticker/24hr"
 
     Вес запроса:
-    [[list_symbols, вес], [1-20, 1], [21-100: 20], [>101: 40]
+    [[list_symbols, вес], [1-20, 2], [21-100: 40], [>101: 80]
 
     Параметры:
     - list_symbols="symbols" (list): актив (["BTCUSDT"], ["BTCUSDT", "ADAUSDT"], ...)

@@ -44,7 +44,7 @@ def post_trailing_stop_market(symbol: str,
     - callback_rate="callbackRate" (str): ... ("0.1", ..., "5.0")
     - time_stamp="timestamp" (str): время отправки запроса ("1681501516492", ...)
     - my_type="type" (str): вид ордера ("TRAILING_STOP_MARKET")
-    - time_in_force="timeInForce" (str): режим исполнения ("GTC", "IOC", "FOK")
+    - time_in_force="timeInForce" (str): режим исполнения ("GTC", "IOC", "FOK", "GTD", "GTX")
     - new_order_resp_type="newOrderRespType" (str): развёрнутость ответа ("ACK", "RESULT", "FULL")
     - new_client_order_id="newClientOrderId" (str): идентификатор сделки ("567887", ...)
     - working_type="workingType" (str): ... ("CONTRACT_PRICE", "MARK_PRICE")
@@ -55,7 +55,7 @@ def post_trailing_stop_market(symbol: str,
     - Все аргументы заполняются заглавными буквами
     - минимальное значение "quantity" рассчитывается как (end_point /fapi/v1/exchangeInfo float(["symbols"][если "symbol" == "symbol"]["filters"][если "filterType" == "MIN_NOTIONAL"]["notional"]) / end_point /fapi/v1/ticker/price float(["price"])
     - "side" возможные варианты: ["BUY" - купить, "SELL"- продать]
-    - "timeInForce" возможные варианты: ["GTC" – ордер будет висеть до тех пор, пока его не отменят, "IOC" – будет куплено то количество, которое можно купить немедленно. Все, что не удалось купить, будет отменено, "FOK" – либо будет куплено все указанное количество немедленно, либо не будет куплено вообще ничего, ордер отменится.
+    - "timeInForce" возможные варианты: ["GTC" – ордер будет висеть до тех пор, пока его не отменят, "IOC" – будет куплено то количество, которое можно купить немедленно. Все, что не удалось купить, будет отменено, "FOK" – либо будет куплено все указанное количество немедленно, либо не будет куплено вообще ничего, ордер отменится, "GTD" - до определённой даты или до конца дня, "GTX" - ....
     - "newOrderRespType" возможные варианты: ["ACK" - короткий ответ, "RESULT" - оптимальный ответ, "FULL" - полный ответ]
     - если "side" == "BUY", то "activationPrice" должен быть меньше end_point /fapi/v1/ticker/price float(["price"])
     - если "side" == "SELL", то "activationPrice" должен быть больше end_point /fapi/v1/ticker/price float(["price"])

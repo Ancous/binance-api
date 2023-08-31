@@ -1,9 +1,9 @@
 {
-   "orderId": 34109933039,
+   "orderId": 34801233133,
    "symbol": "ADAUSDT",
    "status": "NEW",
-   "clientOrderId": "13856",
-   "price": "0.27000",
+   "clientOrderId": "31422",
+   "price": "0.20000",
    "avgPrice": "0.00",
    "origQty": "25",
    "executedQty": "0",
@@ -19,5 +19,5 @@
    "workingType": "CONTRACT_PRICE",
    "priceProtect": false,
    "origType": "LIMIT",
-   "updateTime": 1690804892632
+   "updateTime": 1693481521954
 }

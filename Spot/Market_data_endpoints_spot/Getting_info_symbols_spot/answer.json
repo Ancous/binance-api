@@ -1,12 +1,12 @@
 {
    "timezone": "UTC",
-   "serverTime": 1686670720238,
+   "serverTime": 1693480712358,
    "rateLimits": [
       {
          "rateLimitType": "REQUEST_WEIGHT",
          "interval": "MINUTE",
          "intervalNum": 1,
-         "limit": 1200
+         "limit": 6000
       },
       {
          "rateLimitType": "ORDERS",
@@ -24,7 +24,7 @@
          "rateLimitType": "RAW_REQUESTS",
          "interval": "MINUTE",
          "intervalNum": 5,
-         "limit": 6100
+         "limit": 61000
       }
    ],
    "exchangeFilters": [],
@@ -73,7 +73,7 @@
             {
                "filterType": "MARKET_LOT_SIZE",
                "minQty": "0.00000000",
-               "maxQty": "2367.50985159",
+               "maxQty": "3448.84339250",
                "stepSize": "0.00000000"
             },
             {
@@ -93,7 +93,7 @@
             },
             {
                "filterType": "NOTIONAL",
-               "minNotional": "10.00000000",
+               "minNotional": "5.00000000",
                "applyMinToMarket": true,
                "maxNotional": "9000000.00000000",
                "applyMaxToMarket": false,
@@ -113,7 +113,13 @@
             "MARGIN",
             "TRD_GRP_004",
             "TRD_GRP_005",
-            "TRD_GRP_006"
+            "TRD_GRP_006",
+            "TRD_GRP_009",
+            "TRD_GRP_010",
+            "TRD_GRP_011",
+            "TRD_GRP_012",
+            "TRD_GRP_013",
+            "TRD_GRP_014"
          ],
          "defaultSelfTradePreventionMode": "NONE",
          "allowedSelfTradePreventionModes": [
@@ -167,7 +173,7 @@
             {
                "filterType": "MARKET_LOT_SIZE",
                "minQty": "0.00000000",
-               "maxQty": "3385604.32652777",
+               "maxQty": "3723139.49125000",
                "stepSize": "0.00000000"
             },
             {
@@ -205,8 +211,15 @@
          "permissions": [
             "SPOT",
             "MARGIN",
+            "TRD_GRP_004",
             "TRD_GRP_005",
-            "TRD_GRP_006"
+            "TRD_GRP_006",
+            "TRD_GRP_009",
+            "TRD_GRP_010",
+            "TRD_GRP_011",
+            "TRD_GRP_012",
+            "TRD_GRP_013",
+            "TRD_GRP_014"
          ],
          "defaultSelfTradePreventionMode": "NONE",
          "allowedSelfTradePreventionModes": [

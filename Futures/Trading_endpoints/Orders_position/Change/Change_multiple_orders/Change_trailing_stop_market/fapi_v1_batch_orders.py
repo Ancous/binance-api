@@ -35,7 +35,7 @@ def post_multiple_trailing_stop_market(data_list: list[list[str, ...], ...],
     - Максимально можно сделать запрос на 5 ордеров
     - Все данные в списках заполняются заглавными буквами
     - порядок записи данных в data_list: ["symbol", "side", "quantity", "activationPrice", "callbackRate", "positionSide", "type", "timeInForce", "newClientOrderId", "workingType", "newOrderRespType"]
-    - возможные варианты записи data_list:  [[<"ADAUSDT">, <"BUY", "SELL">, <"14.0">, <"0.4450"> ,<"0.1", "0.2", "0.3", ..., "5.0"> , <"BOTH", "LONG", "SHORT">, <"TRAILING_STOP_MARKET">, <"GTC", "IOC", "FOK">, <"2312">, <"CONTRACT_PRICE", "MARK_PRICE">, <"ACK", "RESULT", "FULL">], ...]
+    - возможные варианты записи data_list:  [[<"ADAUSDT">, <"BUY", "SELL">, <"14.0">, <"0.4450"> ,<"0.1", "0.2", "0.3", ..., "5.0"> , <"BOTH", "LONG", "SHORT">, <"TRAILING_STOP_MARKET">, <"GTC", "IOC", "FOK", "GTD", "GTX">, <"2312">, <"CONTRACT_PRICE", "MARK_PRICE">, <"ACK", "RESULT", "FULL">], ...]
 
     Ответ:
     [

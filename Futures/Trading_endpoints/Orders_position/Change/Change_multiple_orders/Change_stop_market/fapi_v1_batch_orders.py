@@ -35,7 +35,7 @@ def post_multiple_stop_market(data_list: list[list[str, ...], ...],
     - Максимально можно сделать запрос на 5 ордеров
     - Все данные в списках заполняются заглавными буквами
     - порядок записи данных в data_list: ["symbol", "side", "quantity", "stopPrice", "positionSide", "type", "timeInForce", "reduceOnly", "newClientOrderId", "closePosition", "workingType", "priceProtect", "newOrderRespType"]
-    - возможные варианты записи data_list:  [[<"ADAUSDT">, <"BUY", "SELL">, <"14.0">, <"0.4890">, <"BOTH", "LONG", "SHORT">, <"STOP_MARKET">, <"GTC", "IOC", "FOK">, <"FALSE", "TRUE">, <"2312">, <"FALSE", "TRUE">, <"CONTRACT_PRICE", "MARK_PRICE">, <"FALSE", "TRUE">, <"ACK", "RESULT", "FULL">], ...]
+    - возможные варианты записи data_list:  [[<"ADAUSDT">, <"BUY", "SELL">, <"14.0">, <"0.4890">, <"BOTH", "LONG", "SHORT">, <"STOP_MARKET">, <"GTC", "IOC", "FOK", "GTD", "GTX">, <"FALSE", "TRUE">, <"2312">, <"FALSE", "TRUE">, <"CONTRACT_PRICE", "MARK_PRICE">, <"FALSE", "TRUE">, <"ACK", "RESULT", "FULL">], ...]
 
     Ответ:
     [

@@ -14,7 +14,7 @@ def get_symbols_info_spot(list_symbols: list = None) -> dict:
     "https://api.binance.com/api/v3/exchangeInfo"
 
     Вес запроса:
-    10
+    20
 
     Параметры:
     - list_symbols="symbols" (list): актив (["BTCUSDT"], ["BTCUSDT", "ADAUSDT"], ...)
