@@ -13,7 +13,7 @@ def get_glass_applications(symbol: str,
     "https://fapi.binance.com/fapi/v1/depth"
 
     Вес запроса:
-    [[limits: вес], [5, 10, 20, 50: 2], [100: 5], [500: 10], [1000: 20]]
+    [[limits: вес], [5, 10, 30, 50: 2], [100: 5], [500: 10], [1000: 20]]
 
     Параметры:
     - symbol="symbol" (str): актив ("BTCUSDT", ...)
