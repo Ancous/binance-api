@@ -1,0 +1,212 @@
+[
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5355",
+      "longShortRatio": "1.1531",
+      "shortAccount": "0.4645",
+      "timestamp": 1705264500000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5350",
+      "longShortRatio": "1.1505",
+      "shortAccount": "0.4650",
+      "timestamp": 1705264800000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5350",
+      "longShortRatio": "1.1506",
+      "shortAccount": "0.4650",
+      "timestamp": 1705265100000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5350",
+      "longShortRatio": "1.1505",
+      "shortAccount": "0.4650",
+      "timestamp": 1705265400000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5352",
+      "longShortRatio": "1.1512",
+      "shortAccount": "0.4648",
+      "timestamp": 1705265700000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5368",
+      "longShortRatio": "1.1588",
+      "shortAccount": "0.4632",
+      "timestamp": 1705266000000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5365",
+      "longShortRatio": "1.1576",
+      "shortAccount": "0.4635",
+      "timestamp": 1705266300000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5363",
+      "longShortRatio": "1.1564",
+      "shortAccount": "0.4637",
+      "timestamp": 1705266600000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5360",
+      "longShortRatio": "1.1550",
+      "shortAccount": "0.4640",
+      "timestamp": 1705266900000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5368",
+      "longShortRatio": "1.1589",
+      "shortAccount": "0.4632",
+      "timestamp": 1705267200000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5369",
+      "longShortRatio": "1.1595",
+      "shortAccount": "0.4631",
+      "timestamp": 1705267500000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5360",
+      "longShortRatio": "1.1549",
+      "shortAccount": "0.4640",
+      "timestamp": 1705267800000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5376",
+      "longShortRatio": "1.1627",
+      "shortAccount": "0.4624",
+      "timestamp": 1705268100000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5371",
+      "longShortRatio": "1.1602",
+      "shortAccount": "0.4629",
+      "timestamp": 1705268400000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5363",
+      "longShortRatio": "1.1568",
+      "shortAccount": "0.4637",
+      "timestamp": 1705268700000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5364",
+      "longShortRatio": "1.1570",
+      "shortAccount": "0.4636",
+      "timestamp": 1705269000000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5354",
+      "longShortRatio": "1.1522",
+      "shortAccount": "0.4646",
+      "timestamp": 1705269300000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5347",
+      "longShortRatio": "1.1489",
+      "shortAccount": "0.4653",
+      "timestamp": 1705269600000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5354",
+      "longShortRatio": "1.1526",
+      "shortAccount": "0.4646",
+      "timestamp": 1705269900000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5352",
+      "longShortRatio": "1.1516",
+      "shortAccount": "0.4648",
+      "timestamp": 1705270200000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5352",
+      "longShortRatio": "1.1516",
+      "shortAccount": "0.4648",
+      "timestamp": 1705270500000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5351",
+      "longShortRatio": "1.1510",
+      "shortAccount": "0.4649",
+      "timestamp": 1705270800000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5347",
+      "longShortRatio": "1.1493",
+      "shortAccount": "0.4653",
+      "timestamp": 1705271100000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5351",
+      "longShortRatio": "1.1509",
+      "shortAccount": "0.4649",
+      "timestamp": 1705271400000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5349",
+      "longShortRatio": "1.1499",
+      "shortAccount": "0.4651",
+      "timestamp": 1705271700000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5346",
+      "longShortRatio": "1.1485",
+      "shortAccount": "0.4654",
+      "timestamp": 1705272000000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5347",
+      "longShortRatio": "1.1490",
+      "shortAccount": "0.4653",
+      "timestamp": 1705272300000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5348",
+      "longShortRatio": "1.1495",
+      "shortAccount": "0.4652",
+      "timestamp": 1705272600000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5347",
+      "longShortRatio": "1.1493",
+      "shortAccount": "0.4653",
+      "timestamp": 1705272900000
+   },
+   {
+      "symbol": "ADAUSDT",
+      "longAccount": "0.5347",
+      "longShortRatio": "1.1494",
+      "shortAccount": "0.4653",
+      "timestamp": 1705273200000
+   }
+]

@@ -1,0 +1,22 @@
+[
+   {
+      "symbol": "",
+      "incomeType": "TRANSFER",
+      "income": "10.00000000",
+      "asset": "USDT",
+      "time": 1705315962000,
+      "info": "TRANSFER",
+      "tranId": 152431823430,
+      "tradeId": ""
+   },
+   {
+      "symbol": "",
+      "incomeType": "TRANSFER",
+      "income": "-10.00000000",
+      "asset": "USDT",
+      "time": 1705316025000,
+      "info": "TRANSFER",
+      "tranId": 152431862837,
+      "tradeId": ""
+   }
+]

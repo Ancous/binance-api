@@ -1,0 +1,22 @@
+[
+   {
+      "code": -4164,
+      "msg": "Order's notional must be no smaller than 5 (unless you choose reduce only)."
+   },
+   {
+      "code": -2019,
+      "msg": "Margin is insufficient."
+   },
+   {
+      "code": -4164,
+      "msg": "Order's notional must be no smaller than 5 (unless you choose reduce only)."
+   },
+   {
+      "code": -2019,
+      "msg": "Margin is insufficient."
+   },
+   {
+      "code": -2019,
+      "msg": "Margin is insufficient."
+   }
+]

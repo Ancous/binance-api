@@ -1,0 +1,22 @@
+[
+   {
+      "symbol": "ADAUSDT",
+      "positionAmt": "0",
+      "entryPrice": "0.0",
+      "breakEvenPrice": "0.0",
+      "markPrice": "0.52539307",
+      "unRealizedProfit": "0.00000000",
+      "liquidationPrice": "0",
+      "leverage": "1",
+      "maxNotionalValue": "5.0E7",
+      "marginType": "isolated",
+      "isolatedMargin": "0.00000000",
+      "isAutoAddMargin": "false",
+      "positionSide": "BOTH",
+      "notional": "0",
+      "isolatedWallet": "0",
+      "updateTime": 0,
+      "isolated": true,
+      "adlQuantile": 0
+   }
+]

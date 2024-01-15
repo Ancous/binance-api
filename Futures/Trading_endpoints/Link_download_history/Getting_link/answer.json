@@ -1,9 +1,0 @@
-{
-   "downloadId": "705897285947772928",
-   "status": "completed",
-   "url": "https://bin-prod-user-rebate-bucket.s3.amazonaws.com/data-download-task/usdt_margined_futures/2023-05-02/b11da5e4-e932-11ed-b29b-06d1fef09917/202305022143.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVL364M5ZE4RJPUCE%2F20230502%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230502T214746Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=891df982df2e66c63f6e6ceda3e0d23ab078e89d58f13372e6f750271fae5c1a",
-   "s3Link": null,
-   "notified": true,
-   "expirationTimestamp": 1683668866000,
-   "isExpired": null
-}
