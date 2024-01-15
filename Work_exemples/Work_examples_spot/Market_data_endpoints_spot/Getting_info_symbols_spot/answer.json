@@ -1,6 +1,6 @@
 {
    "timezone": "UTC",
-   "serverTime": 1693480712358,
+   "serverTime": 1705351312418,
    "rateLimits": [
       {
          "rateLimitType": "REQUEST_WEIGHT",
@@ -12,13 +12,13 @@
          "rateLimitType": "ORDERS",
          "interval": "SECOND",
          "intervalNum": 10,
-         "limit": 50
+         "limit": 100
       },
       {
          "rateLimitType": "ORDERS",
          "interval": "DAY",
          "intervalNum": 1,
-         "limit": 160000
+         "limit": 200000
       },
       {
          "rateLimitType": "RAW_REQUESTS",
@@ -73,7 +73,7 @@
             {
                "filterType": "MARKET_LOT_SIZE",
                "minQty": "0.00000000",
-               "maxQty": "3448.84339250",
+               "maxQty": "2218.01975397",
                "stepSize": "0.00000000"
             },
             {
@@ -119,11 +119,21 @@
             "TRD_GRP_011",
             "TRD_GRP_012",
             "TRD_GRP_013",
-            "TRD_GRP_014"
+            "TRD_GRP_014",
+            "TRD_GRP_015",
+            "TRD_GRP_016",
+            "TRD_GRP_017",
+            "TRD_GRP_018",
+            "TRD_GRP_019",
+            "TRD_GRP_020",
+            "TRD_GRP_021",
+            "TRD_GRP_022",
+            "TRD_GRP_023",
+            "TRD_GRP_024",
+            "TRD_GRP_025"
          ],
-         "defaultSelfTradePreventionMode": "NONE",
+         "defaultSelfTradePreventionMode": "EXPIRE_MAKER",
          "allowedSelfTradePreventionModes": [
-            "NONE",
             "EXPIRE_TAKER",
             "EXPIRE_MAKER",
             "EXPIRE_BOTH"
@@ -173,7 +183,7 @@
             {
                "filterType": "MARKET_LOT_SIZE",
                "minQty": "0.00000000",
-               "maxQty": "3723139.49125000",
+               "maxQty": "3389556.79958158",
                "stepSize": "0.00000000"
             },
             {
@@ -219,11 +229,21 @@
             "TRD_GRP_011",
             "TRD_GRP_012",
             "TRD_GRP_013",
-            "TRD_GRP_014"
+            "TRD_GRP_014",
+            "TRD_GRP_015",
+            "TRD_GRP_016",
+            "TRD_GRP_017",
+            "TRD_GRP_018",
+            "TRD_GRP_019",
+            "TRD_GRP_020",
+            "TRD_GRP_021",
+            "TRD_GRP_022",
+            "TRD_GRP_023",
+            "TRD_GRP_024",
+            "TRD_GRP_025"
          ],
-         "defaultSelfTradePreventionMode": "NONE",
+         "defaultSelfTradePreventionMode": "EXPIRE_MAKER",
          "allowedSelfTradePreventionModes": [
-            "NONE",
             "EXPIRE_TAKER",
             "EXPIRE_MAKER",
             "EXPIRE_BOTH"

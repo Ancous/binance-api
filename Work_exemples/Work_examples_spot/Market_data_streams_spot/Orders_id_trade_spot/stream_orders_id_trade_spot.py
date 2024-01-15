@@ -1,86 +1,58 @@
+"""
+pass
+"""
+
 import asyncio
-import socket
-import websockets.exceptions
-import websockets
-import json
+import os
+from dotenv import load_dotenv
 
-from random import randint
+from Spot import MarketDataStreamsSpot
+
+load_dotenv()
 
 
-async def get_stream_id_trades_tape_spot(list_data: list,
-                                         symbol: list[list[str], ...],
-                                         method: str = "SUBSCRIBE",
-                                         my_id: int = randint(1, 100)) -> None:
-
+async def my_print(list_data):
     """
-    Запрос:
-    Стрим ленты id-сделок спота покупателя и продавца по символу
-
-    Полный url:
-    "wss://stream.binance.com:9443/ws{symbol}@trade"
-
-    Параметры:
-    - list_data (list): аргумент через который будут передаваться данные стрима ([])
-    - symbol (list[list[str], ...]): список символов ([["btcusdt"], ["bnbusdt"], ...])
-    - method (str): метод стрима ("SUBSCRIBE", "UNSUBSCRIBE")
-    - my_id (int): идентификатор стрима (1, ..., 100)
-
-    Комментарии:
-    - скорость обновления: моментально
-    - symbol вариант заполнения: [["btcusdt"], ...]
-    - symbol значения должны быть строчными
-    - method расшифровка ["SUBSCRIBE": подключить стрим, "UNSUBSCRIBE": отключить стрим, "LIST_SUBSCRIPTIONS": информация о стриме, "SET_PROPERTY": ..., "GET_PROPERTY": ...]
-    - Будут агрегированы только рыночные сделки, что означает, что сделки страхового фонда и сделки ADL не будут агрегированы.
-
-    Ответ:
-    {
-        "e": "trade",   (тип события)
-        "E": 123456789,   (время события)
-        "s": "BNBBTC",   (символ)
-        "t": 12345,   (идентификатор сделки)
-        "p": "0.001",   (цена)
-        "q": "100",   (количество)
-        "b": 88,   (идентификатор заказа покупателя)
-        "a": 50,   (идентификатор заказа продавца)
-        "T": 123456785,   (время совершения сделки)
-        "m": true,   (является ли покупатель маркет-мейкером?)
-        "M": true   (игнорировать)
-    }
+    pass
     """
+    while True:
+        if not list_data:
+            await asyncio.sleep(10)
+        else:
+            print(list_data)
+            await asyncio.sleep(0.1)
 
-    # ----------------------------------------------
-    base_url = "wss://stream.binance.com:9443/ws"
-    streams = [f"{data[0].lower()}@trade" for data in symbol]
-    # ----------------------------------------------
+
+async def func_main_stream(futures_client, list_data, symbol):
+    """
+    pass
+    """
+    task_1 = asyncio.create_task(futures_client.get_stream_id_trades_tape_spot(
+        list_data=list_data,
+        symbol=symbol)
+    )
+    task_2 = asyncio.create_task(my_print(
+        list_data=list_data)
+    )
 
     while True:
         try:
-            async with websockets.connect(base_url) as websocket:
-                subscribe_request = {
-                    "method": method,
-                    "params": streams,
-                    "id": my_id,
-                }
-                await websocket.send(json.dumps(subscribe_request))
-
-                while True:
-                    result = json.loads(await websocket.recv())
-                    list_data[0] = result
-                    print(result)
-        except IndexError:
-            list_data.append(None)
-            print("Стрим ленты id-сделок спота покупателя и продавца по символу запущен.")
-        except websockets.exceptions.ConnectionClosedError:
-            print("Стрим ленты id-сделок спота покупателя и продавца по символу разрыв соединения. Восстанавливаем.\n"
-                  "Ошибка: websockets.exceptions.ConnectionClosedError.")
-            await asyncio.sleep(10)
-        except socket.gaierror:
-            print("Стрим ленты id-сделок спота покупателя и продавца по символу разрыв соединения. Восстанавливаем.\n"
-                  "Ошибка: socket.gaierror.")
-            await asyncio.sleep(10)
+            await task_1
+            await task_2
+        except asyncio.CancelledError:
+            task_1.cancel()
+            task_2.cancel()
+            print(f"Стрим не запустился")
+            break
 
 
 if __name__ in "__main__":
-
+    my_list = list()
     data_streams = [["btcusdt"], ["adausdt"], ["bnbusdt"]]
-    asyncio.run(get_stream_id_trades_tape_spot(list_data=[], symbol=data_streams))
+    client_mdss = MarketDataStreamsSpot(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
+
+    asyncio.run(func_main_stream(
+        futures_client=client_mdss,
+        list_data=my_list,
+        symbol=data_streams)
+    )

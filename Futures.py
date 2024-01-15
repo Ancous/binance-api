@@ -21,23 +21,32 @@ class Futures:
     Класс для работы с фьючерсами
 
     Attributes:
-    base_url (str): базовый url для доступа к бирже binance
-    api_key (str): API KEY Binance
-    secret_key (str): SECRET KEY Binance
+    base_url (str): базовый url для доступа к фьючерсам бирже binance
+    base_url_stream (str): базовый url для доступа к стримам фьючерса бирже binance
+
+    Methods:
+    None
     """
     base_url = "https://fapi.binance.com"
     base_url_stream = "wss://fstream.binance.com/ws"
 
     def __init__(self, secret_key: str, api_key: str) -> None:
         """
-        pass
+        Создает ключи при инициализации объекта класса
+
+        Attributes:
+        secret_key (str): SECRET KEY Binance
+        api_key (str): API KEY Binance
+
+        Methods:
+        None
         """
 
         self.secret_key = secret_key
         self.api_key = api_key
 
 
-class MarketDataEndpoints(Futures):
+class MarketDataEndpointsFutures(Futures):
     """
     Класс для работы с Market data endpoints
 
@@ -46,33 +55,33 @@ class MarketDataEndpoints(Futures):
 
     Methods:
     connection_check: проверка соединения
-    get_best_price_quantity: лучшая цена и количество для символа или символов
-    get_candles: информация по свечам
-    get_candles_blvt_nav: информация по историческим свечам BLVT NAV
-    get_candles_contract: информация по свечам для определенного контракта
-    get_candles_indexprice: информация по свечам для Index Price
-    get_candles_markprice: информация по свечам для Mark Price
-    get_day_statistics: статистика изменения цены за 24 часа
-    get_glass_applications: стакан заявок
-    get_history_funding_rate: история ставок финансирования
-    get_historical_trades: исторические рыночные сделки по "fromId"
-    get_index_composite_symbol: информация о символах составного индекса
-    get_symbols_info: текущие правила биржевой торговли и информация о символах
-    get_latest_price: последняя цена для символа или символов
-    get_latest_trades: последние рыночные сделки
-    get_mark_price_funding_rate: цена маркировки и ставки финансирования
-    get_merged_trades: объединенные сделки
-    get_multiassets: индекс активов для режима Multi-Assets
-    get_ratio_long_short_account: общее соотношение количества длинных/коротких счетов
-    get_server_time: время сервера
-    get_top_ratio_long_short_account: общее соотношение количества длинных/коротких счетов ведущих трейдеров
-    get_top_ratio_long_short_position: общее соотношение количества длинных/коротких позиций ведущих трейдеров
-    get_volume_buy_sell: объем покупок и продаж
-    get_current_open_interest: текущий открытый интерес
-    get_historical_open_interest: история открытого интереса
+    get_best_price_quantity_futures: лучшая цена и количество для символа или символов
+    get_candles_futures: информация по свечам
+    get_candles_blvt_nav_futures: информация по историческим свечам BLVT NAV
+    get_candles_contract_futures: информация по свечам для определенного контракта
+    get_candles_indexprice_futures: информация по свечам для Index Price
+    get_candles_markprice_futures: информация по свечам для Mark Price
+    get_day_statistics_futures: статистика изменения цены за 24 часа
+    get_glass_applications_futures: стакан заявок
+    get_history_funding_rate_futures: история ставок финансирования
+    get_historical_trades_futures: исторические рыночные сделки по "fromId"
+    get_index_composite_symbol_futures: информация о символах составного индекса
+    get_symbols_info_futures: текущие правила биржевой торговли и информация о символах
+    get_latest_price_futures: последняя цена для символа или символов
+    get_latest_trades_futures: последние рыночные сделки
+    get_mark_price_funding_rate_futures: цена маркировки и ставки финансирования
+    get_merged_trades_futures: объединенные сделки
+    get_multiassets_futures: индекс активов для режима Multi-Assets
+    get_ratio_long_short_account_futures: общее соотношение количества длинных/коротких счетов
+    get_server_time_futures: время сервера
+    get_top_ratio_long_short_account_futures: общее соотношение количества длинных/коротких счетов ведущих трейдеров
+    get_top_ratio_long_short_position_futures: общее соотношение количества длинных/коротких позиций ведущих трейдеров
+    get_volume_buy_sell_futures: объем покупок и продаж
+    get_current_open_interest_futures: текущий открытый интерес
+    get_historical_open_interest_futures: история открытого интереса
     """
 
-    def connection_check(self) -> dict:
+    def connection_check_futures(self) -> dict:
         """
         Запрос:
         Проверка соединения
@@ -117,7 +126,7 @@ class MarketDataEndpoints(Futures):
                 "result": response.text
             }
 
-    def get_best_price_quantity(self, symbol: str = "") -> dict:
+    def get_best_price_quantity_futures(self, symbol: str = "") -> dict:
         """
         Запрос:
         Получить лучшую цену и количество для символа или символов
@@ -173,12 +182,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_candles(self,
-                    symbol: str,
-                    interval: str,
-                    start_time: str = None,
-                    end_time: str = None,
-                    limit: str = "500") -> dict:
+    def get_candles_futures(self,
+                            symbol: str,
+                            interval: str,
+                            start_time: str = None,
+                            end_time: str = None,
+                            limit: str = "500") -> dict:
         """
         Запрос:
         Получить информацию по свечам
@@ -266,12 +275,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_candles_blvt_nav(self,
-                             symbol: str,
-                             interval: str,
-                             start_time: str = None,
-                             end_time: str = None,
-                             limit: str = "500") -> dict:
+    def get_candles_blvt_nav_futures(self,
+                                     symbol: str,
+                                     interval: str,
+                                     start_time: str = None,
+                                     end_time: str = None,
+                                     limit: str = "500") -> dict:
         """
         Запрос:
         Получить информацию по историческим свечам BLVT NAV
@@ -347,13 +356,13 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_candles_contract(self,
-                             symbol: str,
-                             interval: str,
-                             start_time: str = None,
-                             end_time: str = None,
-                             limit: str = "500",
-                             contract_type: str = "PERPETUAL") -> dict:
+    def get_candles_contract_futures(self,
+                                     symbol: str,
+                                     interval: str,
+                                     start_time: str = None,
+                                     end_time: str = None,
+                                     limit: str = "500",
+                                     contract_type: str = "PERPETUAL") -> dict:
         """
         Запрос:
         Получить информацию по свечам для определенного контракта
@@ -447,12 +456,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_candles_indexprice(self,
-                               symbol: str,
-                               interval: str,
-                               start_time: str = None,
-                               end_time: str = None,
-                               limit: str = "500") -> dict:
+    def get_candles_indexprice_futures(self,
+                                       symbol: str,
+                                       interval: str,
+                                       start_time: str = None,
+                                       end_time: str = None,
+                                       limit: str = "500") -> dict:
         """
         Запрос:
         Получить информацию по свечам для Index Price
@@ -540,12 +549,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_candles_markprice(self,
-                              symbol: str,
-                              interval: str,
-                              start_time: str = None,
-                              end_time: str = None,
-                              limit: str = "500") -> dict:
+    def get_candles_markprice_futures(self,
+                                      symbol: str,
+                                      interval: str,
+                                      start_time: str = None,
+                                      end_time: str = None,
+                                      limit: str = "500") -> dict:
 
         """
         Запрос:
@@ -634,8 +643,8 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_day_statistics(self,
-                           symbol: str = "") -> dict:
+    def get_day_statistics_futures(self,
+                                   symbol: str = "") -> dict:
         """
         Запрос:
         Получить статистику изменения цены за 24 часа
@@ -701,9 +710,9 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_glass_applications(self,
-                               symbol: str,
-                               limit: str = "500") -> dict:
+    def get_glass_applications_futures(self,
+                                       symbol: str,
+                                       limit: str = "500") -> dict:
         """
         Запрос:
         Получить стакан заявок
@@ -803,11 +812,11 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_history_funding_rate(self,
-                                 symbol: str = "",
-                                 start_time: str = None,
-                                 end_time: str = None,
-                                 limit: str = "500") -> dict:
+    def get_history_funding_rate_futures(self,
+                                         symbol: str = "",
+                                         start_time: str = None,
+                                         end_time: str = None,
+                                         limit: str = "500") -> dict:
         """
         Запрос:
         Получить историю ставок финансирования
@@ -873,10 +882,10 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_historical_trades(self,
-                              symbol: str,
-                              from_id: str = None,
-                              limit: str = "500") -> dict:
+    def get_historical_trades_futures(self,
+                                      symbol: str,
+                                      from_id: str = None,
+                                      limit: str = "500") -> dict:
         """
         Запрос:
         Получить исторические рыночные сделки по "fromId"
@@ -953,8 +962,8 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_index_composite_symbol(self,
-                                   symbol: str = "") -> dict:
+    def get_index_composite_symbol_futures(self,
+                                           symbol: str = "") -> dict:
         """
         Запрос:
         Получить информацию о символе составного индекса
@@ -1023,7 +1032,7 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_symbols_info(self) -> dict:
+    def get_symbols_info_futures(self) -> dict:
         """
         Запрос:
         Получить текущие правила биржевой торговли и информацию о символах
@@ -1182,8 +1191,8 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_latest_price(self,
-                         symbol: str = "") -> dict:
+    def get_latest_price_futures(self,
+                                 symbol: str = "") -> dict:
         """
         Запрос:
         Получить последнюю цену для символа или символов.
@@ -1236,9 +1245,9 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_latest_trades(self,
-                          symbol: str,
-                          limit: str = "500") -> dict:
+    def get_latest_trades_futures(self,
+                                  symbol: str,
+                                  limit: str = "500") -> dict:
         """
         Запрос:
         Получить последние рыночные сделки
@@ -1308,8 +1317,8 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_mark_price_funding_rate(self,
-                                    symbol: str = "") -> dict:
+    def get_mark_price_funding_rate_futures(self,
+                                            symbol: str = "") -> dict:
         """
         Запрос:
         Получить цену маркировки и ставку финансирования
@@ -1368,12 +1377,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_merged_trades(self,
-                          symbol: str,
-                          from_id: str = None,
-                          start_time: str = None,
-                          end_time: str = None,
-                          limit: str = "500") -> dict:
+    def get_merged_trades_futures(self,
+                                  symbol: str,
+                                  from_id: str = None,
+                                  start_time: str = None,
+                                  end_time: str = None,
+                                  limit: str = "500") -> dict:
         """
         Запрос:
         Получить объединенные сделки
@@ -1457,8 +1466,8 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_multiassets(self,
-                        symbol: str = "") -> dict:
+    def get_multiassets_futures(self,
+                                symbol: str = "") -> dict:
         """
         Запрос:
         Получить индекс активов для режима Multi-Assets
@@ -1519,12 +1528,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_ratio_long_short_account(self,
-                                     symbol: str,
-                                     period: str,
-                                     start_time: str = None,
-                                     end_time: str = None,
-                                     limit: str = "30") -> dict:
+    def get_ratio_long_short_account_futures(self,
+                                             symbol: str,
+                                             period: str,
+                                             start_time: str = None,
+                                             end_time: str = None,
+                                             limit: str = "30") -> dict:
         """
         Запрос:
         Получить общее соотношение количества длинных/коротких счетов
@@ -1597,7 +1606,7 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_server_time(self) -> dict:
+    def get_server_time_futures(self) -> dict:
         """
         Запрос:
         Получить время сервера
@@ -1644,12 +1653,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_top_ratio_long_short_account(self,
-                                         symbol: str,
-                                         period: str,
-                                         start_time: str = None,
-                                         end_time: str = None,
-                                         limit: str = "30") -> dict:
+    def get_top_ratio_long_short_account_futures(self,
+                                                 symbol: str,
+                                                 period: str,
+                                                 start_time: str = None,
+                                                 end_time: str = None,
+                                                 limit: str = "30") -> dict:
         """
         Запрос:
         Получить общее соотношение количества длинных/коротких счетов ведущих трейдеров
@@ -1722,12 +1731,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_top_ratio_long_short_position(self,
-                                          symbol: str,
-                                          period: str,
-                                          start_time: str = None,
-                                          end_time: str = None,
-                                          limit: str = "30") -> dict:
+    def get_top_ratio_long_short_position_futures(self,
+                                                  symbol: str,
+                                                  period: str,
+                                                  start_time: str = None,
+                                                  end_time: str = None,
+                                                  limit: str = "30") -> dict:
         """
         Запрос:
         Получить общее соотношение количества длинных/коротких позиций ведущих трейдеров
@@ -1800,12 +1809,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_volume_buy_sell(self,
-                            symbol: str,
-                            period: str,
-                            start_time: str = None,
-                            end_time: str = None,
-                            limit: str = "30") -> dict:
+    def get_volume_buy_sell_futures(self,
+                                    symbol: str,
+                                    period: str,
+                                    start_time: str = None,
+                                    end_time: str = None,
+                                    limit: str = "30") -> dict:
         """
         Запрос:
         Получить объем покупок и продаж
@@ -1876,8 +1885,8 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_current_open_interest(self,
-                                  symbol: str) -> dict:
+    def get_current_open_interest_futures(self,
+                                          symbol: str) -> dict:
         """
         Запрос:
         Получить текущий открытый интерес
@@ -1930,12 +1939,12 @@ class MarketDataEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_historical_open_interest(self,
-                                     symbol: str,
-                                     period: str,
-                                     start_time: str = None,
-                                     end_time: str = None,
-                                     limit: str = "500") -> dict:
+    def get_historical_open_interest_futures(self,
+                                             symbol: str,
+                                             period: str,
+                                             start_time: str = None,
+                                             end_time: str = None,
+                                             limit: str = "500") -> dict:
         """
         Запрос:
         Получить историю открытого интереса
@@ -2007,7 +2016,7 @@ class MarketDataEndpoints(Futures):
             }
 
 
-class TradingEndpoints(Futures):
+class TradingEndpointsFutures(Futures):
     """
     Класс для работы с Trading endpoints
 
@@ -2015,14 +2024,57 @@ class TradingEndpoints(Futures):
     None
 
     Methods:
-    get_stream_best_price_quantity_all: лучшая цена и количество всех символов
+    post_leverage_futures: изменить кредитное плечо
+    post_margin_futures: изменить количество маржи изолированной позиции
+    post_margin_type_futures: изменить маржинальное поле ("ИЗОЛИРОВАННАЯ", "ПЕРЕСКРЕСТНАЯ")
+    get_balance_account_futures: баланс фьючерсного счета
+    get_commission_rate_futures: ставки комиссии актива
+    get_estimation_adl_futures: оценки ADL позиций
+    get_force_orders_futures: принудительные сделки
+    get_ftqri_futures: ...
+    get_income_history_futures: история доходов
+    get_info_account_futures: текущая информация об учетной записи
+    get_margin_change_history_futures: история изменения маржи
+    get_nl_brackets_futures: ...
+    get_update_order_history_futures: история изменений ордеров
+    get_id_futures: идентификатор для загрузки истории сделок с фьючерсами
+    get_link_futures: ссылка для скачивания истории сделок с фьючерсами по идентификатору
+    post_multi_asset_futures: изменить режим мультиактива
+    get_multi_asset_futures: режим мультиактива
+    post_position_futures: изменить режим позиции
+    get_positions_futures: режим позиции
+    post_limit_futures: ордер LIMIT
+    post_market_futures: ордер MARKET
+    post_profit_limit_futures: ордер TAKE_PROFIT
+    post_profit_market_futures: ордер TAKE_PROFIT_MARKET
+    post_stop_limit_futures: ордер STOP
+    post_stop_market_futures: ордер STOP_MARKET
+    post_trailing_stop_market_futures: ордер TRAILING_STOP_MARKET
+    put_limit_futures: обновить ордер LIMIT
+    delete_order_futures: закрыть ордер по идентификатору
+    post_multiple_limit_futures: множественный ордер LIMIT
+    post_multiple_market_futures: множественный ордер MARKER
+    post_multiple_profit_limit_futures: множественный ордер TAKE_PROFIT
+    post_multiple_profit_market_futures: множественный ордер TAKE_PROFIT_MARKET
+    post_multiple_stop_limit_futures: множественный ордер STOP
+    post_multiple_stop_market_futures: множественный ордер STOP_MARKET
+    post_multiple_trailing_stop_market_futures: множественный ордер TRAILING_STOP_MARKET
+    put_multiple_limit_futures: обновить несколько ордеров LIMIT
+    delete_multiple_order_id_futures: закрыть несколько ордеров по идентификатору
+    delete_multiple_order_symbol_futures: закрыть несколько ордеров по символу
+    delete_multiple_orders_time_futures: закрыть все ордера по символу через заданное время
+    get_current_position_symbol_futures: информация о текущей позиции по символу
+    get_open_order_id_futures: информация об открытом ордере по идентификатору
+    get_open_orders_all_futures: информация о всех открытых ордерах
+    get_orders_all_futures: информация о всех ордерах аккаунта
+    get_trades_futures: информация о сделках
     """
 
-    def post_leverage(self,
-                      symbol: str,
-                      leverage: str,
-                      time_stamp: str,
-                      recv_window: str = "5000") -> dict:
+    def post_leverage_futures(self,
+                              symbol: str,
+                              leverage: str,
+                              time_stamp: str,
+                              recv_window: str = "5000") -> dict:
         """
         Запрос:
         Изменить кредитное плечо
@@ -2089,13 +2141,13 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_margin(self,
-                    symbol: str,
-                    amount: str,
-                    my_type: str,
-                    time_stamp: str,
-                    position_side: str = "BOTH",
-                    recv_window: str = "5000") -> dict:
+    def post_margin_futures(self,
+                            symbol: str,
+                            amount: str,
+                            my_type: str,
+                            time_stamp: str,
+                            position_side: str = "BOTH",
+                            recv_window: str = "5000") -> dict:
         """
         Запрос:
         Изменить количество маржи изолированной позиции
@@ -2168,11 +2220,11 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_margin_type(self,
-                         symbol: str,
-                         time_stamp: str,
-                         margin_type: str = "ISOLATED",
-                         recv_window: str = "5000") -> dict:
+    def post_margin_type_futures(self,
+                                 symbol: str,
+                                 time_stamp: str,
+                                 margin_type: str = "ISOLATED",
+                                 recv_window: str = "5000") -> dict:
         """
         Запрос:
         Изменить маржинальное поле ("ИЗОЛИРОВАННАЯ", "ПЕРЕСКРЕСТНАЯ")
@@ -2238,9 +2290,9 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_balance_account(self,
-                            time_stamp: str,
-                            recv_window: str = "5000") -> dict:
+    def get_balance_account_futures(self,
+                                    time_stamp: str,
+                                    recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить баланс фьючерсного счета
@@ -2322,10 +2374,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_commission_rate(self,
-                            symbol: str,
-                            time_stamp: str,
-                            recv_window: str = "5000") -> dict:
+    def get_commission_rate_futures(self,
+                                    symbol: str,
+                                    time_stamp: str,
+                                    recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить ставки комиссии актива
@@ -2387,10 +2439,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_estimation_adl(self,
-                           time_stamp: str,
-                           symbol: str = "",
-                           recv_window: str = "5000") -> dict:
+    def get_estimation_adl_futures(self,
+                                   time_stamp: str,
+                                   symbol: str = "",
+                                   recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить оценки ADL позиций
@@ -2467,14 +2519,14 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_force_orders(self,
-                         time_stamp: str,
-                         symbol: str = "",
-                         auto_close_type: str = "",
-                         start_time: str = "",
-                         end_time: str = "",
-                         limit: str = "50",
-                         recv_window: str = "5000") -> dict:
+    def get_force_orders_futures(self,
+                                 time_stamp: str,
+                                 symbol: str = "",
+                                 auto_close_type: str = "",
+                                 start_time: str = "",
+                                 end_time: str = "",
+                                 limit: str = "50",
+                                 recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить принудительные сделки
@@ -2589,10 +2641,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_ftqri(self,
-                  time_stamp: str,
-                  symbol: str = "",
-                  recv_window: str = "5000") -> dict:
+    def get_ftqri_futures(self,
+                          time_stamp: str,
+                          symbol: str = "",
+                          recv_window: str = "5000") -> dict:
         """
         Запрос:
         ...
@@ -2686,14 +2738,14 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_income_history(self,
-                           time_stamp: str,
-                           symbol: str = "",
-                           income_type: str = "",
-                           start_time: str = "",
-                           end_time: str = "",
-                           limit: str = "100",
-                           recv_window: str = "5000") -> dict:
+    def get_income_history_futures(self,
+                                   time_stamp: str,
+                                   symbol: str = "",
+                                   income_type: str = "",
+                                   start_time: str = "",
+                                   end_time: str = "",
+                                   limit: str = "100",
+                                   recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить историю доходов
@@ -2791,9 +2843,9 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_info_account(self,
-                         time_stamp: str,
-                         recv_window: str = "5000") -> dict:
+    def get_info_account_futures(self,
+                                 time_stamp: str,
+                                 recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить текущую информацию об учетной записи
@@ -3023,14 +3075,14 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_margin_change_history(self,
-                                  symbol: str,
-                                  time_stamp: str,
-                                  my_type: str = "",
-                                  start_time: str = "",
-                                  end_time: str = "",
-                                  limit: str = "500",
-                                  recv_window: str = "5000") -> dict:
+    def get_margin_change_history_futures(self,
+                                          symbol: str,
+                                          time_stamp: str,
+                                          my_type: str = "",
+                                          start_time: str = "",
+                                          end_time: str = "",
+                                          limit: str = "500",
+                                          recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить историю изменения маржи
@@ -3120,13 +3172,13 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_nl_brackets(self,
-                        time_stamp: str,
-                        symbol: str = "",
-                        recv_window: str = "5000") -> dict:
+    def get_nl_brackets_futures(self,
+                                time_stamp: str,
+                                symbol: str = "",
+                                recv_window: str = "5000") -> dict:
         """
         Запрос:
-        ???
+        ...
 
         Полный url:
         "https://fapi.binance.com/fapi/v1/leverageBracket"
@@ -3207,15 +3259,15 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_update_order_history(self,
-                                 symbol: str,
-                                 time_stamp: str,
-                                 start_time: str = "",
-                                 end_time: str = "",
-                                 order_id: str = "",
-                                 orig_client_order_id: str = "",
-                                 limit: str = "50",
-                                 recv_window: str = "5000") -> dict:
+    def get_update_order_history_futures(self,
+                                         symbol: str,
+                                         time_stamp: str,
+                                         start_time: str = "",
+                                         end_time: str = "",
+                                         order_id: str = "",
+                                         orig_client_order_id: str = "",
+                                         limit: str = "50",
+                                         recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить историю изменений ордеров
@@ -3307,11 +3359,11 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_id(self,
-               start_time: str,
-               end_time: str,
-               time_stamp: str,
-               recv_window: str = "5000") -> dict:
+    def get_id_futures(self,
+                       start_time: str,
+                       end_time: str,
+                       time_stamp: str,
+                       recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить идентификатор для загрузки истории сделок с фьючерсами
@@ -3377,10 +3429,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_link(self,
-                 download_id: str,
-                 time_stamp: str,
-                 recv_window: str = "5000") -> dict:
+    def get_link_futures(self,
+                         download_id: str,
+                         time_stamp: str,
+                         recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить ссылку для скачивания истории сделок с фьючерсами по идентификатору
@@ -3471,10 +3523,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_multi_asset(self,
-                         multi_assets_margin: str,
-                         time_stamp: str,
-                         recv_window: str = "5000") -> dict:
+    def post_multi_asset_futures(self,
+                                 multi_assets_margin: str,
+                                 time_stamp: str,
+                                 recv_window: str = "5000") -> dict:
         """
         Запрос:
         Изменить режим мультиактива
@@ -3539,9 +3591,9 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_multi_asset(self,
-                        time_stamp: str,
-                        recv_window: str = "5000") -> dict:
+    def get_multi_asset_futures(self,
+                                time_stamp: str,
+                                recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить режим мультиактива
@@ -3602,10 +3654,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_position(self,
-                      dual_side_position: str,
-                      time_stamp: str,
-                      recv_window: str = "5000") -> dict:
+    def post_position_futures(self,
+                              dual_side_position: str,
+                              time_stamp: str,
+                              recv_window: str = "5000") -> dict:
         """
         Запрос:
         Изменить режим позиции
@@ -3670,9 +3722,9 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_positions(self,
-                      time_stamp: str,
-                      recv_window: str = "5000") -> dict:
+    def get_positions_futures(self,
+                              time_stamp: str,
+                              recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить режим позиции
@@ -3733,20 +3785,20 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_limit(self,
-                   symbol: str,
-                   side: str,
-                   quantity: str,
-                   price: str,
-                   time_stamp: str,
-                   my_type: str = "LIMIT",
-                   time_in_force: str = "GTC",
-                   new_order_resp_type: str = "RESULT",
-                   new_client_order_id: str = str(randint(1, 100000)),
-                   working_type: str = "CONTRACT_PRICE",
-                   price_protect: str = "FALSE",
-                   position_side: str = "BOTH",
-                   recv_window: str = "5000") -> dict:
+    def post_limit_futures(self,
+                           symbol: str,
+                           side: str,
+                           quantity: str,
+                           price: str,
+                           time_stamp: str,
+                           my_type: str = "LIMIT",
+                           time_in_force: str = "GTC",
+                           new_order_resp_type: str = "RESULT",
+                           new_client_order_id: str = str(randint(1, 100000)),
+                           working_type: str = "CONTRACT_PRICE",
+                           price_protect: str = "FALSE",
+                           position_side: str = "BOTH",
+                           recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить ордер LIMIT
@@ -3866,18 +3918,18 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_market(self,
-                    symbol: str,
-                    side: str,
-                    quantity: str,
-                    time_stamp: str,
-                    my_type: str = "MARKET",
-                    new_order_resp_type: str = "RESULT",
-                    new_client_order_id: str = str(randint(1, 100000)),
-                    working_type: str = "CONTRACT_PRICE",
-                    price_protect: str = "FALSE",
-                    position_side: str = "BOTH",
-                    recv_window: str = "5000") -> dict:
+    def post_market_futures(self,
+                            symbol: str,
+                            side: str,
+                            quantity: str,
+                            time_stamp: str,
+                            my_type: str = "MARKET",
+                            new_order_resp_type: str = "RESULT",
+                            new_client_order_id: str = str(randint(1, 100000)),
+                            working_type: str = "CONTRACT_PRICE",
+                            price_protect: str = "FALSE",
+                            position_side: str = "BOTH",
+                            recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить ордер MARKET
@@ -3986,21 +4038,21 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_profit_limit(self,
-                          symbol: str,
-                          side: str,
-                          quantity: str,
-                          price: str,
-                          stop_price: str,
-                          time_stamp: str,
-                          my_type: str = "TAKE_PROFIT",
-                          time_in_force: str = "GTC",
-                          new_order_resp_type: str = "RESULT",
-                          new_client_order_id: str = str(randint(1, 100000)),
-                          working_type: str = "CONTRACT_PRICE",
-                          price_protect: str = "FALSE",
-                          position_side: str = "BOTH",
-                          recv_window: str = "5000") -> dict:
+    def post_profit_limit_futures(self,
+                                  symbol: str,
+                                  side: str,
+                                  quantity: str,
+                                  price: str,
+                                  stop_price: str,
+                                  time_stamp: str,
+                                  my_type: str = "TAKE_PROFIT",
+                                  time_in_force: str = "GTC",
+                                  new_order_resp_type: str = "RESULT",
+                                  new_client_order_id: str = str(randint(1, 100000)),
+                                  working_type: str = "CONTRACT_PRICE",
+                                  price_protect: str = "FALSE",
+                                  position_side: str = "BOTH",
+                                  recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить ордер TAKE_PROFIT
@@ -4127,22 +4179,22 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_profit_market(self,
-                           symbol: str,
-                           side: str,
-                           quantity: str,
-                           stop_price: str,
-                           time_stamp: str,
-                           my_type: str = "TAKE_PROFIT_MARKET",
-                           time_in_force: str = "GTC",
-                           new_order_resp_type: str = "RESULT",
-                           new_client_order_id: str = str(randint(1, 100000)),
-                           reduce_only: str = "FALSE",
-                           close_position: str = "FALSE",
-                           working_type: str = "CONTRACT_PRICE",
-                           price_protect: str = "FALSE",
-                           position_side: str = "BOTH",
-                           recv_window: str = "5000") -> dict:
+    def post_profit_market_futures(self,
+                                   symbol: str,
+                                   side: str,
+                                   quantity: str,
+                                   stop_price: str,
+                                   time_stamp: str,
+                                   my_type: str = "TAKE_PROFIT_MARKET",
+                                   time_in_force: str = "GTC",
+                                   new_order_resp_type: str = "RESULT",
+                                   new_client_order_id: str = str(randint(1, 100000)),
+                                   reduce_only: str = "FALSE",
+                                   close_position: str = "FALSE",
+                                   working_type: str = "CONTRACT_PRICE",
+                                   price_protect: str = "FALSE",
+                                   position_side: str = "BOTH",
+                                   recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить ордер TAKE_PROFIT_MARKET
@@ -4271,21 +4323,21 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_stop_limit(self,
-                        symbol: str,
-                        side: str,
-                        quantity: str,
-                        price: str,
-                        stop_price: str,
-                        time_stamp: str,
-                        my_type: str = "STOP",
-                        time_in_force: str = "GTC",
-                        new_order_resp_type: str = "RESULT",
-                        new_client_order_id: str = str(randint(1, 100000)),
-                        working_type: str = "CONTRACT_PRICE",
-                        price_protect: str = "FALSE",
-                        position_side: str = "BOTH",
-                        recv_window: str = "5000") -> dict:
+    def post_stop_limit_futures(self,
+                                symbol: str,
+                                side: str,
+                                quantity: str,
+                                price: str,
+                                stop_price: str,
+                                time_stamp: str,
+                                my_type: str = "STOP",
+                                time_in_force: str = "GTC",
+                                new_order_resp_type: str = "RESULT",
+                                new_client_order_id: str = str(randint(1, 100000)),
+                                working_type: str = "CONTRACT_PRICE",
+                                price_protect: str = "FALSE",
+                                position_side: str = "BOTH",
+                                recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить ордер STOP
@@ -4412,22 +4464,22 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_stop_market(self,
-                         symbol: str,
-                         side: str,
-                         quantity: str,
-                         stop_price: str,
-                         time_stamp: str,
-                         my_type: str = "STOP_MARKET",
-                         time_in_force: str = "GTC",
-                         new_order_resp_type: str = "RESULT",
-                         new_client_order_id: str = str(randint(1, 100000)),
-                         reduce_only: str = "FALSE",
-                         close_position: str = "FALSE",
-                         working_type: str = "CONTRACT_PRICE",
-                         price_protect: str = "FALSE",
-                         position_side: str = "BOTH",
-                         recv_window: str = "5000") -> dict:
+    def post_stop_market_futures(self,
+                                 symbol: str,
+                                 side: str,
+                                 quantity: str,
+                                 stop_price: str,
+                                 time_stamp: str,
+                                 my_type: str = "STOP_MARKET",
+                                 time_in_force: str = "GTC",
+                                 new_order_resp_type: str = "RESULT",
+                                 new_client_order_id: str = str(randint(1, 100000)),
+                                 reduce_only: str = "FALSE",
+                                 close_position: str = "FALSE",
+                                 working_type: str = "CONTRACT_PRICE",
+                                 price_protect: str = "FALSE",
+                                 position_side: str = "BOTH",
+                                 recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить ордер STOP_MARKET
@@ -4556,20 +4608,20 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_trailing_stop_market(self,
-                                  symbol: str,
-                                  side: str,
-                                  quantity: str,
-                                  activation_price: str,
-                                  callback_rate: str,
-                                  time_stamp: str,
-                                  my_type: str = "TRAILING_STOP_MARKET",
-                                  time_in_force: str = "GTC",
-                                  new_order_resp_type: str = "RESULT",
-                                  new_client_order_id: str = str(randint(1, 100000)),
-                                  working_type: str = "CONTRACT_PRICE",
-                                  position_side: str = "BOTH",
-                                  recv_window: str = "5000") -> dict:
+    def post_trailing_stop_market_futures(self,
+                                          symbol: str,
+                                          side: str,
+                                          quantity: str,
+                                          activation_price: str,
+                                          callback_rate: str,
+                                          time_stamp: str,
+                                          my_type: str = "TRAILING_STOP_MARKET",
+                                          time_in_force: str = "GTC",
+                                          new_order_resp_type: str = "RESULT",
+                                          new_client_order_id: str = str(randint(1, 100000)),
+                                          working_type: str = "CONTRACT_PRICE",
+                                          position_side: str = "BOTH",
+                                          recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить ордер TRAILING_STOP_MARKET
@@ -4693,15 +4745,15 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def put_limit(self,
-                  symbol: str,
-                  side: str,
-                  quantity: str,
-                  price: str,
-                  time_stamp: str,
-                  order_id: str = "",
-                  orig_client_order_id: str = "",
-                  recv_window: str = "5000") -> dict:
+    def put_limit_futures(self,
+                          symbol: str,
+                          side: str,
+                          quantity: str,
+                          price: str,
+                          time_stamp: str,
+                          order_id: str = "",
+                          orig_client_order_id: str = "",
+                          recv_window: str = "5000") -> dict:
         """
         Запрос:
         Обновить ордер LIMIT
@@ -4797,12 +4849,12 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def delete_order(self,
-                     symbol: str,
-                     time_stamp: str,
-                     order_id: str = "",
-                     orig_client_order_id: str = "",
-                     recv_window: str = "5000") -> dict:
+    def delete_order_futures(self,
+                             symbol: str,
+                             time_stamp: str,
+                             order_id: str = "",
+                             orig_client_order_id: str = "",
+                             recv_window: str = "5000") -> dict:
         """
         Запрос:
         Закрыть ордер по идентификатору
@@ -4893,10 +4945,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_multiple_limit(self,
-                            data_list: list[list[str]],
-                            time_stamp: str,
-                            recv_window: str = "5000") -> dict:
+    def post_multiple_limit_futures(self,
+                                    data_list: list[list[str]],
+                                    time_stamp: str,
+                                    recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить множественный ордер LIMIT
@@ -5099,10 +5151,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_multiple_market(self,
-                             data_list: list[list[str]],
-                             time_stamp: str,
-                             recv_window: str = "5000") -> dict:
+    def post_multiple_market_futures(self,
+                                     data_list: list[list[str]],
+                                     time_stamp: str,
+                                     recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить множественный ордер MARKER
@@ -5301,10 +5353,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_multiple_profit_limit(self,
-                                   data_list: list[list[str]],
-                                   time_stamp: str,
-                                   recv_window: str = "5000") -> dict:
+    def post_multiple_profit_limit_futures(self,
+                                           data_list: list[list[str]],
+                                           time_stamp: str,
+                                           recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить множественный ордер TAKE_PROFIT
@@ -5506,10 +5558,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_multiple_profit_market(self,
-                                    data_list: list[list[str]],
-                                    time_stamp: str,
-                                    recv_window: str = "5000") -> dict:
+    def post_multiple_profit_market_futures(self,
+                                            data_list: list[list[str]],
+                                            time_stamp: str,
+                                            recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить множественный ордер TAKE_PROFIT_MARKET
@@ -5713,10 +5765,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_multiple_stop_limit(self,
-                                 data_list: list[list[str]],
-                                 time_stamp: str,
-                                 recv_window: str = "5000") -> dict:
+    def post_multiple_stop_limit_futures(self,
+                                         data_list: list[list[str]],
+                                         time_stamp: str,
+                                         recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить множественный ордер STOP
@@ -5918,10 +5970,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_multiple_stop_market(self,
-                                  data_list: list[list[str]],
-                                  time_stamp: str,
-                                  recv_window: str = "5000") -> dict:
+    def post_multiple_stop_market_futures(self,
+                                          data_list: list[list[str]],
+                                          time_stamp: str,
+                                          recv_window: str = "5000") -> dict:
         """
         Запрос:
         Разместить множественный ордер STOP_MARKET
@@ -6125,10 +6177,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def post_multiple_trailing_stop_market(self,
-                                           data_list: list[list[str]],
-                                           time_stamp: str,
-                                           recv_window: str = "5000") -> dict[str, Any] | dict[str, Any]:
+    def post_multiple_trailing_stop_market_futures(self,
+                                                   data_list: list[list[str]],
+                                                   time_stamp: str,
+                                                   recv_window: str = "5000") -> dict[str, Any] | dict[str, Any]:
         """
         Запрос:
         Разместить множественный ордер TRAILING_STOP_MARKET
@@ -6340,10 +6392,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def put_multiple_limit(self,
-                           data_list: list[list[str]],
-                           time_stamp: str,
-                           recv_window: str = "5000") -> dict:
+    def put_multiple_limit_futures(self,
+                                   data_list: list[list[str]],
+                                   time_stamp: str,
+                                   recv_window: str = "5000") -> dict:
         """
         Запрос:
         Обновить несколько ордеров LIMIT
@@ -6468,12 +6520,12 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def delete_multiple_order_id(self,
-                                 symbol: str,
-                                 time_stamp: str,
-                                 order_id_list: list[str] = (),
-                                 orig_client_order_id_list: list[str] = (),
-                                 recv_window: str = "5000") -> dict:
+    def delete_multiple_order_id_futures(self,
+                                         symbol: str,
+                                         time_stamp: str,
+                                         order_id_list: list[str] = (),
+                                         orig_client_order_id_list: list[str] = (),
+                                         recv_window: str = "5000") -> dict:
         """
         Запрос:
         Закрыть несколько ордеров по идентификатору
@@ -6667,10 +6719,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def delete_multiple_order_symbol(self,
-                                     symbol: str,
-                                     time_stamp: str,
-                                     recv_window: str = "5000") -> dict:
+    def delete_multiple_order_symbol_futures(self,
+                                             symbol: str,
+                                             time_stamp: str,
+                                             recv_window: str = "5000") -> dict:
         """
         Запрос:
         Закрыть несколько ордеров по символу
@@ -6735,11 +6787,11 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def delete_multiple_orders_time(self,
-                                    symbol: str,
-                                    countdown_time: str,
-                                    time_stamp: str,
-                                    recv_window: str = "5000") -> dict:
+    def delete_multiple_orders_time_futures(self,
+                                            symbol: str,
+                                            countdown_time: str,
+                                            time_stamp: str,
+                                            recv_window: str = "5000") -> dict:
         """
         Запрос:
         Закрыть все ордера по символу через заданное время
@@ -6806,10 +6858,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_current_position_symbol(self,
-                                    symbol: str,
-                                    time_stamp: str,
-                                    recv_window: str = "5000") -> dict:
+    def get_current_position_symbol_futures(self,
+                                            symbol: str,
+                                            time_stamp: str,
+                                            recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить информацию о текущей позиции по символу
@@ -6930,12 +6982,12 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_open_order_id(self,
-                          symbol: str,
-                          time_stamp: str,
-                          order_id: str = "",
-                          orig_client_order_id: str = "",
-                          recv_window: str = "5000") -> dict:
+    def get_open_order_id_futures(self,
+                                  symbol: str,
+                                  time_stamp: str,
+                                  order_id: str = "",
+                                  orig_client_order_id: str = "",
+                                  recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить информацию об открытом ордере по идентификатору
@@ -7031,10 +7083,10 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_open_orders_all(self,
-                            time_stamp: str,
-                            symbol: str = "",
-                            recv_window: str = "5000") -> dict:
+    def get_open_orders_all_futures(self,
+                                    time_stamp: str,
+                                    symbol: str = "",
+                                    recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить информацию о всех открытых ордерах
@@ -7150,14 +7202,14 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_orders_all(self,
-                       symbol: str,
-                       time_stamp: str,
-                       order_id: str = "",
-                       start_time: str = "",
-                       end_time: str = "",
-                       limit: str = "500",
-                       recv_window: str = "5000") -> dict:
+    def get_orders_all_futures(self,
+                               symbol: str,
+                               time_stamp: str,
+                               order_id: str = "",
+                               start_time: str = "",
+                               end_time: str = "",
+                               limit: str = "500",
+                               recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить информацию о всех ордерах аккаунта
@@ -7280,12 +7332,12 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_order_id(self,
-                     symbol: str,
-                     time_stamp: str,
-                     order_id: str = "",
-                     orig_client_order_id: str = "",
-                     recv_window: str = "5000") -> dict:
+    def get_order_id_futures(self,
+                             symbol: str,
+                             time_stamp: str,
+                             order_id: str = "",
+                             orig_client_order_id: str = "",
+                             recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить информацию об ордере
@@ -7375,15 +7427,15 @@ class TradingEndpoints(Futures):
                 "headers": response.headers
             }
 
-    def get_trades(self,
-                   symbol: str,
-                   time_stamp: str,
-                   order_id: str = "",
-                   start_time: str = "",
-                   end_time: str = "",
-                   from_id: str = "",
-                   limit: str = "500",
-                   recv_window: str = "5000") -> dict:
+    def get_trades_futures(self,
+                           symbol: str,
+                           time_stamp: str,
+                           order_id: str = "",
+                           start_time: str = "",
+                           end_time: str = "",
+                           from_id: str = "",
+                           limit: str = "500",
+                           recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить информацию о сделках
@@ -7495,7 +7547,7 @@ class TradingEndpoints(Futures):
             }
 
 
-class MarketDataStreams(Futures):
+class MarketDataStreamsFutures(Futures):
     """
     Класс для работы с Market data streams (класс для стримов)
 
@@ -7503,29 +7555,29 @@ class MarketDataStreams(Futures):
     None
 
     Methods:
-    get_stream_best_price_quantity_all: лучшая цена и количество всех символов
-    get_stream_best_price_quantity_symbol: лучшая цена и количество по символу
-    get_stream_candles: свечи
-    get_stream_candles_contract: свечи по контракту
-    get_stream_composite_index: стакан ордеров составного индекса
-    get_stream_contract_info: ...
-    get_stream_info_day_all: информация о всех символах за 24 часа
-    get_stream_info_day_symbol: информация об определенном символе за 24 часа
-    get_stream_liquidated_orders_all: ликвидированные ордера по всем символам
-    get_stream_liquidated_orders_symbol: ликвидированные ордера по символу
-    get_stream_mark_price_funding_rate_all: цена маркировки (mark price) и ставка финансирования всех символов
-    get_stream_mark_price_funding_rate_symbol: цена маркировки (mark price) и ставка финансирования по символу
-    get_stream_min_info_day_all: минимальная информация о всех символах за 24 часа
-    get_stream_min_info_day_symbol: минимальная информация об определенном символе за 24 часа
-    get_stream_order_book: стакан ордеров
-    get_stream_order_book_difference: ...
-    get_stream_trades_tape: лента сделок по символу
+    get_stream_best_price_quantity_all_futures: лучшая цена и количество всех символов
+    get_stream_best_price_quantity_symbol_futures: лучшая цена и количество по символу
+    get_stream_candles_futures: свечи
+    get_stream_candles_contract_futures: свечи по контракту
+    get_stream_composite_index_futures: стакан ордеров составного индекса
+    get_stream_contract_info_futures: ...
+    get_stream_info_day_all_futures: информация о всех символах за 24 часа
+    get_stream_info_day_symbol_futures: информация об определенном символе за 24 часа
+    get_stream_liquidated_orders_all_futures: ликвидированные ордера по всем символам
+    get_stream_liquidated_orders_symbol_futures: ликвидированные ордера по символу
+    get_stream_mark_price_funding_rate_all_futures: цена маркировки (mark price) и ставка финансирования всех символов
+    get_stream_mark_price_funding_rate_symbol_futures: цена маркировки (mark price) и ставка финансирования по символу
+    get_stream_min_info_day_all_futures: минимальная информация о всех символах за 24 часа
+    get_stream_min_info_day_symbol_futures: минимальная информация об определенном символе за 24 часа
+    get_stream_order_book_futures: стакан ордеров
+    get_stream_order_book_difference_futures: ...
+    get_stream_trades_tape_futures: лента сделок по символу
     """
 
-    async def get_stream_best_price_quantity_all(self,
-                                                 list_data: list,
-                                                 method: str = "SUBSCRIBE",
-                                                 my_id: int = randint(1, 100)) -> None:
+    async def get_stream_best_price_quantity_all_futures(self,
+                                                         list_data: list,
+                                                         method: str = "SUBSCRIBE",
+                                                         my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим лучшей цены и количества всех символов
@@ -7586,11 +7638,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_best_price_quantity_symbol(self,
-                                                    list_data: list,
-                                                    symbol: list[list[str]],
-                                                    method: str = "SUBSCRIBE",
-                                                    my_id: int = randint(1, 100)) -> None:
+    async def get_stream_best_price_quantity_symbol_futures(self,
+                                                            list_data: list,
+                                                            symbol: list[list[str]],
+                                                            method: str = "SUBSCRIBE",
+                                                            my_id: int = randint(1, 100)) -> None:
 
         """
         Запрос:
@@ -7656,11 +7708,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_candles(self,
-                                 list_data: list,
-                                 symbol_interval: list[list[str, str], ...],
-                                 method: str = "SUBSCRIBE",
-                                 my_id: int = randint(1, 100)) -> None:
+    async def get_stream_candles_futures(self,
+                                         list_data: list,
+                                         symbol_interval: list[list[str, str], ...],
+                                         method: str = "SUBSCRIBE",
+                                         my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим свечей
@@ -7739,11 +7791,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_candles_contract(self,
-                                          list_data: list,
-                                          symbol_contract_interval: list[list[str, str, str], ...],
-                                          method: str = "SUBSCRIBE",
-                                          my_id: int = randint(1, 100)) -> None:
+    async def get_stream_candles_contract_futures(self,
+                                                  list_data: list,
+                                                  symbol_contract_interval: list[list[str, str, str], ...],
+                                                  method: str = "SUBSCRIBE",
+                                                  my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим свечей по контракту
@@ -7823,11 +7875,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_composite_index(self,
-                                         list_data: list,
-                                         composite_index: list[list[str], ...],
-                                         method: str = "SUBSCRIBE",
-                                         my_id: int = randint(1, 100)) -> None:
+    async def get_stream_composite_index_futures(self,
+                                                 list_data: list,
+                                                 composite_index: list[list[str], ...],
+                                                 method: str = "SUBSCRIBE",
+                                                 my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим стакана ордеров составного индекса
@@ -7902,10 +7954,10 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_contract_info(self,
-                                       list_data: list,
-                                       method: str = "SUBSCRIBE",
-                                       my_id: int = randint(1, 100)) -> None:
+    async def get_stream_contract_info_futures(self,
+                                               list_data: list,
+                                               method: str = "SUBSCRIBE",
+                                               my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         ...
@@ -7985,10 +8037,10 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_info_day_all(self,
-                                      list_data: list,
-                                      method: str = "SUBSCRIBE",
-                                      my_id: int = randint(1, 100)) -> None:
+    async def get_stream_info_day_all_futures(self,
+                                              list_data: list,
+                                              method: str = "SUBSCRIBE",
+                                              my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим по информации о всех символах за 24 часа
@@ -8062,11 +8114,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_info_day_symbol(self,
-                                         list_data: list,
-                                         symbol: list[list[str], ...],
-                                         method: str = "SUBSCRIBE",
-                                         my_id: int = randint(1, 100)) -> None:
+    async def get_stream_info_day_symbol_futures(self,
+                                                 list_data: list,
+                                                 symbol: list[list[str], ...],
+                                                 method: str = "SUBSCRIBE",
+                                                 my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим по информации об определенном символе за 24 часа
@@ -8140,10 +8192,10 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_liquidated_orders_all(self,
-                                               list_data: list,
-                                               method: str = "SUBSCRIBE",
-                                               my_id: int = randint(1, 100)) -> None:
+    async def get_stream_liquidated_orders_all_futures(self,
+                                                       list_data: list,
+                                                       method: str = "SUBSCRIBE",
+                                                       my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим ликвидированных ордеров по всем символам
@@ -8210,11 +8262,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_liquidated_orders_symbol(self,
-                                                  list_data: list,
-                                                  symbol: list[list[str], ...],
-                                                  method: str = "SUBSCRIBE",
-                                                  my_id: int = randint(1, 100)) -> None:
+    async def get_stream_liquidated_orders_symbol_futures(self,
+                                                          list_data: list,
+                                                          symbol: list[list[str], ...],
+                                                          method: str = "SUBSCRIBE",
+                                                          my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим ликвидированных ордеров по символу
@@ -8284,11 +8336,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_mark_price_funding_rate_all(self,
-                                                     list_data: list,
-                                                     speed: str = "",
-                                                     method: str = "SUBSCRIBE",
-                                                     my_id: int = randint(1, 100)) -> None:
+    async def get_stream_mark_price_funding_rate_all_futures(self,
+                                                             list_data: list,
+                                                             speed: str = "",
+                                                             method: str = "SUBSCRIBE",
+                                                             my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим цены маркировки (mark price) и ставки финансирования всех символов
@@ -8356,12 +8408,12 @@ class MarketDataStreams(Futures):
                     "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_mark_price_funding_rate_symbol(self,
-                                                        list_data: list,
-                                                        symbol: list[list[str], ...],
-                                                        speed: str = "",
-                                                        method: str = "SUBSCRIBE",
-                                                        my_id: int = randint(1, 100)) -> None:
+    async def get_stream_mark_price_funding_rate_symbol_futures(self,
+                                                                list_data: list,
+                                                                symbol: list[list[str], ...],
+                                                                speed: str = "",
+                                                                method: str = "SUBSCRIBE",
+                                                                my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим цены маркировки (mark price) и ставки финансирования по символу
@@ -8430,10 +8482,10 @@ class MarketDataStreams(Futures):
                     "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_min_info_day_all(self,
-                                          list_data: list,
-                                          method: str = "SUBSCRIBE",
-                                          my_id: int = randint(1, 100)) -> None:
+    async def get_stream_min_info_day_all_futures(self,
+                                                  list_data: list,
+                                                  method: str = "SUBSCRIBE",
+                                                  my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим по минимальной информации о всех символах за 24 часа
@@ -8502,11 +8554,11 @@ class MarketDataStreams(Futures):
                     "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_min_info_day_symbol(self,
-                                             list_data: list,
-                                             symbol: list[list[str], ...],
-                                             method: str = "SUBSCRIBE",
-                                             my_id: int = randint(1, 100)) -> None:
+    async def get_stream_min_info_day_symbol_futures(self,
+                                                     list_data: list,
+                                                     symbol: list[list[str], ...],
+                                                     method: str = "SUBSCRIBE",
+                                                     my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим по минимальной информации об определенном символе за 24 часа
@@ -8575,11 +8627,11 @@ class MarketDataStreams(Futures):
                     "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_order_book(self,
-                                    list_data: list,
-                                    symbol_quantity_speed: list[list[str, str, str]],
-                                    method: str = "SUBSCRIBE",
-                                    my_id: int = randint(1, 100)) -> None:
+    async def get_stream_order_book_futures(self,
+                                            list_data: list,
+                                            symbol_quantity_speed: list[list[str, str, str]],
+                                            method: str = "SUBSCRIBE",
+                                            my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим стакана ордеров
@@ -8688,11 +8740,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_order_book_difference(self,
-                                               list_data: list,
-                                               symbol_speed: list[list[str, str]],
-                                               method: str = "SUBSCRIBE",
-                                               my_id: int = randint(1, 100)) -> None:
+    async def get_stream_order_book_difference_futures(self,
+                                                       list_data: list,
+                                                       symbol_speed: list[list[str, str]],
+                                                       method: str = "SUBSCRIBE",
+                                                       my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         ...
@@ -8768,11 +8820,11 @@ class MarketDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    async def get_stream_trades_tape(self,
-                                     list_data: list,
-                                     symbol: list[list[str]],
-                                     method: str = "SUBSCRIBE",
-                                     my_id: int = randint(1, 100)) -> None:
+    async def get_stream_trades_tape_futures(self,
+                                             list_data: list,
+                                             symbol: list[list[str]],
+                                             method: str = "SUBSCRIBE",
+                                             my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим ленты сделок по символу
@@ -8840,7 +8892,7 @@ class MarketDataStreams(Futures):
                 await asyncio.sleep(10)
 
 
-class UserDataStreams(Futures):
+class UserDataStreamsFutures(Futures):
     """
     Класс для работы с User data streams
 
@@ -8848,10 +8900,13 @@ class UserDataStreams(Futures):
     None
 
     Methods:
-    ...
+    start_user_data_stream_futures: запуск стрима по данным пользователя
+    connect_user_data_streams_futures: cтрим данных пользователя
+    keepalive_user_data_stream_futures: обновление стрима по данным пользователя
+    delete_user_data_stream_futures: закрытие стрима по данным пользователя
     """
 
-    def start_user_data_stream(self) -> dict:
+    def start_user_data_stream_futures(self) -> dict:
         """
         Запрос:
         Запустить стрим по данным пользователя
@@ -8900,11 +8955,11 @@ class UserDataStreams(Futures):
                 "headers": response.headers
             }
 
-    async def connect_user_data_streams(self,
-                                        dict_data: dict,
-                                        listen_key: str,
-                                        method: str = "SUBSCRIBE",
-                                        my_id: int = randint(1, 100)) -> None:
+    async def connect_user_data_streams_futures(self,
+                                                dict_data: dict,
+                                                listen_key: str,
+                                                method: str = "SUBSCRIBE",
+                                                my_id: int = randint(1, 100)) -> None:
         """
         Запрос:
         Стрим для получения данных пользователя
@@ -8952,7 +9007,7 @@ class UserDataStreams(Futures):
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
-    def keepalive_user_data_stream(self) -> dict:
+    def keepalive_user_data_stream_futures(self) -> dict:
 
         """
         Запрос:
@@ -9000,7 +9055,7 @@ class UserDataStreams(Futures):
                 "headers": response.headers
             }
 
-    def delete_user_data_stream(self) -> dict:
+    def delete_user_data_stream_futures(self) -> dict:
         """
         Запрос:
         Закрыть стрим по данным пользователя

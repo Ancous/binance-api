@@ -1,86 +1,58 @@
+"""
+pass
+"""
+
 import asyncio
-import socket
-import websockets.exceptions
-import websockets
-import json
+import os
+from dotenv import load_dotenv
 
-from random import randint
+from Spot import MarketDataStreamsSpot
+
+load_dotenv()
 
 
-async def get_stream_order_book_spot(list_data: list,
-                                     symbol_quantity_speed: list[list[str, str, str]],
-                                     method: str = "SUBSCRIBE",
-                                     my_id: int = randint(1, 100)) -> None:
+async def my_print(list_data):
     """
-    Запрос:
-    Стрим стакана ордеров спота
-
-    Полный url:
-    "wss://stream.binance.com:9443/ws{symbol}@depth{quantity}@{speed}ms"
-
-    Параметры:
-    - list_data (list): аргумент в который будут записываться данные стрима ([])
-    - symbol_quantity_speed (list[list[str, str, str]]): список данных по стрима - актив_глубина стакана_скорость стрима ([["btcusdt", "10", "100"]])
-    - method (str): метод стрима ("SUBSCRIBE", "UNSUBSCRIBE")
-    - my_id (int): идентификатор стрима (1, ..., 100)
-
-    Комментарии:
-    - скорость обновления: 100мс или 1000мс
-    - symbol_quantity_speed вариант заполнения: [["btcusdt" или "bnbusdt" и т.д., "5" или "10" или "20",  "100" или "1000"]
-    - symbol_quantity_speed значения должны быть строчными
-    - method расшифровка ["SUBSCRIBE": подключить стрим, "UNSUBSCRIBE": отключить стрим, "LIST_SUBSCRIPTIONS": информация о стриме, "SET_PROPERTY": ..., "GET_PROPERTY": ...]
-
-    Ответ:
-    {
-        'lastUpdateId': 7379433651,   (идентификатор последнего обновления)
-        'bids':[   (Bids)
-            [
-                '0.26080000',   (обновляемый уровень цены)
-                '35190.90000000'   (количество)
-            ],
-        ],
-        'asks':[   (Asks)
-            [
-                '0.26090000',   (обновляемый уровень цены)
-                '36457.60000000'   (количество)
-            ],
-        ]
-    }
+    pass
     """
+    while True:
+        if not list_data:
+            await asyncio.sleep(10)
+        else:
+            print(list_data)
+            await asyncio.sleep(0.1)
 
-    # ----------------------------------------------
-    base_url = "wss://stream.binance.com:9443/ws"
-    streams = [f"{data[0].lower()}@depth{data[1]}@{data[2]}ms" for data in symbol_quantity_speed]
-    # ----------------------------------------------
+
+async def func_main_stream(futures_client, list_data, symbol_quantity_speed):
+    """
+    pass
+    """
+    task_1 = asyncio.create_task(futures_client.get_stream_order_book_spot(
+        list_data=list_data,
+        symbol_quantity_speed=symbol_quantity_speed)
+    )
+    task_2 = asyncio.create_task(my_print(
+        list_data=list_data)
+    )
 
     while True:
         try:
-            async with websockets.connect(base_url) as websocket:
-                subscribe_request = {
-                    "method": method,
-                    "params": streams,
-                    "id": my_id,
-                }
-                await websocket.send(json.dumps(subscribe_request))
-
-                while True:
-                    result = json.loads(await websocket.recv())
-                    list_data[0] = result
-                    print(result)
-        except IndexError:
-            list_data.append(None)
-            print("Стрим стакана ордеров спота запущен.")
-        except websockets.exceptions.ConnectionClosedError:
-            print("Стрим стакана ордеров спота разрыв соединения. Восстанавливаем.\n"
-                  "Ошибка: websockets.exceptions.ConnectionClosedError.")
-            await asyncio.sleep(10)
-        except socket.gaierror:
-            print("Стрим стакана ордеров спота разрыв соединения. Восстанавливаем.\n"
-                  "Ошибка: socket.gaierror.")
-            await asyncio.sleep(10)
+            await task_1
+            await task_2
+        except asyncio.CancelledError:
+            task_1.cancel()
+            task_2.cancel()
+            print(f"Стрим не запустился")
+            break
 
 
 if __name__ in "__main__":
-
+    my_list = list()
     data_streams = [["btcusdt", "5", "1000"]]
-    asyncio.run(get_stream_order_book_spot(list_data=[], symbol_quantity_speed=data_streams))
+    client_mdss = MarketDataStreamsSpot(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
+
+    asyncio.run(func_main_stream(
+        futures_client=client_mdss,
+        list_data=my_list,
+        symbol_quantity_speed=data_streams)
+    )
