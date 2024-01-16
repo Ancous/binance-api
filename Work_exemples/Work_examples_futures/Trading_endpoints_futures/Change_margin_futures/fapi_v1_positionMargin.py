@@ -14,7 +14,9 @@ load_dotenv()
 if __name__ in "__main__":
 
     client_te = TradingEndpointsFutures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
-    result = client_te.post_margin_futures(symbol="ADAUSDT", amount="1", my_type="2", time_stamp=str(round(time.time() * 1000)))
+    result = client_te.post_margin_futures(symbol="ADAUSDT",
+                                           amount="1", my_type="2",
+                                           time_stamp=str(round(time.time() * 1000)))
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])
