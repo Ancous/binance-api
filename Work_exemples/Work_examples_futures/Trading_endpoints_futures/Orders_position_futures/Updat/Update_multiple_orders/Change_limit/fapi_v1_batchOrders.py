@@ -5,7 +5,6 @@ pass
 import os
 import time
 
-from random import randint
 from dotenv import load_dotenv
 
 from Futures import TradingEndpointsFutures
