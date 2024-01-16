@@ -5,7 +5,7 @@ pass
 import os
 from dotenv import load_dotenv
 
-from Futures import MarketDataEndpointsFutures
+from binance_api_ancous import MarketDataEndpointsFutures
 
 load_dotenv()
 
@@ -22,3 +22,4 @@ if __name__ in "__main__":
         print("status_code:", result["status_code"])
         print("result:", result["result"])
         print("headers:", result["headers"])
+

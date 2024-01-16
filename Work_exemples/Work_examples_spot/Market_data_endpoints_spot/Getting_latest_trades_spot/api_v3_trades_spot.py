@@ -5,7 +5,7 @@ pass
 import os
 from dotenv import load_dotenv
 
-from Spot import MarketDataEndpointsSpot
+from binance_api_ancous import MarketDataEndpointsSpot
 
 load_dotenv()
 

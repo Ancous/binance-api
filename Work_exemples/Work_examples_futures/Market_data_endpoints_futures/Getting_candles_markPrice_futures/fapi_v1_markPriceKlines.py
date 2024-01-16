@@ -5,14 +5,14 @@ pass
 import os
 from dotenv import load_dotenv
 
-from Futures import MarketDataEndpointsFutures
+from binance_api_ancous import MarketDataEndpointsFutures
 
 load_dotenv()
 
 if __name__ in "__main__":
 
     client_mde = MarketDataEndpointsFutures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
-    result = client_mde.get_candles_markprice(symbol="ADAUSDT", interval="1m")
+    result = client_mde.get_candles_markprice_futures(symbol="ADAUSDT", interval="1m")
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])

@@ -6,7 +6,7 @@ import asyncio
 import os
 from dotenv import load_dotenv
 
-from Spot import MarketDataStreamsSpot
+from binance_api_ancous import MarketDataStreamsSpot
 
 load_dotenv()
 

@@ -8,7 +8,7 @@ import time
 from random import randint
 from dotenv import load_dotenv
 
-from Futures import TradingEndpointsFutures
+from binance_api_ancous import TradingEndpointsFutures
 
 load_dotenv()
 

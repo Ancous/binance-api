@@ -5,7 +5,7 @@ pass
 import os
 from dotenv import load_dotenv
 
-from Futures import MarketDataEndpointsFutures
+from binance_api_ancous import MarketDataEndpointsFutures
 
 load_dotenv()
 
