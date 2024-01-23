@@ -6,18 +6,17 @@ import os
 import time
 
 from dotenv import load_dotenv
-
-from binance_api_ancous import TradingEndpointsFutures
+from binance_api_ancous import Futures
 
 load_dotenv()
 
 if __name__ in "__main__":
 
-    client_te = TradingEndpointsFutures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
-    result = client_te.get_update_order_history_futures(symbol="ADAUSDT",
-                                                        time_stamp=str(round(time.time() * 1000)),
-                                                        order_id="32717797177",
-                                                        orig_client_order_id="14019")
+    client = Futures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
+    result = client.get_update_order_history_futures(symbol="ADAUSDT",
+                                                     time_stamp=str(round(time.time() * 1000)),
+                                                     order_id="32717797177",
+                                                     orig_client_order_id="14019")
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])

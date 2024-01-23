@@ -6,13 +6,12 @@ import os
 import time
 
 from dotenv import load_dotenv
-
-from binance_api_ancous import TradingEndpointsFutures
+from binance_api_ancous import Futures
 
 load_dotenv()
 
 if __name__ in "__main__":
-    client_te = TradingEndpointsFutures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
+    client = Futures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
     trades_parameters = [
         ["ADAUSDT", "BUY", "68.0", "0.3100", "32717797178", "74707"],
         ["ADAUSDT", "BUY", "136.0", "0.3050", "32717797177", "14019"],
@@ -20,8 +19,8 @@ if __name__ in "__main__":
         ["ADAUSDT", "BUY", "17.0", "0.3596", "3757597177", "75896"],
         ["ADAUSDT", "BUY", "20.0", "0.3496", "96547797177", "45019"]
     ]
-    result = client_te.put_multiple_limit_futures(data_list=trades_parameters,
-                                                  time_stamp=str(round(time.time() * 1000)))
+    result = client.put_multiple_limit_futures(data_list=trades_parameters,
+                                               time_stamp=str(round(time.time() * 1000)))
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])

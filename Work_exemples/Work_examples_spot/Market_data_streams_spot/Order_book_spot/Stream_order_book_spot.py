@@ -2,11 +2,11 @@
 pass
 """
 
-import asyncio
 import os
-from dotenv import load_dotenv
+import asyncio
 
-from binance_api_ancous import MarketDataStreamsSpot
+from dotenv import load_dotenv
+from binance_api_ancous import Spot
 
 load_dotenv()
 
@@ -49,10 +49,10 @@ async def func_main_stream(futures_client, list_data, symbol_quantity_speed):
 if __name__ in "__main__":
     my_list = list()
     data_streams = [["btcusdt", "5", "1000"]]
-    client_mdss = MarketDataStreamsSpot(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
+    client = Spot(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
 
     asyncio.run(func_main_stream(
-        futures_client=client_mdss,
+        futures_client=client,
         list_data=my_list,
         symbol_quantity_speed=data_streams)
     )

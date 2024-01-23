@@ -6,15 +6,14 @@ import os
 import time
 
 from dotenv import load_dotenv
-
-from binance_api_ancous import TradingEndpointsFutures
+from binance_api_ancous import Futures
 
 load_dotenv()
 
 if __name__ in "__main__":
 
-    client_te = TradingEndpointsFutures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
-    result = client_te.get_nl_brackets_futures(time_stamp=str(round(time.time() * 1000)))
+    client = Futures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
+    result = client.get_nl_brackets_futures(time_stamp=str(round(time.time() * 1000)))
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])

@@ -1228,10 +1228,11 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим лучшей цены и количества спота по символу.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим лучшей цены и количества спота по символу запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print("Стрим лучшей цены и количества спота по символу разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: websockets.exceptions.ConnectionClosedError.")
@@ -1311,12 +1312,13 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим свечей спота запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим свечей спота запущен.")
             except websockets.exceptions.ConnectionClosedError:
-                print("Стрим свечей спота. Восстанавливаем.\n"
+                print("Стрим свечей спота разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: websockets.exceptions.ConnectionClosedError.")
                 await asyncio.sleep(10)
             except socket.gaierror:
@@ -1393,10 +1395,11 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим по информации о всех символах спота за 24 часа запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим по информации о всех символах спота за 24 часа запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print("Стрим по информации о всех символах спота за 24 часа разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: websockets.exceptions.ConnectionClosedError.")
@@ -1476,19 +1479,22 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим по информации об определенном символе спота за 24 часа запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим по информации об определенном символе спота за 24 часа запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print(
                     "Стрим по информации об определенном символе спота за 24 часа разрыв соединения. Восстанавливаем.\n"
-                    "Ошибка: websockets.exceptions.ConnectionClosedError.")
+                    "Ошибка: websockets.exceptions.ConnectionClosedError."
+                )
                 await asyncio.sleep(10)
             except socket.gaierror:
                 print(
                     "Стрим по информации об определенном символе спота за 24 часа разрыв соединения. Восстанавливаем.\n"
-                    "Ошибка: socket.gaierror.")
+                    "Ошибка: socket.gaierror."
+                )
                 await asyncio.sleep(10)
 
     async def get_stream_info_rolling_all_spot(self,
@@ -1556,19 +1562,22 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим по информации о всех символах спота в скользящем окне запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим по информации о всех символах спота в скользящем окне запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print(
                     "Стрим по информации о всех символах спота в скользящем окне разрыв соединения. Восстанавливаем.\n"
-                    "Ошибка: websockets.exceptions.ConnectionClosedError.")
+                    "Ошибка: websockets.exceptions.ConnectionClosedError."
+                )
                 await asyncio.sleep(10)
             except socket.gaierror:
                 print(
                     "Стрим по информации о всех символах спота в скользящем окне разрыв соединения. Восстанавливаем.\n"
-                    "Ошибка: socket.gaierror.")
+                    "Ошибка: socket.gaierror."
+                )
                 await asyncio.sleep(10)
 
     async def get_stream_info_rolling_symbol_spot(self,
@@ -1636,21 +1645,24 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим по информации об определенном символе спота в скользящем окне запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим по информации об определенном символе спота в скользящем окне запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print(
                     "Стрим по информации об определенном символе спота в скользящем окне разрыв соединения. "
                     "Восстанавливаем.\n"
-                    "Ошибка: websockets.exceptions.ConnectionClosedError.")
+                    "Ошибка: websockets.exceptions.ConnectionClosedError."
+                )
                 await asyncio.sleep(10)
             except socket.gaierror:
                 print(
                     "Стрим по информации об определенном символе спота в скользящем окне разрыв соединения. "
                     "Восстанавливаем.\n"
-                    "Ошибка: socket.gaierror.")
+                    "Ошибка: socket.gaierror."
+                )
                 await asyncio.sleep(10)
 
     async def get_stream_min_info_day_all_spot(self,
@@ -1708,21 +1720,24 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим по минимальной информации о всех символах спота за 24 часа запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим по минимальной информации о всех символах спота за 24 часа запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print(
                     "Стрим по минимальной информации о всех символах спота за 24 часа разрыв соединения. "
                     "Восстанавливаем.\n"
-                    "Ошибка: websockets.exceptions.ConnectionClosedError.")
+                    "Ошибка: websockets.exceptions.ConnectionClosedError."
+                )
                 await asyncio.sleep(10)
             except socket.gaierror:
                 print(
                     "Стрим по минимальной информации о всех символах спота за 24 часа разрыв соединения. "
                     "Восстанавливаем.\n"
-                    "Ошибка: socket.gaierror.")
+                    "Ошибка: socket.gaierror."
+                )
                 await asyncio.sleep(10)
 
     async def get_stream_min_info_day_symbol_spot(self,
@@ -1780,21 +1795,24 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим по минимальной информации об определенном символе спота за 24 часа запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим по минимальной информации об определенном символе спота за 24 часа запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print(
                     "Стрим по минимальной информации об определенном символе спота за 24 часа разрыв соединения. "
                     "Восстанавливаем.\n"
-                    "Ошибка: websockets.exceptions.ConnectionClosedError.")
+                    "Ошибка: websockets.exceptions.ConnectionClosedError."
+                )
                 await asyncio.sleep(10)
             except socket.gaierror:
                 print(
                     "Стрим по минимальной информации об определенном символе спота за 24 часа разрыв соединения. "
                     "Восстанавливаем.\n"
-                    "Ошибка: socket.gaierror.")
+                    "Ошибка: socket.gaierror."
+                )
                 await asyncio.sleep(10)
 
     async def get_stream_order_book_difference_spot(self,
@@ -1861,10 +1879,11 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("... запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("... запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print("... разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: websockets.exceptions.ConnectionClosedError.")
@@ -1936,10 +1955,11 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим стакана ордеров спота запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим стакана ордеров спота запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print("Стрим стакана ордеров спота разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: websockets.exceptions.ConnectionClosedError.")
@@ -2008,10 +2028,11 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим ленты id-сделок спота покупателя и продавца по символу запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим ленты id-сделок спота покупателя и продавца по символу запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print(
                     "Стрим ленты id-сделок спота покупателя и продавца по символу разрыв соединения. Восстанавливаем.\n"
@@ -2082,10 +2103,11 @@ class Spot:
 
                     while True:
                         result = json.loads(await websocket.recv())
-                        list_data[0] = result
-            except IndexError:
-                list_data.append(None)
-                print("Стрим ленты сделок спота по символу запущен.")
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим ленты сделок спота по символу запущен.")
             except websockets.exceptions.ConnectionClosedError:
                 print("Стрим ленты сделок спота по символу разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: websockets.exceptions.ConnectionClosedError.")

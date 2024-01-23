@@ -3,16 +3,16 @@ pass
 """
 
 import os
-from dotenv import load_dotenv
 
-from binance_api_ancous import MarketDataEndpointsSpot
+from dotenv import load_dotenv
+from binance_api_ancous import Spot
 
 load_dotenv()
 
 if __name__ in "__main__":
 
-    client_mdes = MarketDataEndpointsSpot(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
-    result = client_mdes.get_server_time_spot()
+    client = Spot(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
+    result = client.get_server_time_spot()
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])

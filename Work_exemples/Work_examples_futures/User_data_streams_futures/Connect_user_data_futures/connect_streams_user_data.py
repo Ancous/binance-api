@@ -2,11 +2,11 @@
 pass
 """
 
-import asyncio
 import os
-from dotenv import load_dotenv
+import asyncio
 
-from binance_api_ancous import UserDataStreamsFutures
+from dotenv import load_dotenv
+from binance_api_ancous import Futures
 
 load_dotenv()
 
@@ -58,12 +58,12 @@ if __name__ in "__main__":
         conditional_order_trigger_reject=None
     )
 
-    client_uds = UserDataStreamsFutures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
-    response = client_uds.start_user_data_stream_futures()
+    client = Futures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
+    response = client.start_user_data_stream_futures()
     my_listen_key = response["result"]["listenKey"]
 
     asyncio.run(func_main_stream(
-        futures_client=client_uds,
+        futures_client=client,
         dict_data=event_data,
         listen_key=my_listen_key)
     )
