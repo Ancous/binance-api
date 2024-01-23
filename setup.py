@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name="binance_api_ancous",
-    version="0.0.1",
+    version="0.0.2",
     author="Ancous",
     author_email="alex_taras@bk.ru",
     description="Interaction with the Binance exchange",

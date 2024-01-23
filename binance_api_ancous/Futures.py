@@ -7,11 +7,10 @@ import json
 import socket
 import asyncio
 import hashlib
-from typing import Any
-
 import requests
 import websockets.exceptions
 
+from typing import Any
 from random import randint
 from urllib.parse import urlencode
 
@@ -25,7 +24,104 @@ class Futures:
     base_url_stream (str): базовый url для доступа к стримам фьючерса бирже binance
 
     Methods:
-    None
+
+        Market data endpoints futures:
+            connection_check: проверка соединения
+            get_best_price_quantity_futures: лучшая цена и количество для символа или символов
+            get_candles_futures: информация по свечам
+            get_candles_blvt_nav_futures: информация по историческим свечам BLVT NAV
+            get_candles_contract_futures: информация по свечам для определенного контракта
+            get_candles_indexprice_futures: информация по свечам для Index Price
+            get_candles_markprice_futures: информация по свечам для Mark Price
+            get_day_statistics_futures: статистика изменения цены за 24 часа
+            get_glass_applications_futures: стакан заявок
+            get_history_funding_rate_futures: история ставок финансирования
+            get_historical_trades_futures: исторические рыночные сделки по "fromId"
+            get_index_composite_symbol_futures: информация о символах составного индекса
+            get_symbols_info_futures: текущие правила биржевой торговли и информация о символах
+            get_latest_price_futures: последняя цена для символа или символов
+            get_latest_trades_futures: последние рыночные сделки
+            get_mark_price_funding_rate_futures: цена маркировки и ставки финансирования
+            get_merged_trades_futures: объединенные сделки
+            get_multiassets_futures: индекс активов для режима Multi-Assets
+            get_ratio_long_short_account_futures: общее соотношение количества long/short счетов
+            get_server_time_futures: время сервера
+            get_top_ratio_long_short_account_futures: общее соотношение количества long/short счетов ведущих трейдеров
+            get_top_ratio_long_short_position_futures: общее соотношение количества long/short позиций ведущих трейдеров
+            get_volume_buy_sell_futures: объем покупок и продаж
+            get_current_open_interest_futures: текущий открытый интерес
+            get_historical_open_interest_futures: история открытого интереса
+
+        Trading endpoints futures:
+            post_leverage_futures: изменить кредитное плечо
+            post_margin_futures: изменить количество маржи изолированной позиции
+            post_margin_type_futures: изменить маржинальное поле ("ИЗОЛИРОВАННАЯ", "ПЕРЕСКРЕСТНАЯ")
+            get_balance_account_futures: баланс фьючерсного счета
+            get_commission_rate_futures: ставки комиссии актива
+            get_estimation_adl_futures: оценки ADL позиций
+            get_force_orders_futures: принудительные сделки
+            get_ftqri_futures: ...
+            get_income_history_futures: история доходов
+            get_info_account_futures: текущая информация об учетной записи
+            get_margin_change_history_futures: история изменения маржи
+            get_nl_brackets_futures: ...
+            get_update_order_history_futures: история изменений ордеров
+            get_id_futures: идентификатор для загрузки истории сделок с фьючерсами
+            get_link_futures: ссылка для скачивания истории сделок с фьючерсами по идентификатору
+            post_multi_asset_futures: изменить режим мультиактива
+            get_multi_asset_futures: режим мультиактива
+            post_position_futures: изменить режим позиции
+            get_positions_futures: режим позиции
+            post_limit_futures: ордер LIMIT
+            post_market_futures: ордер MARKET
+            post_profit_limit_futures: ордер TAKE_PROFIT
+            post_profit_market_futures: ордер TAKE_PROFIT_MARKET
+            post_stop_limit_futures: ордер STOP
+            post_stop_market_futures: ордер STOP_MARKET
+            post_trailing_stop_market_futures: ордер TRAILING_STOP_MARKET
+            put_limit_futures: обновить ордер LIMIT
+            delete_order_futures: закрыть ордер по идентификатору
+            post_multiple_limit_futures: множественный ордер LIMIT
+            post_multiple_market_futures: множественный ордер MARKER
+            post_multiple_profit_limit_futures: множественный ордер TAKE_PROFIT
+            post_multiple_profit_market_futures: множественный ордер TAKE_PROFIT_MARKET
+            post_multiple_stop_limit_futures: множественный ордер STOP
+            post_multiple_stop_market_futures: множественный ордер STOP_MARKET
+            post_multiple_trailing_stop_market_futures: множественный ордер TRAILING_STOP_MARKET
+            put_multiple_limit_futures: обновить несколько ордеров LIMIT
+            delete_multiple_order_id_futures: закрыть несколько ордеров по идентификатору
+            delete_multiple_order_symbol_futures: закрыть несколько ордеров по символу
+            delete_multiple_orders_time_futures: закрыть все ордера по символу через заданное время
+            get_current_position_symbol_futures: информация о текущей позиции по символу
+            get_open_order_id_futures: информация об открытом ордере по идентификатору
+            get_open_orders_all_futures: информация о всех открытых ордерах
+            get_orders_all_futures: информация о всех ордерах аккаунта
+            get_trades_futures: информация о сделках
+
+        Market data streams futures:
+            get_stream_best_price_quantity_all_futures: лучшая цена и количество всех символов
+            get_stream_best_price_quantity_symbol_futures: лучшая цена и количество по символу
+            get_stream_candles_futures: свечи
+            get_stream_candles_contract_futures: свечи по контракту
+            get_stream_composite_index_futures: стакан ордеров составного индекса
+            get_stream_contract_info_futures: ...
+            get_stream_info_day_all_futures: информация о всех символах за 24 часа
+            get_stream_info_day_symbol_futures: информация об определенном символе за 24 часа
+            get_stream_liquidated_orders_all_futures: ликвидированные ордера по всем символам
+            get_stream_liquidated_orders_symbol_futures: ликвидированные ордера по символу
+            get_stream_mark_price_funding_rate_all_futures: mark price и ставка финансирования всех символов
+            get_stream_mark_price_funding_rate_symbol_futures: mark price и ставка финансирования по символу
+            get_stream_min_info_day_all_futures: минимальная информация о всех символах за 24 часа
+            get_stream_min_info_day_symbol_futures: минимальная информация об определенном символе за 24 часа
+            get_stream_order_book_futures: стакан ордеров
+            get_stream_order_book_difference_futures: ...
+            get_stream_trades_tape_futures: лента сделок по символу
+
+        User data streams futures:
+            start_user_data_stream_futures: запуск стрима по данным пользователя
+            connect_user_data_streams_futures: cтрим данных пользователя
+            keepalive_user_data_stream_futures: обновление стрима по данным пользователя
+            delete_user_data_stream_futures: закрытие стрима по данным пользователя
     """
     base_url = "https://fapi.binance.com"
     base_url_stream = "wss://fstream.binance.com/ws"
@@ -44,42 +140,6 @@ class Futures:
 
         self.secret_key = secret_key
         self.api_key = api_key
-
-
-class MarketDataEndpointsFutures(Futures):
-    """
-    Класс для работы с Market data endpoints
-
-    Attributes:
-    None
-
-    Methods:
-    connection_check: проверка соединения
-    get_best_price_quantity_futures: лучшая цена и количество для символа или символов
-    get_candles_futures: информация по свечам
-    get_candles_blvt_nav_futures: информация по историческим свечам BLVT NAV
-    get_candles_contract_futures: информация по свечам для определенного контракта
-    get_candles_indexprice_futures: информация по свечам для Index Price
-    get_candles_markprice_futures: информация по свечам для Mark Price
-    get_day_statistics_futures: статистика изменения цены за 24 часа
-    get_glass_applications_futures: стакан заявок
-    get_history_funding_rate_futures: история ставок финансирования
-    get_historical_trades_futures: исторические рыночные сделки по "fromId"
-    get_index_composite_symbol_futures: информация о символах составного индекса
-    get_symbols_info_futures: текущие правила биржевой торговли и информация о символах
-    get_latest_price_futures: последняя цена для символа или символов
-    get_latest_trades_futures: последние рыночные сделки
-    get_mark_price_funding_rate_futures: цена маркировки и ставки финансирования
-    get_merged_trades_futures: объединенные сделки
-    get_multiassets_futures: индекс активов для режима Multi-Assets
-    get_ratio_long_short_account_futures: общее соотношение количества длинных/коротких счетов
-    get_server_time_futures: время сервера
-    get_top_ratio_long_short_account_futures: общее соотношение количества длинных/коротких счетов ведущих трейдеров
-    get_top_ratio_long_short_position_futures: общее соотношение количества длинных/коротких позиций ведущих трейдеров
-    get_volume_buy_sell_futures: объем покупок и продаж
-    get_current_open_interest_futures: текущий открытый интерес
-    get_historical_open_interest_futures: история открытого интереса
-    """
 
     def connection_check_futures(self) -> dict:
         """
@@ -2014,61 +2074,6 @@ class MarketDataEndpointsFutures(Futures):
                 "result": response.text,
                 "headers": response.headers
             }
-
-
-class TradingEndpointsFutures(Futures):
-    """
-    Класс для работы с Trading endpoints
-
-    Attributes:
-    None
-
-    Methods:
-    post_leverage_futures: изменить кредитное плечо
-    post_margin_futures: изменить количество маржи изолированной позиции
-    post_margin_type_futures: изменить маржинальное поле ("ИЗОЛИРОВАННАЯ", "ПЕРЕСКРЕСТНАЯ")
-    get_balance_account_futures: баланс фьючерсного счета
-    get_commission_rate_futures: ставки комиссии актива
-    get_estimation_adl_futures: оценки ADL позиций
-    get_force_orders_futures: принудительные сделки
-    get_ftqri_futures: ...
-    get_income_history_futures: история доходов
-    get_info_account_futures: текущая информация об учетной записи
-    get_margin_change_history_futures: история изменения маржи
-    get_nl_brackets_futures: ...
-    get_update_order_history_futures: история изменений ордеров
-    get_id_futures: идентификатор для загрузки истории сделок с фьючерсами
-    get_link_futures: ссылка для скачивания истории сделок с фьючерсами по идентификатору
-    post_multi_asset_futures: изменить режим мультиактива
-    get_multi_asset_futures: режим мультиактива
-    post_position_futures: изменить режим позиции
-    get_positions_futures: режим позиции
-    post_limit_futures: ордер LIMIT
-    post_market_futures: ордер MARKET
-    post_profit_limit_futures: ордер TAKE_PROFIT
-    post_profit_market_futures: ордер TAKE_PROFIT_MARKET
-    post_stop_limit_futures: ордер STOP
-    post_stop_market_futures: ордер STOP_MARKET
-    post_trailing_stop_market_futures: ордер TRAILING_STOP_MARKET
-    put_limit_futures: обновить ордер LIMIT
-    delete_order_futures: закрыть ордер по идентификатору
-    post_multiple_limit_futures: множественный ордер LIMIT
-    post_multiple_market_futures: множественный ордер MARKER
-    post_multiple_profit_limit_futures: множественный ордер TAKE_PROFIT
-    post_multiple_profit_market_futures: множественный ордер TAKE_PROFIT_MARKET
-    post_multiple_stop_limit_futures: множественный ордер STOP
-    post_multiple_stop_market_futures: множественный ордер STOP_MARKET
-    post_multiple_trailing_stop_market_futures: множественный ордер TRAILING_STOP_MARKET
-    put_multiple_limit_futures: обновить несколько ордеров LIMIT
-    delete_multiple_order_id_futures: закрыть несколько ордеров по идентификатору
-    delete_multiple_order_symbol_futures: закрыть несколько ордеров по символу
-    delete_multiple_orders_time_futures: закрыть все ордера по символу через заданное время
-    get_current_position_symbol_futures: информация о текущей позиции по символу
-    get_open_order_id_futures: информация об открытом ордере по идентификатору
-    get_open_orders_all_futures: информация о всех открытых ордерах
-    get_orders_all_futures: информация о всех ордерах аккаунта
-    get_trades_futures: информация о сделках
-    """
 
     def post_leverage_futures(self,
                               symbol: str,
@@ -7546,34 +7551,6 @@ class TradingEndpointsFutures(Futures):
                 "headers": response.headers
             }
 
-
-class MarketDataStreamsFutures(Futures):
-    """
-    Класс для работы с Market data streams (класс для стримов)
-
-    Attributes:
-    None
-
-    Methods:
-    get_stream_best_price_quantity_all_futures: лучшая цена и количество всех символов
-    get_stream_best_price_quantity_symbol_futures: лучшая цена и количество по символу
-    get_stream_candles_futures: свечи
-    get_stream_candles_contract_futures: свечи по контракту
-    get_stream_composite_index_futures: стакан ордеров составного индекса
-    get_stream_contract_info_futures: ...
-    get_stream_info_day_all_futures: информация о всех символах за 24 часа
-    get_stream_info_day_symbol_futures: информация об определенном символе за 24 часа
-    get_stream_liquidated_orders_all_futures: ликвидированные ордера по всем символам
-    get_stream_liquidated_orders_symbol_futures: ликвидированные ордера по символу
-    get_stream_mark_price_funding_rate_all_futures: цена маркировки (mark price) и ставка финансирования всех символов
-    get_stream_mark_price_funding_rate_symbol_futures: цена маркировки (mark price) и ставка финансирования по символу
-    get_stream_min_info_day_all_futures: минимальная информация о всех символах за 24 часа
-    get_stream_min_info_day_symbol_futures: минимальная информация об определенном символе за 24 часа
-    get_stream_order_book_futures: стакан ордеров
-    get_stream_order_book_difference_futures: ...
-    get_stream_trades_tape_futures: лента сделок по символу
-    """
-
     async def get_stream_best_price_quantity_all_futures(self,
                                                          list_data: list,
                                                          method: str = "SUBSCRIBE",
@@ -8890,21 +8867,6 @@ class MarketDataStreamsFutures(Futures):
                 print("Стрим ленты сделок по символу разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
-
-
-class UserDataStreamsFutures(Futures):
-    """
-    Класс для работы с User data streams
-
-    Attributes:
-    None
-
-    Methods:
-    start_user_data_stream_futures: запуск стрима по данным пользователя
-    connect_user_data_streams_futures: cтрим данных пользователя
-    keepalive_user_data_stream_futures: обновление стрима по данным пользователя
-    delete_user_data_stream_futures: закрытие стрима по данным пользователя
-    """
 
     def start_user_data_stream_futures(self) -> dict:
         """

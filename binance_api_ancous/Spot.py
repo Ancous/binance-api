@@ -1,13 +1,14 @@
 """
 pass
 """
+
 import json
 import socket
 import asyncio
 import requests
-from random import randint
 import websockets.exceptions
 
+from random import randint
 from urllib.parse import urlencode
 
 
@@ -20,7 +21,36 @@ class Spot:
     base_url_stream (str): базовый url для доступа к стримам спота бирже binance
 
     Methods:
-    None
+
+        Market data endpoints spot:
+            connection_check_spot: проверка соединения спота
+            get_average_price_spot: текущая средняя цена символа спота
+            get_best_price_quantity_spot: лучшая цена и количество для символа или символов спота
+            get_candles_spot: информация по свечам спота
+            get_day_statistics_spot: статистика изменения цены спота за 24 часа
+            get_glass_applications_spot: стакан заявок спота
+            get_historical_trades_spot: исторические рыночные сделки по "fromId" спота
+            get_symbols_info_spot: текущие правила биржевой торговли и информация о символах для спота
+            get_latest_price_spot: последняя цена для символа или символов спота
+            get_latest_trades_spot: последние рыночные сделки спота
+            get_merged_trades_spot: объединенные сделки спота
+            get_rolling_statistics_spot: статистика изменения цены спота в скользящем окне
+            get_server_time_spot: время сервера спота
+            get_uicandles_spot: информация по свечам спота
+
+        Market data streams spot:
+            get_stream_best_price_quantity_symbol_spot: лучшая цена и количество спота по символу
+            get_stream_candles_spot: свечи спота
+            get_stream_info_day_all_spot: информация о всех символах спота за 24 часа
+            get_stream_info_day_symbol_spot: информация об определенном символе спота за 24 часа
+            get_stream_info_rolling_all_spot: информация о всех символах спота в скользящем окне
+            get_stream_info_rolling_symbol_spot: информация об определенном символе спота в скользящем окне
+            get_stream_min_info_day_all_spot: минимальная информация о всех символах спота за 24 часа
+            get_stream_min_info_day_symbol_spot: минимальная информация об определенном символе спота за 24 часа
+            get_stream_order_book_difference_spot: ...
+            get_stream_order_book_spot: стакан ордеров спота
+            get_stream_id_trades_tape_spot: лента id-сделок спота покупателя и продавца по символу
+            get_stream_trades_tape_spot: лента сделок спота по символу
     """
     base_url = "https://api.binance.com"
     base_url_stream = "wss://stream.binance.com:9443/ws"
@@ -39,31 +69,6 @@ class Spot:
 
         self.secret_key = secret_key
         self.api_key = api_key
-
-
-class MarketDataEndpointsSpot(Spot):
-    """
-    Класс для работы с Market data endpoints spot
-
-    Attributes:
-    None
-
-    Methods:
-    connection_check_spot: проверка соединения спота
-    get_average_price_spot: текущая средняя цена символа спота
-    get_best_price_quantity_spot: лучшая цена и количество для символа или символов спота
-    get_candles_spot: информация по свечам спота
-    get_day_statistics_spot: статистика изменения цены спота за 24 часа
-    get_glass_applications_spot: стакан заявок спота
-    get_historical_trades_spot: исторические рыночные сделки по "fromId" спота
-    get_symbols_info_spot: текущие правила биржевой торговли и информация о символах для спота
-    get_latest_price_spot: последняя цена для символа или символов спота
-    get_latest_trades_spot: последние рыночные сделки спота
-    get_merged_trades_spot: объединенные сделки спота
-    get_rolling_statistics_spot: статистика изменения цены спота в скользящем окне
-    get_server_time_spot: время сервера спота
-    get_uicandles_spot: информация по свечам спота
-    """
 
     def connection_check_spot(self) -> dict:
         """
@@ -1169,29 +1174,6 @@ class MarketDataEndpointsSpot(Spot):
                 "headers": response.headers,
                 "result": response.text
             }
-
-
-class MarketDataStreamsSpot(Spot):
-    """
-    Класс для работы с Market data streams spot
-
-    Attributes:
-    None
-
-    Methods:
-    get_stream_best_price_quantity_symbol_spot: лучшая цена и количество спота по символу
-    get_stream_candles_spot: свечи спота
-    get_stream_info_day_all_spot: информация о всех символах спота за 24 часа
-    get_stream_info_day_symbol_spot: информация об определенном символе спота за 24 часа
-    get_stream_info_rolling_all_spot: информация о всех символах спота в скользящем окне
-    get_stream_info_rolling_symbol_spot: информация об определенном символе спота в скользящем окне
-    get_stream_min_info_day_all_spot: минимальная информация о всех символах спота за 24 часа
-    get_stream_min_info_day_symbol_spot: минимальная информация об определенном символе спота за 24 часа
-    get_stream_order_book_difference_spot: ...
-    get_stream_order_book_spot: стакан ордеров спота
-    get_stream_id_trades_tape_spot: лента id-сделок спота покупателя и продавца по символу
-    get_stream_trades_tape_spot: лента сделок спота по символу
-    """
 
     async def get_stream_best_price_quantity_symbol_spot(self,
                                                          list_data: list,
