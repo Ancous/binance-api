@@ -3,6 +3,7 @@ pass
 """
 
 import os
+import json
 import time
 
 from dotenv import load_dotenv
@@ -15,6 +16,8 @@ if __name__ in "__main__":
     result = client.delete_order_futures(symbol="ADAUSDT",
                                          orig_client_order_id="9766",
                                          time_stamp=str(round(time.time() * 1000)))
+    with open("answer.json", "w") as file:
+        json.dump(obj=result["result"], fp=file, indent=3)
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])

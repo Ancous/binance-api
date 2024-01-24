@@ -3,6 +3,7 @@ pass
 """
 
 import os
+import json
 import time
 
 from random import randint
@@ -27,6 +28,8 @@ if __name__ in "__main__":
     ]
     result = client.post_multiple_profit_limit_futures(data_list=trades_parameters,
                                                        time_stamp=str(round(time.time() * 1000)))
+    with open("answer.json", "w") as file:
+        json.dump(obj=result["result"], fp=file, indent=3)
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])

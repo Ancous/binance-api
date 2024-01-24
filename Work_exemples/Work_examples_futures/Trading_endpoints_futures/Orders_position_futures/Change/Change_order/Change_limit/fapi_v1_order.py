@@ -3,6 +3,7 @@ pass
 """
 
 import os
+import json
 import time
 
 from dotenv import load_dotenv
@@ -17,6 +18,8 @@ if __name__ in "__main__":
                                        quantity="25.0",
                                        price="0.2000",
                                        time_stamp=str(round(time.time() * 1000)))
+    with open("answer.json", "w") as file:
+        json.dump(obj=result["result"], fp=file, indent=3)
 
     if result["status_code"] == 200:
         print("status_code:", result["status_code"])

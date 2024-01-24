@@ -98,22 +98,13 @@ class Spot:
         complete_request = self.base_url + end_point
 
         response = requests.get(url=complete_request)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_average_price_spot(self,
                                symbol: str) -> dict:
@@ -151,22 +142,13 @@ class Spot:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_best_price_quantity_spot(self,
                                      list_symbols: list = None) -> dict:
@@ -212,22 +194,13 @@ class Spot:
         complete_parameters = urlencode(parameters).replace('%2C+', ',').replace('%27', '%22')
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_candles_spot(self,
                          symbol: str,
@@ -305,22 +278,13 @@ class Spot:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_day_statistics_spot(self,
                                 list_symbols: list = None,
@@ -380,22 +344,13 @@ class Spot:
         complete_parameters = urlencode(parameters).replace('%2C+', ',').replace('%27', '%22')
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_glass_applications_spot(self,
                                     symbol: str,
@@ -455,22 +410,13 @@ class Spot:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_historical_trades_spot(self,
                                    symbol: str,
@@ -536,22 +482,13 @@ class Spot:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_symbols_info_spot(self,
                               list_symbols: list = None) -> dict:
@@ -714,22 +651,13 @@ class Spot:
         complete_parameters = urlencode(parameters).replace('%2C+', ',').replace('%27', '%22')
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_latest_price_spot(self,
                               list_symbols: list = None) -> dict:
@@ -772,22 +700,13 @@ class Spot:
         complete_parameters = urlencode(parameters).replace('%2C+', ',').replace('%27', '%22')
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_latest_trades_spot(self,
                                symbol: str,
@@ -846,22 +765,13 @@ class Spot:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_merged_trades_spot(self,
                                symbol: str,
@@ -935,22 +845,13 @@ class Spot:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_rolling_statistics_spot(self,
                                     list_symbols: list,
@@ -1018,22 +919,13 @@ class Spot:
         complete_parameters = urlencode(parameters).replace('%2C+', ',').replace('%27', '%22')
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_server_time_spot(self) -> dict:
         """
@@ -1065,22 +957,13 @@ class Spot:
         complete_request = self.base_url + end_point
 
         response = requests.get(url=complete_request)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_uicandles_spot(self,
                            symbol: str,
@@ -1158,22 +1041,13 @@ class Spot:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     async def get_stream_best_price_quantity_symbol_spot(self,
                                                          list_data: list,

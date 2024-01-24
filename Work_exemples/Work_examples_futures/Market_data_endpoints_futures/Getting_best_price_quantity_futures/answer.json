@@ -1,9 +1,4 @@
 {
-   "symbol": "ADAUSDT",
-   "bidPrice": "0.53950",
-   "bidQty": "24581",
-   "askPrice": "0.53960",
-   "askQty": "21573",
-   "time": 1705433882911,
-   "lastUpdateId": 3840878054896
+   "code": -1121,
+   "msg": "Invalid symbol."
 }

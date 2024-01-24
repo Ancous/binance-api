@@ -169,22 +169,13 @@ class Futures:
         complete_request = self.base_url + end_point
 
         response = requests.get(url=complete_request)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": response.text
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_best_price_quantity_futures(self, symbol: str = "") -> dict:
         """
@@ -225,22 +216,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_candles_futures(self,
                             symbol: str,
@@ -318,22 +300,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_candles_blvt_nav_futures(self,
                                      symbol: str,
@@ -399,22 +372,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_candles_contract_futures(self,
                                      symbol: str,
@@ -499,22 +463,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_candles_indexprice_futures(self,
                                        symbol: str,
@@ -592,22 +547,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_candles_markprice_futures(self,
                                       symbol: str,
@@ -686,22 +632,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_day_statistics_futures(self,
                                    symbol: str = "") -> dict:
@@ -753,22 +690,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_glass_applications_futures(self,
                                        symbol: str,
@@ -855,22 +783,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_history_funding_rate_futures(self,
                                          symbol: str = "",
@@ -925,22 +844,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_historical_trades_futures(self,
                                       symbol: str,
@@ -1005,22 +915,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_index_composite_symbol_futures(self,
                                            symbol: str = "") -> dict:
@@ -1075,22 +976,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_symbols_info_futures(self) -> dict:
         """
@@ -1234,22 +1126,13 @@ class Futures:
         complete_request = self.base_url + end_point
 
         response = requests.get(url=complete_request)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_latest_price_futures(self,
                                  symbol: str = "") -> dict:
@@ -1288,22 +1171,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_latest_trades_futures(self,
                                   symbol: str,
@@ -1360,22 +1234,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_mark_price_funding_rate_futures(self,
                                             symbol: str = "") -> dict:
@@ -1420,22 +1285,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_merged_trades_futures(self,
                                   symbol: str,
@@ -1509,22 +1365,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_multiassets_futures(self,
                                 symbol: str = "") -> dict:
@@ -1571,22 +1418,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_ratio_long_short_account_futures(self,
                                              symbol: str,
@@ -1649,22 +1487,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_server_time_futures(self) -> dict:
         """
@@ -1696,22 +1525,13 @@ class Futures:
         complete_request = self.base_url + end_point
 
         response = requests.get(url=complete_request)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_top_ratio_long_short_account_futures(self,
                                                  symbol: str,
@@ -1774,22 +1594,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_top_ratio_long_short_position_futures(self,
                                                   symbol: str,
@@ -1852,22 +1663,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_volume_buy_sell_futures(self,
                                     symbol: str,
@@ -1928,22 +1730,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_current_open_interest_futures(self,
                                           symbol: str) -> dict:
@@ -1982,22 +1775,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_historical_open_interest_futures(self,
                                              symbol: str,
@@ -2058,22 +1842,13 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_leverage_futures(self,
                               symbol: str,
@@ -2129,22 +1904,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_margin_futures(self,
                             symbol: str,
@@ -2208,22 +1974,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_margin_type_futures(self,
                                  symbol: str,
@@ -2278,22 +2035,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_balance_account_futures(self,
                                     time_stamp: str,
@@ -2362,22 +2110,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_commission_rate_futures(self,
                                     symbol: str,
@@ -2427,22 +2166,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_estimation_adl_futures(self,
                                    time_stamp: str,
@@ -2507,22 +2237,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_force_orders_futures(self,
                                  time_stamp: str,
@@ -2629,22 +2350,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_ftqri_futures(self,
                           time_stamp: str,
@@ -2726,22 +2438,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_income_history_futures(self,
                                    time_stamp: str,
@@ -2831,22 +2534,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_info_account_futures(self,
                                  time_stamp: str,
@@ -3063,22 +2757,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_margin_change_history_futures(self,
                                           symbol: str,
@@ -3160,22 +2845,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_nl_brackets_futures(self,
                                 time_stamp: str,
@@ -3247,22 +2923,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_update_order_history_futures(self,
                                          symbol: str,
@@ -3347,22 +3014,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_id_futures(self,
                        start_time: str,
@@ -3417,22 +3075,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_link_futures(self,
                          download_id: str,
@@ -3511,22 +3160,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_multi_asset_futures(self,
                                  multi_assets_margin: str,
@@ -3579,22 +3219,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_multi_asset_futures(self,
                                 time_stamp: str,
@@ -3642,22 +3273,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_position_futures(self,
                               dual_side_position: str,
@@ -3710,22 +3332,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_positions_futures(self,
                               time_stamp: str,
@@ -3773,22 +3386,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_limit_futures(self,
                            symbol: str,
@@ -3906,22 +3510,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_market_futures(self,
                             symbol: str,
@@ -4026,22 +3621,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_profit_limit_futures(self,
                                   symbol: str,
@@ -4167,22 +3753,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_profit_market_futures(self,
                                    symbol: str,
@@ -4311,22 +3888,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_stop_limit_futures(self,
                                 symbol: str,
@@ -4452,22 +4020,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_stop_market_futures(self,
                                  symbol: str,
@@ -4596,22 +4155,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_trailing_stop_market_futures(self,
                                           symbol: str,
@@ -4733,22 +4283,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def put_limit_futures(self,
                           symbol: str,
@@ -4837,22 +4378,13 @@ class Futures:
         }
 
         response = requests.put(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def delete_order_futures(self,
                              symbol: str,
@@ -4933,22 +4465,13 @@ class Futures:
         }
 
         response = requests.delete(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_multiple_limit_futures(self,
                                     data_list: list[list[str]],
@@ -5139,22 +4662,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_multiple_market_futures(self,
                                      data_list: list[list[str]],
@@ -5341,22 +4855,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_multiple_profit_limit_futures(self,
                                            data_list: list[list[str]],
@@ -5546,22 +5051,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_multiple_profit_market_futures(self,
                                             data_list: list[list[str]],
@@ -5753,22 +5249,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_multiple_stop_limit_futures(self,
                                          data_list: list[list[str]],
@@ -5958,22 +5445,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_multiple_stop_market_futures(self,
                                           data_list: list[list[str]],
@@ -6165,22 +5643,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def post_multiple_trailing_stop_market_futures(self,
                                                    data_list: list[list[str]],
@@ -6380,22 +5849,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def put_multiple_limit_futures(self,
                                    data_list: list[list[str]],
@@ -6508,22 +5968,13 @@ class Futures:
         }
 
         response = requests.put(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def delete_multiple_order_id_futures(self,
                                          symbol: str,
@@ -6707,22 +6158,13 @@ class Futures:
         }
 
         response = requests.delete(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def delete_multiple_order_symbol_futures(self,
                                              symbol: str,
@@ -6775,22 +6217,13 @@ class Futures:
         }
 
         response = requests.delete(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def delete_multiple_orders_time_futures(self,
                                             symbol: str,
@@ -6846,22 +6279,13 @@ class Futures:
         }
 
         response = requests.post(url=complete_request, data=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_current_position_symbol_futures(self,
                                             symbol: str,
@@ -6970,22 +6394,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_open_order_id_futures(self,
                                   symbol: str,
@@ -7071,22 +6486,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_open_orders_all_futures(self,
                                     time_stamp: str,
@@ -7190,22 +6596,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_orders_all_futures(self,
                                symbol: str,
@@ -7320,22 +6717,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_order_id_futures(self,
                              symbol: str,
@@ -7415,22 +6803,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def get_trades_futures(self,
                            symbol: str,
@@ -7534,22 +6913,13 @@ class Futures:
         }
 
         response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "result": result,
-                "headers": response.headers
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     async def get_stream_best_price_quantity_all_futures(self,
                                                          list_data: list,
@@ -8900,22 +8270,13 @@ class Futures:
             "X-MBX-APIKEY": self.api_key
         }
         response = requests.post(url=complete_request, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     async def connect_user_data_streams_futures(self,
                                                 dict_data: dict,
@@ -9000,22 +8361,13 @@ class Futures:
             "X-MBX-APIKEY": self.api_key
         }
         response = requests.put(url=complete_request, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
 
     def delete_user_data_stream_futures(self) -> dict:
         """
@@ -9047,19 +8399,10 @@ class Futures:
             "X-MBX-APIKEY": self.api_key
         }
         response = requests.delete(url=complete_request, headers=headers)
+        result = json.loads(response.text)
 
-        if response.status_code == 200:
-            result = json.loads(response.text)
-            with open("answer.json", "w") as file:
-                json.dump(obj=result, fp=file, indent=3)
-            return {
-                "status_code": response.status_code,
-                "headers": response.headers,
-                "result": result
-            }
-        else:
-            return {
-                "status_code": response.status_code,
-                "result": response.text,
-                "headers": response.headers
-            }
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
