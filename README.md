@@ -1,6 +1,6 @@
 # FUTURES
 
-### MARKET DATA ENDPOINTS
+### MARKET DATA ENDPOINTS FUTURES
 
 GET /fapi/v1/constituents
 
@@ -10,7 +10,7 @@ GET /fapi/v1/fundingInfo
 
 GET /futures/data/basis
 
-### TRADING ENDPOINTS
+### TRADING ENDPOINTS FUTURES
 
 GET /fapi/v1/order/asyn
 
@@ -30,7 +30,7 @@ GET /fapi/v1/constituents
 
 # SPOT
 
-### MARKET DATA ENDPOINTS
+### MARKET DATA ENDPOINTS SPOT
 
 GET /api/v3/ticker/tradingDay
 
