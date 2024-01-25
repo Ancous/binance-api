@@ -207,6 +207,7 @@ class Spot:
                          interval: str,
                          start_time: str = None,
                          end_time: str = None,
+                         time_zone: str = None,
                          limit: str = "500") -> dict:
         """
         Запрос:
@@ -224,9 +225,14 @@ class Spot:
                                                      "4h", "6h", "8h", "12h", "1d", "3d", "1w", "1M")
         - start_time="startTime" (str):  время начала отбора ("1681505080619", ...)
         - end_time="endTime" (str): время окончания отбора ("1681505034619", ...)
+        - time_zone="timeZone" (str): временной интервал часы:минуты-(-1:00, 05:45)
+                                                         только часы-(0, 8, 4)()
         - limit="limit" (str): какое количество свечей вывести ("1", ..., "1000")
 
         Комментарии:
+        - "timeZone" принимает диапазон строго от -12:00 до 14:00 включительно.
+        - Если указан "timeZone", интервал интерпретируется в этом часовом поясе,
+                                                                       а не в формате UTC как start_time или end_time
         - сокращения "interval": [m -> минута; h -> час; d -> день; w -> неделя; M -> месяц]
         - Если "startTime" и "endTime" не отправлены, возвращаются самые последние klines.
 
@@ -270,7 +276,8 @@ class Spot:
             "interval": interval,
             "limit": limit,
             "startTime": start_time,
-            "endTime": end_time
+            "endTime": end_time,
+            "timeZone": time_zone
         }
         # ---------------------------------------------
 
@@ -363,7 +370,7 @@ class Spot:
         "https://api.binance.com/api/v3/depth"
 
         Вес запроса:
-        [[limits: вес], [1-100: 2], [101-500: 10], [501-1000: 20], [1001-5000: 100]]
+        [[limits: вес], [1-100: 5], [101-500: 25], [501-1000: 50], [1001-5000: 250]]
 
         Параметры:
         - symbol="symbol" (str): актив ("BTCUSDT", ...)
@@ -719,7 +726,7 @@ class Spot:
         "https://api.binance.com/api/v3/trades"
 
         Вес запроса:
-        2
+        10
 
         Параметры:
         - symbol="symbol" (str): актив ("BTCUSDT", ...)
@@ -970,6 +977,7 @@ class Spot:
                            interval: str,
                            start_time: str = None,
                            end_time: str = None,
+                           time_zone: str = None,
                            limit: str = "500") -> dict:
         """
         Запрос:
@@ -987,9 +995,14 @@ class Spot:
                                                      "4h", "6h", "8h", "12h", "1d", "3d", "1w", "1M")
         - start_time="startTime" (str):  время начала отбора ("1681505080619", ...)
         - end_time="endTime" (str): время окончания отбора ("1681505034619", ...)
+        - time_zone="timeZone" (str): временной интервал часы:минуты-(-1:00, 05:45)
+                                                         только часы-(0, 8, 4)
         - limit="limit" (str): какое количество свечей вывести ("1", ..., "1500")
 
         Комментарии:
+        - "timeZone" принимает диапазон строго от -12:00 до 14:00 включительно.
+        - Если указан "timeZone", интервал интерпретируется в этом часовом поясе,
+                                                                       а не в формате UTC как start_time или end_time
         - сокращения "interval": [m -> минута; h -> час; d -> день; w -> неделя; M -> месяц]
         - Если "startTime" и "endTime" не отправлены, возвращаются самые последние klines.
 
@@ -1033,7 +1046,8 @@ class Spot:
             "interval": interval,
             "limit": limit,
             "startTime": start_time,
-            "endTime": end_time
+            "endTime": end_time,
+            "timeZone": time_zone
         }
         # ---------------------------------------------
 

@@ -1141,7 +1141,7 @@ class Futures:
         Получить последнюю цену для символа или символов.
 
         Полный url:
-        "https://fapi.binance.com/fapi/v1/ticker/price"
+        "https://fapi.binance.com/fapi/v2/ticker/price"
 
         Вес запроса:
         1 для одного символа, 2 когда параметр символа отсутствует
@@ -1161,7 +1161,7 @@ class Futures:
         """
 
         # ------------------------------------------
-        end_point = "/fapi/v1/ticker/price"
+        end_point = "/fapi/v2/ticker/price"
         parameters = {
             "symbol": symbol.upper(),
         }
@@ -3035,7 +3035,7 @@ class Futures:
         "https://fapi.binance.com/fapi/v1/income/asyn"
 
         Вес запроса:
-        5
+        1500
 
         Параметры:
         - start_time="startTime" (str): время начала отбора ("1681505080619", ...)
@@ -3095,7 +3095,7 @@ class Futures:
         "https://fapi.binance.com/fapi/v1/income/asyn/id"
 
         Вес запроса:
-        5
+        10
 
         Параметры:
         - download_id="downloadId" (str): идентификатор загрузки ("132131234", ...)
