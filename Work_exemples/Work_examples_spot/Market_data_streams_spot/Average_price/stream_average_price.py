@@ -27,7 +27,7 @@ async def func_main_stream(spot_client, list_data, symbol):
     """
     pass
     """
-    task_1 = asyncio.create_task(spot_client.get_stream_trades_tape_spot(
+    task_1 = asyncio.create_task(spot_client.get_stream_average_price_spot(
         list_data=list_data,
         symbol=symbol)
     )

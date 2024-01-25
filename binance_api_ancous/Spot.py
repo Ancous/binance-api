@@ -28,6 +28,7 @@ class Spot:
             get_best_price_quantity_spot: лучшая цена и количество для символа или символов спота
             get_candles_spot: информация по свечам спота
             get_day_statistics_spot: статистика изменения цены спота за 24 часа
+            get_trading_day_statistics_spot: статистика изменения цены спота за торговый день.
             get_glass_applications_spot: стакан заявок спота
             get_historical_trades_spot: исторические рыночные сделки по "fromId" спота
             get_symbols_info_spot: текущие правила биржевой торговли и информация о символах для спота
@@ -51,6 +52,7 @@ class Spot:
             get_stream_order_book_spot: стакан ордеров спота
             get_stream_id_trades_tape_spot: лента id-сделок спота покупателя и продавца по символу
             get_stream_trades_tape_spot: лента сделок спота по символу
+            get_stream_average_price: средняя цена по символам
     """
     base_url = "https://api.binance.com"
     base_url_stream = "wss://stream.binance.com:9443/ws"
@@ -207,7 +209,7 @@ class Spot:
                          interval: str,
                          start_time: str = None,
                          end_time: str = None,
-                         time_zone: str = None,
+                         time_zone: str = "0",
                          limit: str = "500") -> dict:
         """
         Запрос:
@@ -343,6 +345,98 @@ class Spot:
             }
         else:
             parameters = {
+                "type": my_type
+            }
+        # ---------------------------------------------
+
+        complete_request = self.base_url + end_point
+        complete_parameters = urlencode(parameters).replace('%2C+', ',').replace('%27', '%22')
+
+        response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_trading_day_statistics_spot(self,
+                                        list_symbols: list = None,
+                                        time_zone: str = "0",
+                                        my_type: str = "FULL") -> dict:
+        """
+        Запрос:
+        Получить статистику изменения цен спота за торговый день.
+
+        Полный url:
+        "https://api.binance.com/api/v3/ticker/tradingDay"
+
+        Вес запроса:
+        4 за каждый запрошенный символ
+        Вес этого запроса будет ограничен 200, если количество символов в запросе превысит 50.
+
+        Параметры:
+        - list_symbols="symbols" (list): актив (["BTCUSDT"], ["BTCUSDT", "ADAUSDT"], ...)
+        - time_zone="timeZone" (str): временной интервал часы:минуты-(-1:00, 05:45)
+                                                         только часы-(0, 8, 4)
+        - my_type="my_type" (str): ... ("FULL","MINI")
+
+        Комментарии:
+        - "timeZone" принимает диапазон строго от -12:00 до 14:00 включительно.
+        - Если указан "timeZone", интервал интерпретируется в этом часовом поясе,
+                                                                       а не в формате UTC как start_time или end_time
+
+        Ответ:
+        [
+            {
+                "symbol": "BTCUSDT",
+                "priceChange": "-83.13000000",
+                "priceChangePercent": "-0.317",
+                "weightedAvgPrice": "26234.58803036",
+                "openPrice": "26304.80000000",
+                "highPrice": "26397.46000000",
+                "lowPrice": "26088.34000000",
+                "lastPrice": "26221.67000000",
+                "volume": "18495.35066000",
+                "quoteVolume": "485217905.04210480",
+                "openTime": 1695686400000,
+                "closeTime": 1695772799999,
+                "firstId": 3220151555,
+                "lastId": 3220849281,
+                "count": 697727
+            },
+            {
+                "symbol": "BNBUSDT",
+                "priceChange": "2.60000000",
+                "priceChangePercent": "1.238",
+                "weightedAvgPrice": "211.92276958",
+                "openPrice": "210.00000000",
+                "highPrice": "213.70000000",
+                "lowPrice": "209.70000000",
+                "lastPrice": "212.60000000",
+                "volume": "280709.58900000",
+                "quoteVolume": "59488753.54750000",
+                "openTime": 1695686400000,
+                "closeTime": 1695772799999,
+                "firstId": 672397461,
+                "lastId": 672496158,
+                "count": 98698
+            }
+        ]
+        """
+
+        # ------------------------------------------
+        end_point = "/api/v3/ticker/tradingDay"
+        if list_symbols:
+            parameters = {
+                "symbols": [symbol.upper() for symbol in list_symbols],
+                "timeZone": time_zone,
+                "type": my_type
+            }
+        else:
+            parameters = {
+                "timeZone": time_zone,
                 "type": my_type
             }
         # ---------------------------------------------
@@ -977,7 +1071,7 @@ class Spot:
                            interval: str,
                            start_time: str = None,
                            end_time: str = None,
-                           time_zone: str = None,
+                           time_zone: str = "0",
                            limit: str = "500") -> dict:
         """
         Запрос:
@@ -1132,7 +1226,7 @@ class Spot:
 
     async def get_stream_candles_spot(self,
                                       list_data: list,
-                                      symbol_interval: list[list[str, str], ...],
+                                      symbol_interval: list[list[str, str]],
                                       method: str = "SUBSCRIBE",
                                       my_id: int = randint(1, 100)) -> None:
         """
@@ -1299,7 +1393,7 @@ class Spot:
 
     async def get_stream_info_day_symbol_spot(self,
                                               list_data: list,
-                                              symbol: list[list[str], ...],
+                                              symbol: list[list[str]],
                                               method: str = "SUBSCRIBE",
                                               my_id: int = randint(1, 100)) -> None:
         """
@@ -1470,7 +1564,7 @@ class Spot:
 
     async def get_stream_info_rolling_symbol_spot(self,
                                                   list_data: list,
-                                                  symbol_winsizes: list[list[str], ...],
+                                                  symbol_winsizes: list[list[str]],
                                                   method: str = "SUBSCRIBE",
                                                   my_id: int = randint(1, 100)) -> None:
         """
@@ -1630,7 +1724,7 @@ class Spot:
 
     async def get_stream_min_info_day_symbol_spot(self,
                                                   list_data: list,
-                                                  symbol: list[list[str], ...],
+                                                  symbol: list[list[str]],
                                                   method: str = "SUBSCRIBE",
                                                   my_id: int = randint(1, 100)) -> None:
         """
@@ -1705,7 +1799,7 @@ class Spot:
 
     async def get_stream_order_book_difference_spot(self,
                                                     list_data: list,
-                                                    symbol_speed: list[list[str, str], ...],
+                                                    symbol_speed: list[list[str, str]],
                                                     method: str = "SUBSCRIBE",
                                                     my_id: int = randint(1, 100)) -> None:
         """
@@ -1771,13 +1865,13 @@ class Spot:
                             list_data.clear()
                             list_data.append(result)
                         else:
-                            print("... запущен.")
+                            print("Стрим по ... запущен.")
             except websockets.exceptions.ConnectionClosedError:
-                print("... разрыв соединения. Восстанавливаем.\n"
+                print("Стрим по ... разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: websockets.exceptions.ConnectionClosedError.")
                 await asyncio.sleep(10)
             except socket.gaierror:
-                print("... разрыв соединения. Восстанавливаем.\n"
+                print("Стрим по ... разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 
@@ -1859,7 +1953,7 @@ class Spot:
 
     async def get_stream_id_trades_tape_spot(self,
                                              list_data: list,
-                                             symbol: list[list[str], ...],
+                                             symbol: list[list[str]],
                                              method: str = "SUBSCRIBE",
                                              my_id: int = randint(1, 100)) -> None:
         """
@@ -1934,7 +2028,7 @@ class Spot:
 
     async def get_stream_trades_tape_spot(self,
                                           list_data: list,
-                                          symbol: list[list[str], ...],
+                                          symbol: list[list[str]],
                                           method: str = "SUBSCRIBE",
                                           my_id: int = randint(1, 100)) -> None:
         """
@@ -2003,4 +2097,74 @@ class Spot:
             except socket.gaierror:
                 print("Стрим ленты сделок спота по символу разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: socket.gaierror.")
+                await asyncio.sleep(10)
+
+    async def get_stream_average_price_spot(self,
+                                            list_data: list,
+                                            symbol: list[list[str]],
+                                            method: str = "SUBSCRIBE",
+                                            my_id: int = randint(1, 100)) -> None:
+        """
+        Запрос:
+        Стрим средней цены по символам
+
+        Полный url:
+        "wss://stream.binance.com:9443/ws{symbol}@avgPrice"
+
+        Параметры:
+        - list_data (list): аргумент через который будут передаваться данные стрима ([])
+        - symbol (list[list[str], ...]): список символов ([["btcusdt"], ["bnbusdt"], ...])
+        - method (str): метод стрима ("SUBSCRIBE", "UNSUBSCRIBE")
+        - my_id (int): идентификатор стрима (1, ..., 100)
+
+        Комментарии:
+        - скорость обновления: 1000мс
+        - symbol вариант заполнения: [["btcusdt"], ...]
+        - symbol значения должны быть строчными
+        - method расшифровка ["SUBSCRIBE": подключить стрим, "UNSUBSCRIBE": отключить стрим,
+                              "LIST_SUBSCRIPTIONS": информация о стриме, "SET_PROPERTY": ..., "GET_PROPERTY": ...]
+
+        Ответ:
+        {
+            "e": "avgPrice",    (тип события)
+            "E": 1693907033000,    (время события)
+            "s": "BTCUSDT",    (символ)
+            "i": "5m",    (средний ценовой интервал)
+            "w": "25776.86000000",    (средняя цена)
+            "T": 1693907032213    (время последней сделки)
+        }
+        """
+
+        # ----------------------------------------------
+        streams = [f"{data[0].lower()}@avgPrice" for data in symbol]
+        # ----------------------------------------------
+
+        while True:
+            try:
+                async with websockets.connect(self.base_url_stream) as websocket:
+                    subscribe_request = {
+                        "method": method,
+                        "params": streams,
+                        "id": my_id,
+                    }
+                    await websocket.send(json.dumps(subscribe_request))
+
+                    while True:
+                        result = json.loads(await websocket.recv())
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим средней цены по символам запущен.")
+            except websockets.exceptions.ConnectionClosedError:
+                print(
+                    "Стрим средней цены по символам разрыв соединения. Восстанавливаем.\n"
+                    "Ошибка: websockets.exceptions.ConnectionClosedError."
+                )
+                await asyncio.sleep(10)
+            except socket.gaierror:
+                print(
+                    "Стрим средней цены по символам разрыв соединения. Восстанавливаем.\n"
+                    "Ошибка: socket.gaierror."
+                )
                 await asyncio.sleep(10)

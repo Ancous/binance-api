@@ -32,11 +32,11 @@ GET /fapi/v1/constituents
 
 ### MARKET DATA ENDPOINTS SPOT
 
-GET /api/v3/ticker/tradingDay
+...
 
 ### MARKET DATA STREAM SPOT
 
-<.symbol.>@avgPrice
+...
 
 ---
 

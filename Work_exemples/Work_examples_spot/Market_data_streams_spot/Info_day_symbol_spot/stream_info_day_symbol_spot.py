@@ -23,11 +23,11 @@ async def my_print(list_data):
             await asyncio.sleep(0.1)
 
 
-async def func_main_stream(futures_client, list_data, symbol):
+async def func_main_stream(spot_client, list_data, symbol):
     """
     pass
     """
-    task_1 = asyncio.create_task(futures_client.get_stream_info_day_symbol_spot(
+    task_1 = asyncio.create_task(spot_client.get_stream_info_day_symbol_spot(
         list_data=list_data,
         symbol=symbol)
     )
@@ -52,7 +52,7 @@ if __name__ in "__main__":
     client = Spot(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
 
     asyncio.run(func_main_stream(
-        futures_client=client,
+        spot_client=client,
         list_data=my_list,
         symbol=data_streams)
     )
