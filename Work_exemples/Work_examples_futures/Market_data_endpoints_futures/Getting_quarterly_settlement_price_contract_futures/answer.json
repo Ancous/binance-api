@@ -1,0 +1,34 @@
+[
+   {
+      "deliveryTime": 1703808000000,
+      "deliveryPrice": 42388.0
+   },
+   {
+      "deliveryTime": 1695945600000,
+      "deliveryPrice": 27103.0
+   },
+   {
+      "deliveryTime": 1688083200000,
+      "deliveryPrice": 30733.6
+   },
+   {
+      "deliveryTime": 1680220800000,
+      "deliveryPrice": 27814.2
+   },
+   {
+      "deliveryTime": 1648166400000,
+      "deliveryPrice": 44066.3
+   },
+   {
+      "deliveryTime": 1656028800000,
+      "deliveryPrice": 20867.1
+   },
+   {
+      "deliveryTime": 1664496000000,
+      "deliveryPrice": 19546.0
+   },
+   {
+      "deliveryTime": 1672358400000,
+      "deliveryPrice": 16503.6
+   }
+]

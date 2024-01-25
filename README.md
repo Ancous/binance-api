@@ -1,34 +1,24 @@
-# FUTURES
+# ТРЕБУЕМЫЕ ОБНОВЛЕНИЯ И ДАТА ПОСЛЕДНЕЙ СВЕРКИ С BINANCE API
+
+## FUTURES
 
 ### MARKET DATA ENDPOINTS FUTURES
 
-GET /fapi/v1/constituents
-
-GET /futures/data/delivery-price
-
-GET /fapi/v1/fundingInfo
-
-GET /futures/data/basis
-
-### TRADING ENDPOINTS FUTURES
-
-GET /fapi/v1/order/asyn
-
-GET /fapi/v1/order/asyn/id
-
-GET /fapi/v1/trade/asyn
-
-GET /fapi/v1/trade/asyn/id
-
-GET /fapi/v1/constituents
+...
 
 ### MARKET DATA STREAMS FUTURES
 
-!assetIndex@arr
+...
 
-<.assetSymbol.>@assetIndex
+### TRADING ENDPOINTS FUTURES
 
-# SPOT
+...
+
+### USER DATA STREAM FUTURES
+
+...
+
+## SPOT
 
 ### MARKET DATA ENDPOINTS SPOT
 

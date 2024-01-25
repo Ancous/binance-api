@@ -1,0 +1,30 @@
+{
+   "symbol": "ADAUSDT",
+   "time": 1706188329608,
+   "constituents": [
+      {
+         "exchange": "binance",
+         "symbol": "ADAUSDT"
+      },
+      {
+         "exchange": "binance_cross",
+         "symbol": "ADABTC*BTCUSDT"
+      },
+      {
+         "exchange": "okex",
+         "symbol": "ADA-USDT"
+      },
+      {
+         "exchange": "kucoin",
+         "symbol": "ADA-USDT"
+      },
+      {
+         "exchange": "mxc",
+         "symbol": "ADA_USDT"
+      },
+      {
+         "exchange": "bybit",
+         "symbol": "ADAUSDT"
+      }
+   ]
+}

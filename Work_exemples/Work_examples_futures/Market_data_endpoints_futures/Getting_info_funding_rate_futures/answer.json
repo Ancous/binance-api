@@ -1,0 +1,1437 @@
+[
+   {
+      "symbol": "BLZUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "GTCUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "LPTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "UNFIUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "TRBUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "PERPUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "HIFIUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ARKUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "IMXUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "FRONTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "FLMUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "GLMRUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ENJUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BICOUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "OGNUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BNTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "STMXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "FOOTBALLUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "DEFIUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BTCDOMUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BLUEBIRDUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "QNTUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ALGOUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RNDRUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "FLOWUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "1000XECUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "FXSUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "WOOUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ARUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ASTRUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BATUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "LRCUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ENSUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SEIUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CVXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RVNUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ANTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "JASMYUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "AUDIOUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SSVUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ICXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "TUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "1000FLOKIUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "LUNA2USDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "IOTXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "PENDLEUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BANDUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ONEUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MAGICUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CKBUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SKLUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "GALUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "DGBUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ACHUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ZENUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "UMAUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "API3USDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "EDUUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "NMRUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "JOEUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "IDUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "LQTYUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "XVSUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RADUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "HFTUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RDNTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "NKNUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "OXTUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "DODOXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "LINAUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MAVUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BNXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "XVGUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CYBERUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "YGGUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ARKMUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SPELLUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ARPAUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CTKUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "HOOKUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ALICEUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "TRUUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "AGLDUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BELUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "COMBOUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "TLMUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BAKEUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "LEVERUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ATAUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "KEYUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "IDEXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MDTUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "REEFUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "LITUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "PHBUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "AMBUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "STORJUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "HBARUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ICPUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "GRTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "EGLDUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "STXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RUNEUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "THETAUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "INJUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SNXUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "KAVAUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CHZUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ZECUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "IOTAUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CRVUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "KLAYUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MINAUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "1000LUNCUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "COMPUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "DASHUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "GMXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ROSEUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "1INCHUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ZILUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "1000PEPEUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SFPUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "XEMUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "QTUMUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "AGIXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CELOUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "OCEANUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "FETUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ANKRUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "GMTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "YFIUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "HOTUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "WAVESUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BALUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BLURUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "KSMUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SXPUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ZRXUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SUSHIUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ONTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "IOSTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "TOMOUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "KNCUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RSRUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "STGUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CTSIUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CELRUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MTLUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "C98USDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RLCUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CHRUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "HIGHUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ALPHAUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "OMGUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "DENTUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "COTIUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RENUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "DUSKUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "PEOPLEUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "DARUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 8,
+      "disclaimer": false
+   },
+   {
+      "symbol": "STRAXUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "LOOMUSDT",
+      "adjustedFundingRateCap": "0.03000000",
+      "adjustedFundingRateFloor": "-0.03000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BIGTIMEUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BONDUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ORBSUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "STPTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "WAXPUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BSVUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "RIFUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "POLYXUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "GASUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "POWRUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SLPUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "TIAUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SNTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "CAKEUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MEMEUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "TOKENUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "TWTUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ORDIUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "STEEMUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BADGERUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ILVUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "NTRNUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MBLUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "KASUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "BEAMXUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "1000BONKUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "PYTHUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "SUPERUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "USTCUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ONGUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ETHWUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "JTOUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "1000SATSUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "AUCTIONUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "1000RATSUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ACEUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MOVRUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "NFPUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "AIUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "XAIUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "MANTAUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "WIFUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   },
+   {
+      "symbol": "ONDOUSDT",
+      "adjustedFundingRateCap": "0.02000000",
+      "adjustedFundingRateFloor": "-0.02000000",
+      "fundingIntervalHours": 4,
+      "disclaimer": false
+   }
+]

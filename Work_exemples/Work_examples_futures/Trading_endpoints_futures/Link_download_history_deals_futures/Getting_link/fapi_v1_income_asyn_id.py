@@ -14,9 +14,11 @@ load_dotenv()
 if __name__ in "__main__":
 
     client = Futures(secret_key=os.getenv("secret_key"), api_key=os.getenv("api_key"))
-    result = client.get_id_futures(start_time="16855668000",
-                                   end_time="16859124000",
-                                   time_stamp=str(round(time.time() * 1000)))
+    # result_dop = client.get_id_deals_futures(start_time="16855668000",
+    #                                          end_time="16859124000",
+    #                                          time_stamp=str(round(time.time() * 1000)))
+    result = client.get_link_deals_futures(download_id="1232146453213213",
+                                           time_stamp=str(round(time.time() * 1000)))
     with open("answer.json", "w") as file:
         json.dump(obj=result["result"], fp=file, indent=3)
 

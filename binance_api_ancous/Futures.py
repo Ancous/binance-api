@@ -36,6 +36,7 @@ class Futures:
             get_day_statistics_futures: статистика изменения цены за 24 часа
             get_glass_applications_futures: стакан заявок
             get_history_funding_rate_futures: история ставок финансирования
+            get_info_funding_rate_futures: информация о ставках финансирования
             get_historical_trades_futures: исторические рыночные сделки по "fromId"
             get_index_composite_symbol_futures: информация о символах составного индекса
             get_symbols_info_futures: текущие правила биржевой торговли и информация о символах
@@ -51,6 +52,29 @@ class Futures:
             get_volume_buy_sell_futures: объем покупок и продаж
             get_current_open_interest_futures: текущий открытый интерес
             get_historical_open_interest_futures: история открытого интереса
+            get_basis_futures: информация по basis
+            get_quarterly_settlement_price_contract_futures: расчетная цена контракта по кварталу
+            get_index_price_components_futures: составляющие индекс цены символа
+
+        Market data streams futures:
+            get_stream_best_price_quantity_all_futures: лучшая цена и количество всех символов
+            get_stream_best_price_quantity_symbol_futures: лучшая цена и количество по символу
+            get_stream_candles_futures: свечи
+            get_stream_candles_contract_futures: свечи по контракту
+            get_stream_composite_index_futures: стакан ордеров составного индекса
+            get_stream_contract_info_futures: ...
+            get_stream_info_day_all_futures: информация о всех символах за 24 часа
+            get_stream_info_day_symbol_futures: информация об определенном символе за 24 часа
+            get_stream_liquidated_orders_all_futures: ликвидированные ордера по всем символам
+            get_stream_liquidated_orders_symbol_futures: ликвидированные ордера по символу
+            get_stream_mark_price_funding_rate_all_futures: mark price и ставка финансирования всех символов
+            get_stream_mark_price_funding_rate_symbol_futures: mark price и ставка финансирования по символу
+            get_stream_min_info_day_all_futures: минимальная информация о всех символах за 24 часа
+            get_stream_min_info_day_symbol_futures: минимальная информация об определенном символе за 24 часа
+            get_stream_order_book_futures: стакан ордеров
+            get_stream_order_book_difference_futures: ...
+            get_stream_trades_tape_futures: лента сделок по символу
+            get_stream_asset_index_in_multi_assets: индексы активов в режиме мультиактива
 
         Trading endpoints futures:
             post_leverage_futures: изменить кредитное плечо
@@ -66,8 +90,12 @@ class Futures:
             get_margin_change_history_futures: история изменения маржи
             get_nl_brackets_futures: ...
             get_update_order_history_futures: история изменений ордеров
-            get_id_futures: идентификатор для загрузки истории сделок с фьючерсами
-            get_link_futures: ссылка для скачивания истории сделок с фьючерсами по идентификатору
+            get_id_deals_futures: идентификатор для загрузки истории сделок с фьючерсами
+            get_link_deals_futures: ссылка для скачивания истории сделок с фьючерсами по идентификатору
+            get_id_orders_futures: идентификатор для загрузки истории заказов с фьючерсами
+            get_link_orders_futures: ссылка для скачивания истории заказов с фьючерсами по идентификатору
+            get_id_trades_futures: идентификатор для загрузки истории торговли с фьючерсами
+            get_link_trades_futures: ссылка для скачивания истории торговли с фьючерсами по идентификатору
             post_multi_asset_futures: изменить режим мультиактива
             get_multi_asset_futures: режим мультиактива
             post_position_futures: изменить режим позиции
@@ -97,25 +125,6 @@ class Futures:
             get_open_orders_all_futures: информация о всех открытых ордерах
             get_orders_all_futures: информация о всех ордерах аккаунта
             get_trades_futures: информация о сделках
-
-        Market data streams futures:
-            get_stream_best_price_quantity_all_futures: лучшая цена и количество всех символов
-            get_stream_best_price_quantity_symbol_futures: лучшая цена и количество по символу
-            get_stream_candles_futures: свечи
-            get_stream_candles_contract_futures: свечи по контракту
-            get_stream_composite_index_futures: стакан ордеров составного индекса
-            get_stream_contract_info_futures: ...
-            get_stream_info_day_all_futures: информация о всех символах за 24 часа
-            get_stream_info_day_symbol_futures: информация об определенном символе за 24 часа
-            get_stream_liquidated_orders_all_futures: ликвидированные ордера по всем символам
-            get_stream_liquidated_orders_symbol_futures: ликвидированные ордера по символу
-            get_stream_mark_price_funding_rate_all_futures: mark price и ставка финансирования всех символов
-            get_stream_mark_price_funding_rate_symbol_futures: mark price и ставка финансирования по символу
-            get_stream_min_info_day_all_futures: минимальная информация о всех символах за 24 часа
-            get_stream_min_info_day_symbol_futures: минимальная информация об определенном символе за 24 часа
-            get_stream_order_book_futures: стакан ордеров
-            get_stream_order_book_difference_futures: ...
-            get_stream_trades_tape_futures: лента сделок по символу
 
         User data streams futures:
             start_user_data_stream_futures: запуск стрима по данным пользователя
@@ -844,6 +853,51 @@ class Futures:
         complete_parameters = parameters
 
         response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_info_funding_rate_futures(self) -> dict:
+        """
+        Запрос:
+        Получить информацию о ставках финансирования
+
+        Полный url:
+        "https://fapi.binance.com/fapi/v1/fundingInfo"
+
+        Вес запроса:
+        None
+
+        Параметры:
+        - None
+
+        Комментарии:
+        - Запросить информацию о ставке финансирования для символов, которые имеют настройку
+                                                                FundingRateCap/ FundingRateFloor/ fundingIntervalHours
+
+        Ответ:
+        [
+            {
+                "symbol": "BLZUSDT",
+                "adjustedFundingRateCap": "0.02500000",
+                "adjustedFundingRateFloor": "-0.02500000",
+                "fundingIntervalHours": 8,
+                "disclaimer": false    (игнор)
+            }
+        ]
+        """
+
+        # ------------------------------------------
+        end_point = "/fapi/v1/fundingInfo"
+        # ---------------------------------------------
+
+        complete_request = self.base_url + end_point
+
+        response = requests.get(url=complete_request)
         result = json.loads(response.text)
 
         return {
@@ -1835,6 +1889,198 @@ class Futures:
             "limit": limit,
             "startTime": start_time,
             "endTime": end_time
+        }
+        # ---------------------------------------------
+
+        complete_request = self.base_url + end_point
+        complete_parameters = parameters
+
+        response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_basis_futures(self,
+                          symbol: str,
+                          period: str,
+                          start_time: str = None,
+                          end_time: str = None,
+                          limit: str = "30",
+                          contract_type: str = "PERPETUAL") -> dict:
+        """
+        Запрос:
+        Получить информацию по basis
+
+        Полный url:
+        "https://fapi.binance.com/futures/data/basis"
+
+        Вес запроса:
+        - None
+
+        Параметры:
+        - symbol="pair" (str): актив ("BTCUSDT", ...)
+        - period="period" (str): интервал свечи ("5m", "15m", "30m", "1h", "2h", "4h", "6h", "12h", "1d")
+        - start_time="startTime" (str):  время начала отбора ("1681505080619", ...)
+        - end_time="endTime" (str): время окончания отбора ("1681505034619", ...)
+        - limit="limit" (str): какое количество свечей вывести ("1", ..., "500")
+        - contract_type="contractType" (str): тип контракта ("PERPETUAL", "CURRENT_QUARTER", "NEXT_QUARTER")
+
+        Комментарии:
+        - "contractType" возможные варианты: ["PERPETUAL": - бессрочный, "CURRENT_MONTH" - текущий месяц,
+                                              "NEXT_MONTH" - следующий месяц, "CURRENT_QUARTER" - текущий квартал,
+                                              "NEXT_QUARTER" - следующий квартал,
+                                              "PERPETUAL_DELIVERING" - постоянная доставка]
+        - сокращения "period": [m -> минута; h -> час; d -> день]
+        - Если "startTime" и "endTime" не отправлены, возвращаются самые последние klines.
+
+        Ответ:
+        [
+            {
+                "indexPrice": "34400.15945055",
+                "contractType": "PERPETUAL",
+                "basisRate": "0.0004",
+                "futuresPrice": "34414.10",
+                "annualizedBasisRate": "",
+                "basis": "13.94054945",
+                "pair": "BTCUSDT",
+                "timestamp": 1698742800000
+            }
+        ]
+        """
+
+        # ---------------------------------------------
+        end_point = "/futures/data/basis"
+        parameters = {
+            "pair": symbol.upper(),
+            "period": period,
+            "limit": limit,
+            "startTime": start_time,
+            "endTime": end_time,
+            "contractType": contract_type
+        }
+        # ---------------------------------------------
+
+        complete_request = self.base_url + end_point
+        complete_parameters = parameters
+
+        response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_quarterly_settlement_price_contract_futures(self,
+                                                        symbol: str) -> dict:
+        """
+        Запрос:
+        Получить расчетную цену контракта по кварталу
+
+        Полный url:
+        "https://fapi.binance.com/futures/data/delivery-price"
+
+        Вес запроса:
+        - None
+
+        Параметры:
+        - symbol="pair" (str): актив ("BTCUSDT", ...)
+
+        Комментарии:
+        - None
+
+        Ответ:
+        [
+            {
+                "deliveryTime": 1695945600000,
+                "deliveryPrice": 27103.00000000
+            },
+            {
+                "deliveryTime": 1688083200000,
+                "deliveryPrice": 30733.60000000
+            },
+            {
+                "deliveryTime": 1680220800000,
+                "deliveryPrice": 27814.20000000
+            },
+            {
+                "deliveryTime": 1648166400000,
+                "deliveryPrice": 44066.30000000
+            }
+        ]
+        """
+
+        # ------------------------------------------
+        end_point = "/futures/data/delivery-price"
+        parameters = {
+            "pair": symbol.upper(),
+        }
+        # ---------------------------------------------
+
+        complete_request = self.base_url + end_point
+        complete_parameters = parameters
+
+        response = requests.get(url=complete_request, params=complete_parameters)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_index_price_components_futures(self,
+                                           symbol: str) -> dict:
+        """
+        Запрос:
+        Получить составляющие индекс цены символа
+
+        Полный url:
+        "https://fapi.binance.com/fapi/v1/constituents"
+
+        Вес запроса:
+        2
+
+        Параметры:
+        - symbol="symbol" (str): актив ("BTCUSDT", ...)
+
+        Комментарии:
+        - None
+
+        Ответ:
+        {
+            "symbol": "BTCUSDT",
+            "time": 1697421272043,
+            "constituents": [
+                {
+                    "exchange": "binance",
+                    "symbol": "BTCUSDT"
+                },
+                {
+                    "exchange": "okex",
+                    "symbol": "BTC-USDT"
+                },
+                {
+                    "exchange": "huobi",
+                    "symbol": "btcusdt"
+                },
+                {
+                    "exchange": "coinbase",
+                    "symbol": "BTC-USDT"
+                }
+            ]
+        }
+        """
+
+        # ------------------------------------------
+        end_point = "/fapi/v1/constituents"
+        parameters = {
+            "symbol": symbol.upper(),
         }
         # ---------------------------------------------
 
@@ -3022,11 +3268,11 @@ class Futures:
             "headers": response.headers
         }
 
-    def get_id_futures(self,
-                       start_time: str,
-                       end_time: str,
-                       time_stamp: str,
-                       recv_window: str = "5000") -> dict:
+    def get_id_deals_futures(self,
+                             start_time: str,
+                             end_time: str,
+                             time_stamp: str,
+                             recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить идентификатор для загрузки истории сделок с фьючерсами
@@ -3046,6 +3292,7 @@ class Futures:
 
         Комментарии:
         - Ограничение запроса — максимум 5 раз в месяц
+        - время между "startTime" и "endTime" не может превышать 1 год
 
         Ответ:
         {
@@ -3083,10 +3330,10 @@ class Futures:
             "headers": response.headers
         }
 
-    def get_link_futures(self,
-                         download_id: str,
-                         time_stamp: str,
-                         recv_window: str = "5000") -> dict:
+    def get_link_deals_futures(self,
+                               download_id: str,
+                               time_stamp: str,
+                               recv_window: str = "5000") -> dict:
         """
         Запрос:
         Получить ссылку для скачивания истории сделок с фьючерсами по идентификатору
@@ -3113,14 +3360,7 @@ class Futures:
         {
            "downloadId": "705897285947772928",
            "status": "completed",   ("completed"-завершено или "processing"-обработка)
-           "url": "https://bin-prod-user-rebate-bucket.s3.amazonaws.com/data-download-task/usdt_margined_futures/
-                   2023-05-02/b11da5e4-e932-11ed-b29b-06d1fef09917/202305022143.zip?
-                   X-Amz-Algorithm=AWS4-HMAC-SHA256&
-                   X-Amz-Credential=AKIAVL364M5ZE4RJPUCE%2F20230502%2Fap-northeast-1%2Fs3%2Faws4_request&
-                   X-Amz-Date=20230502T214746Z&
-                   X-Amz-Expires=604800&
-                   X-Amz-SignedHeaders=host&
-                   X-Amz-Signature=891df982df2e66c63f6e6ceda3e0d23ab078e89d58f13372e6f750271fae5c1a",
+           "url": "https://bin-prod-user-rebate-bucket.s3.amazonaws.com/data-download-task/usdt_margined_futures/...
                                                                         (Ссылка сопоставлена с идентификатором загрузки)
            "s3Link": null,
            "notified": true,   (ignore)
@@ -3131,17 +3371,297 @@ class Futures:
         - Если результат ответ в обработке ("processing"):
 
         {
-            "downloadId":"545923594199212032",
-            "status":"completed",   ("completed"-завершено или "processing"-обработка))
-            "url":"www.binance.com",   (Срок действия ссылки истекает после этой метки времени)
-            "notified":true,   (ignore)
-            "expirationTimestamp":1645009771000,   (Срок действия ссылки истекает после этой метки времени)
+            "downloadId": "545923594199212032",
+            "status": "processing",
+            "url": "",
+            "notified": false,
+            "expirationTimestamp": -1,
             "isExpired":null,
         }
         """
 
         # -------------------------------------------------------------------------
         end_point = "/fapi/v1/income/asyn/id"
+        parameters = {
+            "downloadId": download_id,
+            "timestamp": time_stamp,
+            "recvWindow": recv_window
+        }
+        query_string = urlencode(parameters)
+        parameters["signature"] = hmac.new(key=self.secret_key.encode(),
+                                           msg=query_string.encode(),
+                                           digestmod=hashlib.sha256).hexdigest()
+        # -------------------------------------------------------------------------
+
+        complete_request = self.base_url + end_point
+        complete_parameters = parameters
+        headers = {
+            "X-MBX-APIKEY": self.api_key
+        }
+
+        response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_id_orders_futures(self,
+                              start_time: str,
+                              end_time: str,
+                              time_stamp: str,
+                              recv_window: str = "5000") -> dict:
+        """
+        Запрос:
+        Получить идентификатор для загрузки истории заказов с фьючерсами
+
+        Полный url:
+        "https://fapi.binance.com/fapi/v1/order/asyn"
+
+        Вес запроса:
+        1500
+
+        Параметры:
+        - start_time="startTime" (str): время начала отбора ("1681505080619", ...)
+        - end_time="endTime" (str): время окончания отбора ("1681505034619", ...)
+        - time_stamp="timestamp" (str): время отправки запроса ("1681501516492", ...)
+        - recv_window="recvWindow" (str): количество миллисекунд, в течение которых запрос действителен
+                                                                                                ("1000", ..., "70000")
+
+        Комментарии:
+        - ограничение запроса — максимум 10 раз в месяц
+        - время между "startTime" и "endTime" не может превышать 1 год
+
+        Ответ:
+        {
+           "avgCostTimestampOfLast30d": 380288,   (Среднее время загрузки данных за последние 30 дней)
+           "downloadId": "705896703002431488"
+        }
+        """
+
+        # -------------------------------------------------------------------------
+        end_point = "/fapi/v1/order/asyn"
+        parameters = {
+            "startTime": start_time,
+            "endTime": end_time,
+            "timestamp": time_stamp,
+            "recvWindow": recv_window
+        }
+        query_string = urlencode(parameters)
+        parameters["signature"] = hmac.new(key=self.secret_key.encode(),
+                                           msg=query_string.encode(),
+                                           digestmod=hashlib.sha256).hexdigest()
+        # -------------------------------------------------------------------------
+
+        complete_request = self.base_url + end_point
+        complete_parameters = parameters
+        headers = {
+            "X-MBX-APIKEY": self.api_key
+        }
+
+        response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_link_orders_futures(self,
+                                download_id: str,
+                                time_stamp: str,
+                                recv_window: str = "5000") -> dict:
+        """
+        Запрос:
+        Получить ссылку для скачивания истории заказов с фьючерсами по идентификатору
+
+        Полный url:
+        "https://fapi.binance.com/fapi/v1/order/asyn/id"
+
+        Вес запроса:
+        10
+
+        Параметры:
+        - download_id="downloadId" (str): идентификатор загрузки ("132131234", ...)
+        - time_stamp="timestamp" (str): время отправки запроса ("1681501516492", ...)
+        - recv_window="recvWindow" (str): количество миллисекунд, в течение которых запрос действителен
+                                                                                                ("1000", ..., "70000")
+
+        Комментарии:
+        - "downloadId" можно получит по url "https://fapi.binance.com/fapi/v1/order/asyn"
+        - Срок действия ссылки для скачивания: 24 часа
+
+        Ответ:
+        - Если результат ответ завершен ("completed"):
+
+        {
+           "downloadId": "705897285947772928",
+           "status": "completed",   ("completed"-завершено или "processing"-обработка)
+           "url": "https://bin-prod-user-rebate-bucket.s3.amazonaws.com/data-download-task/usdt_margined_futures/...
+                                                                        (Ссылка сопоставлена с идентификатором загрузки)
+           "s3Link": null,
+           "notified": true,   (ignore)
+           "expirationTimestamp": 1683668866000,   (Срок действия ссылки истекает после этой метки времени)
+           "isExpired": null
+        }
+
+        - Если результат ответ в обработке ("processing"):
+
+        {
+            "downloadId": "545923594199212032",
+            "status": "processing",
+            "url": "",
+            "notified": false,
+            "expirationTimestamp": -1,
+            "isExpired":null,
+        }
+        """
+
+        # -------------------------------------------------------------------------
+        end_point = "/fapi/v1/order/asyn/id"
+        parameters = {
+            "downloadId": download_id,
+            "timestamp": time_stamp,
+            "recvWindow": recv_window
+        }
+        query_string = urlencode(parameters)
+        parameters["signature"] = hmac.new(key=self.secret_key.encode(),
+                                           msg=query_string.encode(),
+                                           digestmod=hashlib.sha256).hexdigest()
+        # -------------------------------------------------------------------------
+
+        complete_request = self.base_url + end_point
+        complete_parameters = parameters
+        headers = {
+            "X-MBX-APIKEY": self.api_key
+        }
+
+        response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_id_trades_futures(self,
+                              start_time: str,
+                              end_time: str,
+                              time_stamp: str,
+                              recv_window: str = "5000") -> dict:
+        """
+        Запрос:
+        Получить идентификатор для загрузки истории торговли с фьючерсами
+
+        Полный url:
+        "https://fapi.binance.com/fapi/v1/trade/asyn"
+
+        Вес запроса:
+        1500
+
+        Параметры:
+        - start_time="startTime" (str): время начала отбора ("1681505080619", ...)
+        - end_time="endTime" (str): время окончания отбора ("1681505034619", ...)
+        - time_stamp="timestamp" (str): время отправки запроса ("1681501516492", ...)
+        - recv_window="recvWindow" (str): количество миллисекунд, в течение которых запрос действителен
+                                                                                                ("1000", ..., "70000")
+
+        Комментарии:
+        - ограничение запроса — максимум 5 раз в месяц
+        - время между "startTime" и "endTime" не может превышать 1 год
+
+        Ответ:
+        {
+           "avgCostTimestampOfLast30d": 380288,   (Среднее время загрузки данных за последние 30 дней)
+           "downloadId": "705896703002431488"
+        }
+        """
+
+        # -------------------------------------------------------------------------
+        end_point = "/fapi/v1/trade/asyn"
+        parameters = {
+            "startTime": start_time,
+            "endTime": end_time,
+            "timestamp": time_stamp,
+            "recvWindow": recv_window
+        }
+        query_string = urlencode(parameters)
+        parameters["signature"] = hmac.new(key=self.secret_key.encode(),
+                                           msg=query_string.encode(),
+                                           digestmod=hashlib.sha256).hexdigest()
+        # -------------------------------------------------------------------------
+
+        complete_request = self.base_url + end_point
+        complete_parameters = parameters
+        headers = {
+            "X-MBX-APIKEY": self.api_key
+        }
+
+        response = requests.get(url=complete_request, params=complete_parameters, headers=headers)
+        result = json.loads(response.text)
+
+        return {
+            "status_code": response.status_code,
+            "result": result,
+            "headers": response.headers
+        }
+
+    def get_link_trades_futures(self,
+                                download_id: str,
+                                time_stamp: str,
+                                recv_window: str = "5000") -> dict:
+        """
+        Запрос:
+        Получить ссылку для скачивания истории торговли с фьючерсами по идентификатору
+
+        Полный url:
+        "https://fapi.binance.com/fapi/v1/trade/asyn/id"
+
+        Вес запроса:
+        10
+
+        Параметры:
+        - download_id="downloadId" (str): идентификатор загрузки ("132131234", ...)
+        - time_stamp="timestamp" (str): время отправки запроса ("1681501516492", ...)
+        - recv_window="recvWindow" (str): количество миллисекунд, в течение которых запрос действителен
+                                                                                                ("1000", ..., "70000")
+
+        Комментарии:
+        - "downloadId" можно получит по url "https://fapi.binance.com/fapi/v1/order/asyn"
+        - Срок действия ссылки для скачивания: 24 часа
+
+        Ответ:
+        - Если результат ответ завершен ("completed"):
+
+        {
+           "downloadId": "705897285947772928",
+           "status": "completed",   ("completed"-завершено или "processing"-обработка)
+           "url": "https://bin-prod-user-rebate-bucket.s3.amazonaws.com/data-download-task/usdt_margined_futures/...
+                                                                        (Ссылка сопоставлена с идентификатором загрузки)
+           "s3Link": null,
+           "notified": true,   (ignore)
+           "expirationTimestamp": 1683668866000,   (Срок действия ссылки истекает после этой метки времени)
+           "isExpired": null
+        }
+
+        - Если результат ответ в обработке ("processing"):
+
+        {
+            "downloadId": "545923594199212032",
+            "status": "processing",
+            "url": "",
+            "notified": false,
+            "expirationTimestamp": -1,
+            "isExpired":null,
+        }
+        """
+
+        # -------------------------------------------------------------------------
+        end_point = "/fapi/v1/trade/asyn/id"
         parameters = {
             "downloadId": download_id,
             "timestamp": time_stamp,
@@ -3189,7 +3709,7 @@ class Futures:
                                                                                                 ("1000", ..., "70000")
 
         Комментарии:
-        - Изменить режим мультиактива на КАЖДОМ символе пользователя (режим Single-Asset или режим Multi-Assets)
+        - изменить режим мультиактива на КАЖДОМ символе пользователя (режим Single-Asset или режим Multi-Assets)
         - "multiAssetsMargin" возможные варианты: ["false" - режим Single-Asset, "true" - режим Multi-Assets]
 
         Ответ:
@@ -8235,6 +8755,98 @@ class Futures:
                 await asyncio.sleep(10)
             except socket.gaierror:
                 print("Стрим ленты сделок по символу разрыв соединения. Восстанавливаем.\n"
+                      "Ошибка: socket.gaierror.")
+                await asyncio.sleep(10)
+
+    async def get_stream_asset_index_in_multi_assets(self,
+                                                     list_data: list,
+                                                     method: str = "SUBSCRIBE",
+                                                     symbol: list[list[str]] = None,
+                                                     my_id: int = randint(1, 100)) -> None:
+        """
+        Запрос:
+        Стрим индексов активов в режиме мультиактива
+
+        Полный url:
+        "wss://fstream.binance.com/ws!assetIndex@arrOR" (для всех активов)
+        или
+        "wss://fstream.binance.com/ws{assetSymbol}@assetIndex" (для определенных активов)
+
+        Параметры:
+        - list_data (list): аргумент через который будут передаваться данные стрима ([])
+        - method (str): метод стрима ("SUBSCRIBE", "UNSUBSCRIBE")
+        - symbol (list[list[str], ...]): список символов ([["btcusdt"], ["bnbusdt"], ...])
+        - my_id (int): идентификатор стрима (1, ..., 100)
+
+        Комментарии:
+        - symbol вариант заполнения: [["btcusdt"], ...]
+        - symbol значения должны быть строчными
+        - method расшифровка ["SUBSCRIBE": подключить стрим, "UNSUBSCRIBE": отключить стрим,
+                              "LIST_SUBSCRIPTIONS": информация о стриме, "SET_PROPERTY": ..., "GET_PROPERTY": ...]
+
+        Ответ:
+        [
+            {
+                "e":"assetIndexUpdate",
+                "E":1686749230000,
+                "s":"ADAUSD",    (asset index symbol)
+                "i":"0.27462452",    (index price)
+                "b":"0.10000000",    (bid buffer)
+                "a":"0.10000000",    (ask buffer)
+                "B":"0.24716207",    (bid rate)
+                "A":"0.30208698",    (ask rate)
+                "q":"0.05000000",    (auto exchange bid buffer)
+                "g":"0.05000000",    (auto exchange ask buffer)
+                "Q":"0.26089330",    (auto exchange bid rate)
+                "G":"0.28835575"     (auto exchange ask rate)
+            },
+            {
+                "e":"assetIndexUpdate",
+                "E":1686749230000,
+                "s":"USDTUSD",
+                "i":"0.99987691",
+                "b":"0.00010000",
+                "a":"0.00010000",
+                "B":"0.99977692",
+                "A":"0.99997689",
+                "q":"0.00010000",
+                "g":"0.00010000",
+                "Q":"0.99977692",
+                "G":"0.99997689"
+            }
+        ]
+        """
+
+        # ----------------------------------------------
+        if symbol:
+            streams = [f"{data[0].lower()}@assetIndex" for data in symbol]
+        else:
+            streams = [f"!assetIndex@arrOR"]
+        # ----------------------------------------------
+
+        while True:
+            try:
+                async with websockets.connect(self.base_url_stream) as websocket:
+                    subscribe_request = {
+                        "method": method,
+                        "params": streams,
+                        "id": my_id,
+                    }
+                    await websocket.send(json.dumps(subscribe_request))
+
+                    while True:
+                        result = json.loads(await websocket.recv())
+                        if "id" not in result:
+                            list_data.clear()
+                            list_data.append(result)
+                        else:
+                            print("Стрим индексов активов в режиме мультиактива запущен.")
+            except websockets.exceptions.ConnectionClosedError:
+                print("Стрим индексов активов в режиме мультиактива разрыв соединения. Восстанавливаем.\n"
+                      "Ошибка: websockets.exceptions.ConnectionClosedError.")
+                await asyncio.sleep(10)
+            except socket.gaierror:
+                print("Стрим индексов активов в режиме мультиактива разрыв соединения. Восстанавливаем.\n"
                       "Ошибка: socket.gaierror.")
                 await asyncio.sleep(10)
 

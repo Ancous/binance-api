@@ -1,0 +1,9 @@
+{
+   "downloadId": "802863014904516608",
+   "status": "completed",
+   "url": "https://bin-prod-user-rebate-bucket.s3.amazonaws.com/data-download-task/usdt_margined_futures_order/2024-01-25/6e575268-bb74-11ee-89eb-06a0ac25cdaf/202401251124.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVL364M5ZFDQ6TAWC%2F20240125%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20240125T112601Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4e5877193b9b4acab3bd4b0c814fa37f1fa27c778544318080f62c70feeb4ba9",
+   "s3Link": null,
+   "notified": false,
+   "expirationTimestamp": 1706786761000,
+   "isExpired": null
+}

@@ -1,0 +1,302 @@
+[
+   {
+      "indexPrice": "40074.31659574",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40068.50",
+      "annualizedBasisRate": "",
+      "basis": "-5.81659574",
+      "pair": "BTCUSDT",
+      "timestamp": 1706176500000
+   },
+   {
+      "indexPrice": "40032.83063830",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "40023.40",
+      "annualizedBasisRate": "",
+      "basis": "-9.43063830",
+      "pair": "BTCUSDT",
+      "timestamp": 1706176800000
+   },
+   {
+      "indexPrice": "40040.87893617",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "40030.10",
+      "annualizedBasisRate": "",
+      "basis": "-10.77893617",
+      "pair": "BTCUSDT",
+      "timestamp": 1706177100000
+   },
+   {
+      "indexPrice": "40003.51893617",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40000.00",
+      "annualizedBasisRate": "",
+      "basis": "-3.51893617",
+      "pair": "BTCUSDT",
+      "timestamp": 1706177400000
+   },
+   {
+      "indexPrice": "40009.43382979",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40003.60",
+      "annualizedBasisRate": "",
+      "basis": "-5.83382979",
+      "pair": "BTCUSDT",
+      "timestamp": 1706177700000
+   },
+   {
+      "indexPrice": "39986.73744681",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "39975.20",
+      "annualizedBasisRate": "",
+      "basis": "-11.53744681",
+      "pair": "BTCUSDT",
+      "timestamp": 1706178000000
+   },
+   {
+      "indexPrice": "39989.33489362",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "39981.30",
+      "annualizedBasisRate": "",
+      "basis": "-8.03489362",
+      "pair": "BTCUSDT",
+      "timestamp": 1706178300000
+   },
+   {
+      "indexPrice": "40008.20680851",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "39999.80",
+      "annualizedBasisRate": "",
+      "basis": "-8.40680851",
+      "pair": "BTCUSDT",
+      "timestamp": 1706178600000
+   },
+   {
+      "indexPrice": "40026.80702128",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40022.70",
+      "annualizedBasisRate": "",
+      "basis": "-4.10702128",
+      "pair": "BTCUSDT",
+      "timestamp": 1706178900000
+   },
+   {
+      "indexPrice": "40049.52914894",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40044.10",
+      "annualizedBasisRate": "",
+      "basis": "-5.42914894",
+      "pair": "BTCUSDT",
+      "timestamp": 1706179200000
+   },
+   {
+      "indexPrice": "40069.62446809",
+      "contractType": "PERPETUAL",
+      "basisRate": "0.0000",
+      "futuresPrice": "40068.20",
+      "annualizedBasisRate": "",
+      "basis": "-1.42446809",
+      "pair": "BTCUSDT",
+      "timestamp": 1706179500000
+   },
+   {
+      "indexPrice": "40061.66765957",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40058.00",
+      "annualizedBasisRate": "",
+      "basis": "-3.66765957",
+      "pair": "BTCUSDT",
+      "timestamp": 1706179800000
+   },
+   {
+      "indexPrice": "40097.28574468",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40092.30",
+      "annualizedBasisRate": "",
+      "basis": "-4.98574468",
+      "pair": "BTCUSDT",
+      "timestamp": 1706180100000
+   },
+   {
+      "indexPrice": "40113.97595745",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "40103.30",
+      "annualizedBasisRate": "",
+      "basis": "-10.67595745",
+      "pair": "BTCUSDT",
+      "timestamp": 1706180400000
+   },
+   {
+      "indexPrice": "40105.64446809",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40101.00",
+      "annualizedBasisRate": "",
+      "basis": "-4.64446809",
+      "pair": "BTCUSDT",
+      "timestamp": 1706180700000
+   },
+   {
+      "indexPrice": "40131.49234043",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "40121.60",
+      "annualizedBasisRate": "",
+      "basis": "-9.89234043",
+      "pair": "BTCUSDT",
+      "timestamp": 1706181000000
+   },
+   {
+      "indexPrice": "40214.52170213",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "40205.00",
+      "annualizedBasisRate": "",
+      "basis": "-9.52170213",
+      "pair": "BTCUSDT",
+      "timestamp": 1706181300000
+   },
+   {
+      "indexPrice": "40195.01276596",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40191.50",
+      "annualizedBasisRate": "",
+      "basis": "-3.51276596",
+      "pair": "BTCUSDT",
+      "timestamp": 1706181600000
+   },
+   {
+      "indexPrice": "40241.75574468",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "40230.70",
+      "annualizedBasisRate": "",
+      "basis": "-11.05574468",
+      "pair": "BTCUSDT",
+      "timestamp": 1706181900000
+   },
+   {
+      "indexPrice": "40274.09765957",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0001",
+      "futuresPrice": "40270.00",
+      "annualizedBasisRate": "",
+      "basis": "-4.09765957",
+      "pair": "BTCUSDT",
+      "timestamp": 1706182200000
+   },
+   {
+      "indexPrice": "40265.36148936",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "40252.60",
+      "annualizedBasisRate": "",
+      "basis": "-12.76148936",
+      "pair": "BTCUSDT",
+      "timestamp": 1706182500000
+   },
+   {
+      "indexPrice": "40235.19319149",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "40228.80",
+      "annualizedBasisRate": "",
+      "basis": "-6.39319149",
+      "pair": "BTCUSDT",
+      "timestamp": 1706182800000
+   },
+   {
+      "indexPrice": "40237.97553191",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "40224.90",
+      "annualizedBasisRate": "",
+      "basis": "-13.07553191",
+      "pair": "BTCUSDT",
+      "timestamp": 1706183100000
+   },
+   {
+      "indexPrice": "40200.38063830",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "40190.80",
+      "annualizedBasisRate": "",
+      "basis": "-9.58063830",
+      "pair": "BTCUSDT",
+      "timestamp": 1706183400000
+   },
+   {
+      "indexPrice": "40174.35361702",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "40168.30",
+      "annualizedBasisRate": "",
+      "basis": "-6.05361702",
+      "pair": "BTCUSDT",
+      "timestamp": 1706183700000
+   },
+   {
+      "indexPrice": "40176.30255319",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "40165.50",
+      "annualizedBasisRate": "",
+      "basis": "-10.80255319",
+      "pair": "BTCUSDT",
+      "timestamp": 1706184000000
+   },
+   {
+      "indexPrice": "40228.72680851",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "40218.10",
+      "annualizedBasisRate": "",
+      "basis": "-10.62680851",
+      "pair": "BTCUSDT",
+      "timestamp": 1706184300000
+   },
+   {
+      "indexPrice": "40207.38021277",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0002",
+      "futuresPrice": "40199.80",
+      "annualizedBasisRate": "",
+      "basis": "-7.58021277",
+      "pair": "BTCUSDT",
+      "timestamp": 1706184600000
+   },
+   {
+      "indexPrice": "40132.90340426",
+      "contractType": "PERPETUAL",
+      "basisRate": "-0.0003",
+      "futuresPrice": "40119.30",
+      "annualizedBasisRate": "",
+      "basis": "-13.60340426",
+      "pair": "BTCUSDT",
+      "timestamp": 1706184900000
+   },
+   {
+      "indexPrice": "40072.19957447",
+      "contractType": "PERPETUAL",
+      "basisRate": "0.0000",
+      "futuresPrice": "40073.10",
+      "annualizedBasisRate": "",
+      "basis": "0.90042553",
+      "pair": "BTCUSDT",
+      "timestamp": 1706185200000
+   }
+]
