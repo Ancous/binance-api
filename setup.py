@@ -15,11 +15,12 @@ def readme():
 
 setup(
     name="binance-api-ancous",
-    version="0.0.7",
+    version="0.0.8",
     author="Ancous",
     author_email="alex_taras@bk.ru",
     description="Interaction with the Binance exchange",
     long_description=readme(),
+    long_description_content_type="text/markdown",
     url="https://github.com/Ancous/binance-api.git",
     packages=[
         "binance_api_ancous"
