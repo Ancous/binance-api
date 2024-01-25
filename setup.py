@@ -4,12 +4,22 @@ pass
 
 from setuptools import setup
 
+
+def readme():
+    """
+    Описание работы функции
+    """
+    with open('README.md') as file:
+        return file.read()
+
+
 setup(
     name="binance-api-ancous",
     version="0.0.6",
     author="Ancous",
     author_email="alex_taras@bk.ru",
     description="Interaction with the Binance exchange",
+    long_description=readme(),
     url="https://github.com/Ancous/binance-api.git",
     packages=[
         "binance_api_ancous"
