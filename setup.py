@@ -15,7 +15,7 @@ def readme():
 
 setup(
     name="binance-api-ancous",
-    version="0.0.9",
+    version="0.1.0",
     author="Ancous",
     author_email="alex_taras@bk.ru",
     description="Interaction with the Binance exchange",
