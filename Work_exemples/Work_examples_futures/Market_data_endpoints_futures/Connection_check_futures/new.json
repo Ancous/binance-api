@@ -1,0 +1,68 @@
+{
+  "RSA": {
+    "MEXC": {
+      "key": {
+        "api-key": "",
+        "secret": ""
+      },
+      "Binance": {
+        "key": {
+          "api-key": "",
+          "secret": ""
+        },
+        "торговля": {
+          "price": "xxx",
+          "quantity": "zzz"
+        }
+      },
+      "OKX": {
+        "key": {
+          "api-key": "",
+          "secret": ""
+        },
+        "индикаторы": {
+          "boliger": {
+            "x": "",
+            "y": ""
+          },
+          "volume": {
+            "x": "",
+            "y": "",
+            "z": ""
+          }
+        }
+      },
+      "Bybit": {
+        "key": {
+          "api-key": "",
+          "secret": ""
+        },
+        "торговля": {
+          "price": "xxx",
+          "quantity": "zzz",
+          "stop-loss": "xxx",
+          "take-profit": "zzz"
+        },
+        "индикаторы": {
+          "boliger": {
+            "x": "",
+            "y": ""
+          },
+          "volume": {
+            "x": "",
+            "y": "",
+            "z": ""
+          }
+        }
+      }
+    }
+  },
+  "СКОЛЬЗЯЧКАК": {
+    "OKX": {
+      "key": {
+        "api-key": "",
+        "secret": ""
+      }
+    }
+  }
+}
