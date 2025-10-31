@@ -1,11 +1,78 @@
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QTabWidget
 
+res = {
+  "RSA": {
+    "MEXC": {
+      "key": {
+        "api-key": "",
+        "secret": ""
+      }
+    },
+    "Binance": {
+      "key": {
+        "api-key": "",
+        "secret": ""
+      },
+      "торговля": {
+        "price": "xxx",
+        "quantity": "zzz"
+      }
+    },
+    "OKX": {
+      "key": {
+        "api-key": "",
+        "secret": ""
+      },
+      "индикаторы": {
+        "boliger": {
+          "x": "",
+          "y": ""
+        },
+        "volume": {
+          "x": "",
+          "y": "",
+          "z": ""
+        }
+      }
+    },
+    "Bybit": {
+      "key": {
+        "api-key": "",
+        "secret": ""
+      },
+      "торговля": {
+        "price": "xxx",
+        "quantity": "zzz",
+        "stop-loss": "xxx",
+        "take-profit": "zzz"
+      },
+      "индикаторы": {
+        "boliger": {
+          "x": "",
+          "y": ""
+        },
+        "volume": {
+          "x": "",
+          "y": "",
+          "z": ""
+        }
+      }
+    }
+  },
+  "СКОЛЬЗЯЧКАК": {
+    "OKX": {
+      "key": {
+        "api-key": "",
+        "secret": ""
+      }
+    }
+  }
+}
+
 class TabsPage(QWidget):
     def __init__(self, parent=None, data=None, path=None):
         super().__init__(parent)
         self.parent = parent
-        self.data = data  # Словарь с данными
-        self.path = path  # Список ключей для выбора подсловаря, например ["RSA", "Binance"]
         self.setup_ui()
 
     def setup_ui(self):
@@ -18,7 +85,7 @@ class TabsPage(QWidget):
         current_data = self.get_current_data()
         
         # Автоматически создаём вкладки на основе ключей current_data
-        for top_key, top_value in current_data.items():
+        for top_key, top_value in res.items():
             tab = QWidget()
             layout_tab = QVBoxLayout()
             
@@ -50,18 +117,6 @@ class TabsPage(QWidget):
         
         # Добавляем кнопки в основной layout страницы
         layout.addLayout(buttons_layout)
-
-    def get_current_data(self):
-        """Получаем подсловарь на основе path."""
-        if not self.data or not self.path:
-            return {}
-        current = self.data
-        try:
-            for key in self.path:
-                current = current[key]
-            return current
-        except KeyError:
-            return {}  # Если путь неверный, возвращаем пустой словарь
 
     def create_fields_for_dict(self, d, layout):
         """Рекурсивно создаёт поля для словаря."""
